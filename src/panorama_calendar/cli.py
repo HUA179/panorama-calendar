@@ -219,7 +219,12 @@ def _record_publication(
     events: list[EventRecord],
     artifact: CalendarArtifact,
 ) -> None:
-    """Append one line to the feed's audit trail after a successful write."""
+    """Append one line to the feed's audit trail after a successful write.
+
+    A build that reproduces the exact bytes already published adds no line: the
+    audit trail records revisions, not heartbeats. Without this the state branch
+    would gain a commit every scheduled run and say nothing new.
+    """
     sequences = [event.sequence for event in events]
     append_publish_record(
         out / f"{feed}-{year}.revisions.jsonl",
@@ -231,6 +236,7 @@ def _record_publication(
             "sequence_max": max(sequences) if sequences else None,
             "ics_sha256": hashlib.sha256(artifact.path.read_bytes()).hexdigest(),
         },
+        skip_if_unchanged=True,
     )
 
 
