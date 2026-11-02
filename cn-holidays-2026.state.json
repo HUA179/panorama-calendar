@@ -1,0 +1,520 @@
+{
+  "events": [
+    {
+      "alarms": [],
+      "calendar_kind": "CN_HOLIDAY",
+      "categories": [
+        "法定节假日",
+        "放假"
+      ],
+      "description": "放假 2026-01-01 至 2026-01-03，共 3 天。\n调休上班：01月04日（在日历中单独显示）。\n依据：国务院办公厅关于2026年部分节假日安排的通知（国办发明电〔2025〕7号）。\n原文链接见事件 URL。",
+      "dtstamp": "2026-11-02T15:05:35.886231Z",
+      "end_at_utc": null,
+      "end_date_exclusive": "2026-01-04",
+      "end_estimated": false,
+      "event_key": "cn_holiday:rest:2026:元旦",
+      "event_kind": "REST_PERIOD",
+      "last_modified": "2026-11-02T15:05:35.886231Z",
+      "location": "",
+      "result_status": "NOT_AVAILABLE",
+      "sequence": 1,
+      "source_timezone": null,
+      "sources": [
+        {
+          "authority": "国务院办公厅",
+          "content_hash": "429f8e846960d9c1317b2d84077eba8c5bbe9987fa5d8c7f49c710b205c57145",
+          "evidence_id": "国办发明电〔2025〕7号",
+          "retrieved_at": "2026-11-02T15:30:00+08:00",
+          "url": "https://www.gov.cn/zhengce/content/202511/content_7047090.htm"
+        }
+      ],
+      "start_at_utc": null,
+      "start_date": "2026-01-01",
+      "status": "CONFIRMED",
+      "summary": "元旦｜放假3天",
+      "transparent": true,
+      "uid": "event-9169819cc8c065f77e4b464fee1cc18b@panorama.local"
+    },
+    {
+      "alarms": [],
+      "calendar_kind": "CN_HOLIDAY",
+      "categories": [
+        "法定节假日",
+        "放假"
+      ],
+      "description": "放假 2026-02-15 至 2026-02-23，共 9 天。\n调休上班：02月14日、02月28日（在日历中单独显示）。\n依据：国务院办公厅关于2026年部分节假日安排的通知（国办发明电〔2025〕7号）。\n原文链接见事件 URL。",
+      "dtstamp": "2026-11-02T15:05:35.886231Z",
+      "end_at_utc": null,
+      "end_date_exclusive": "2026-02-24",
+      "end_estimated": false,
+      "event_key": "cn_holiday:rest:2026:春节",
+      "event_kind": "REST_PERIOD",
+      "last_modified": "2026-11-02T15:05:35.886231Z",
+      "location": "",
+      "result_status": "NOT_AVAILABLE",
+      "sequence": 1,
+      "source_timezone": null,
+      "sources": [
+        {
+          "authority": "国务院办公厅",
+          "content_hash": "429f8e846960d9c1317b2d84077eba8c5bbe9987fa5d8c7f49c710b205c57145",
+          "evidence_id": "国办发明电〔2025〕7号",
+          "retrieved_at": "2026-11-02T15:30:00+08:00",
+          "url": "https://www.gov.cn/zhengce/content/202511/content_7047090.htm"
+        }
+      ],
+      "start_at_utc": null,
+      "start_date": "2026-02-15",
+      "status": "CONFIRMED",
+      "summary": "春节｜放假9天",
+      "transparent": true,
+      "uid": "event-d46d2148b402f553271ea7a66379be55@panorama.local"
+    },
+    {
+      "alarms": [],
+      "calendar_kind": "CN_HOLIDAY",
+      "categories": [
+        "法定节假日",
+        "放假"
+      ],
+      "description": "放假 2026-04-04 至 2026-04-06，共 3 天。\n依据：国务院办公厅关于2026年部分节假日安排的通知（国办发明电〔2025〕7号）。\n原文链接见事件 URL。",
+      "dtstamp": "2026-11-02T15:05:35.886231Z",
+      "end_at_utc": null,
+      "end_date_exclusive": "2026-04-07",
+      "end_estimated": false,
+      "event_key": "cn_holiday:rest:2026:清明节",
+      "event_kind": "REST_PERIOD",
+      "last_modified": "2026-11-02T15:05:35.886231Z",
+      "location": "",
+      "result_status": "NOT_AVAILABLE",
+      "sequence": 1,
+      "source_timezone": null,
+      "sources": [
+        {
+          "authority": "国务院办公厅",
+          "content_hash": "429f8e846960d9c1317b2d84077eba8c5bbe9987fa5d8c7f49c710b205c57145",
+          "evidence_id": "国办发明电〔2025〕7号",
+          "retrieved_at": "2026-11-02T15:30:00+08:00",
+          "url": "https://www.gov.cn/zhengce/content/202511/content_7047090.htm"
+        }
+      ],
+      "start_at_utc": null,
+      "start_date": "2026-04-04",
+      "status": "CONFIRMED",
+      "summary": "清明节｜放假3天",
+      "transparent": true,
+      "uid": "event-8f715aa010e2527cf6850c70bfc7fc36@panorama.local"
+    },
+    {
+      "alarms": [],
+      "calendar_kind": "CN_HOLIDAY",
+      "categories": [
+        "法定节假日",
+        "放假"
+      ],
+      "description": "放假 2026-05-01 至 2026-05-05，共 5 天。\n调休上班：05月09日（在日历中单独显示）。\n依据：国务院办公厅关于2026年部分节假日安排的通知（国办发明电〔2025〕7号）。\n原文链接见事件 URL。",
+      "dtstamp": "2026-11-02T15:05:35.886231Z",
+      "end_at_utc": null,
+      "end_date_exclusive": "2026-05-06",
+      "end_estimated": false,
+      "event_key": "cn_holiday:rest:2026:劳动节",
+      "event_kind": "REST_PERIOD",
+      "last_modified": "2026-11-02T15:05:35.886231Z",
+      "location": "",
+      "result_status": "NOT_AVAILABLE",
+      "sequence": 1,
+      "source_timezone": null,
+      "sources": [
+        {
+          "authority": "国务院办公厅",
+          "content_hash": "429f8e846960d9c1317b2d84077eba8c5bbe9987fa5d8c7f49c710b205c57145",
+          "evidence_id": "国办发明电〔2025〕7号",
+          "retrieved_at": "2026-11-02T15:30:00+08:00",
+          "url": "https://www.gov.cn/zhengce/content/202511/content_7047090.htm"
+        }
+      ],
+      "start_at_utc": null,
+      "start_date": "2026-05-01",
+      "status": "CONFIRMED",
+      "summary": "劳动节｜放假5天",
+      "transparent": true,
+      "uid": "event-62e9fb488a2edd9d5dbe7531cd55d594@panorama.local"
+    },
+    {
+      "alarms": [],
+      "calendar_kind": "CN_HOLIDAY",
+      "categories": [
+        "法定节假日",
+        "放假"
+      ],
+      "description": "放假 2026-06-19 至 2026-06-21，共 3 天。\n依据：国务院办公厅关于2026年部分节假日安排的通知（国办发明电〔2025〕7号）。\n原文链接见事件 URL。",
+      "dtstamp": "2026-11-02T15:05:35.886231Z",
+      "end_at_utc": null,
+      "end_date_exclusive": "2026-06-22",
+      "end_estimated": false,
+      "event_key": "cn_holiday:rest:2026:端午节",
+      "event_kind": "REST_PERIOD",
+      "last_modified": "2026-11-02T15:05:35.886231Z",
+      "location": "",
+      "result_status": "NOT_AVAILABLE",
+      "sequence": 1,
+      "source_timezone": null,
+      "sources": [
+        {
+          "authority": "国务院办公厅",
+          "content_hash": "429f8e846960d9c1317b2d84077eba8c5bbe9987fa5d8c7f49c710b205c57145",
+          "evidence_id": "国办发明电〔2025〕7号",
+          "retrieved_at": "2026-11-02T15:30:00+08:00",
+          "url": "https://www.gov.cn/zhengce/content/202511/content_7047090.htm"
+        }
+      ],
+      "start_at_utc": null,
+      "start_date": "2026-06-19",
+      "status": "CONFIRMED",
+      "summary": "端午节｜放假3天",
+      "transparent": true,
+      "uid": "event-9c2da71b12fec6df14647422b031d9cb@panorama.local"
+    },
+    {
+      "alarms": [],
+      "calendar_kind": "CN_HOLIDAY",
+      "categories": [
+        "法定节假日",
+        "放假"
+      ],
+      "description": "放假 2026-09-25 至 2026-09-27，共 3 天。\n依据：国务院办公厅关于2026年部分节假日安排的通知（国办发明电〔2025〕7号）。\n原文链接见事件 URL。",
+      "dtstamp": "2026-11-02T15:05:35.886231Z",
+      "end_at_utc": null,
+      "end_date_exclusive": "2026-09-28",
+      "end_estimated": false,
+      "event_key": "cn_holiday:rest:2026:中秋节",
+      "event_kind": "REST_PERIOD",
+      "last_modified": "2026-11-02T15:05:35.886231Z",
+      "location": "",
+      "result_status": "NOT_AVAILABLE",
+      "sequence": 1,
+      "source_timezone": null,
+      "sources": [
+        {
+          "authority": "国务院办公厅",
+          "content_hash": "429f8e846960d9c1317b2d84077eba8c5bbe9987fa5d8c7f49c710b205c57145",
+          "evidence_id": "国办发明电〔2025〕7号",
+          "retrieved_at": "2026-11-02T15:30:00+08:00",
+          "url": "https://www.gov.cn/zhengce/content/202511/content_7047090.htm"
+        }
+      ],
+      "start_at_utc": null,
+      "start_date": "2026-09-25",
+      "status": "CONFIRMED",
+      "summary": "中秋节｜放假3天",
+      "transparent": true,
+      "uid": "event-342e79cafc3a456c374975edd12d84e7@panorama.local"
+    },
+    {
+      "alarms": [],
+      "calendar_kind": "CN_HOLIDAY",
+      "categories": [
+        "法定节假日",
+        "放假"
+      ],
+      "description": "放假 2026-10-01 至 2026-10-07，共 7 天。\n调休上班：09月20日、10月10日（在日历中单独显示）。\n依据：国务院办公厅关于2026年部分节假日安排的通知（国办发明电〔2025〕7号）。\n原文链接见事件 URL。",
+      "dtstamp": "2026-11-02T15:05:35.886231Z",
+      "end_at_utc": null,
+      "end_date_exclusive": "2026-10-08",
+      "end_estimated": false,
+      "event_key": "cn_holiday:rest:2026:国庆节",
+      "event_kind": "REST_PERIOD",
+      "last_modified": "2026-11-02T15:05:35.886231Z",
+      "location": "",
+      "result_status": "NOT_AVAILABLE",
+      "sequence": 1,
+      "source_timezone": null,
+      "sources": [
+        {
+          "authority": "国务院办公厅",
+          "content_hash": "429f8e846960d9c1317b2d84077eba8c5bbe9987fa5d8c7f49c710b205c57145",
+          "evidence_id": "国办发明电〔2025〕7号",
+          "retrieved_at": "2026-11-02T15:30:00+08:00",
+          "url": "https://www.gov.cn/zhengce/content/202511/content_7047090.htm"
+        }
+      ],
+      "start_at_utc": null,
+      "start_date": "2026-10-01",
+      "status": "CONFIRMED",
+      "summary": "国庆节｜放假7天",
+      "transparent": true,
+      "uid": "event-c5fc7ce486da25139622be6b20be675b@panorama.local"
+    },
+    {
+      "alarms": [
+        {
+          "action": "DISPLAY",
+          "description": "明天调休上班：元旦调休，别忘了。",
+          "purpose": "adjusted-workday-evening",
+          "related": "START",
+          "trigger": "-PT4H",
+          "uid": "alarm-e5bb0e4ff9a8a581f24ceca3fc33c5f7@panorama.local",
+          "x_wr_alarmuid": "alarm-e5bb0e4ff9a8a581f24ceca3fc33c5f7@panorama.local"
+        }
+      ],
+      "calendar_kind": "CN_HOLIDAY",
+      "categories": [
+        "法定节假日",
+        "调休上班"
+      ],
+      "description": "元旦调休，这一天需要上班。\n依据：国务院办公厅关于2026年部分节假日安排的通知（国办发明电〔2025〕7号）。\n原文链接见事件 URL。",
+      "dtstamp": "2026-11-02T15:05:35.886231Z",
+      "end_at_utc": null,
+      "end_date_exclusive": "2026-01-05",
+      "end_estimated": false,
+      "event_key": "cn_holiday:workday:2026-01-04",
+      "event_kind": "ADJUSTED_WORKDAY",
+      "last_modified": "2026-11-02T15:05:35.886231Z",
+      "location": "",
+      "result_status": "NOT_AVAILABLE",
+      "sequence": 1,
+      "source_timezone": null,
+      "sources": [
+        {
+          "authority": "国务院办公厅",
+          "content_hash": "429f8e846960d9c1317b2d84077eba8c5bbe9987fa5d8c7f49c710b205c57145",
+          "evidence_id": "国办发明电〔2025〕7号",
+          "retrieved_at": "2026-11-02T15:30:00+08:00",
+          "url": "https://www.gov.cn/zhengce/content/202511/content_7047090.htm"
+        }
+      ],
+      "start_at_utc": null,
+      "start_date": "2026-01-04",
+      "status": "CONFIRMED",
+      "summary": "调休上班｜元旦",
+      "transparent": true,
+      "uid": "event-da6786d4b22e4831082892f31e981a67@panorama.local"
+    },
+    {
+      "alarms": [
+        {
+          "action": "DISPLAY",
+          "description": "明天调休上班：春节调休，别忘了。",
+          "purpose": "adjusted-workday-evening",
+          "related": "START",
+          "trigger": "-PT4H",
+          "uid": "alarm-b6c5c7fc0c81624da401767481f24225@panorama.local",
+          "x_wr_alarmuid": "alarm-b6c5c7fc0c81624da401767481f24225@panorama.local"
+        }
+      ],
+      "calendar_kind": "CN_HOLIDAY",
+      "categories": [
+        "法定节假日",
+        "调休上班"
+      ],
+      "description": "春节调休，这一天需要上班。\n依据：国务院办公厅关于2026年部分节假日安排的通知（国办发明电〔2025〕7号）。\n原文链接见事件 URL。",
+      "dtstamp": "2026-11-02T15:05:35.886231Z",
+      "end_at_utc": null,
+      "end_date_exclusive": "2026-02-15",
+      "end_estimated": false,
+      "event_key": "cn_holiday:workday:2026-02-14",
+      "event_kind": "ADJUSTED_WORKDAY",
+      "last_modified": "2026-11-02T15:05:35.886231Z",
+      "location": "",
+      "result_status": "NOT_AVAILABLE",
+      "sequence": 1,
+      "source_timezone": null,
+      "sources": [
+        {
+          "authority": "国务院办公厅",
+          "content_hash": "429f8e846960d9c1317b2d84077eba8c5bbe9987fa5d8c7f49c710b205c57145",
+          "evidence_id": "国办发明电〔2025〕7号",
+          "retrieved_at": "2026-11-02T15:30:00+08:00",
+          "url": "https://www.gov.cn/zhengce/content/202511/content_7047090.htm"
+        }
+      ],
+      "start_at_utc": null,
+      "start_date": "2026-02-14",
+      "status": "CONFIRMED",
+      "summary": "调休上班｜春节",
+      "transparent": true,
+      "uid": "event-ec25aee03e9ccf5e8aa3bee8348a639d@panorama.local"
+    },
+    {
+      "alarms": [
+        {
+          "action": "DISPLAY",
+          "description": "明天调休上班：春节调休，别忘了。",
+          "purpose": "adjusted-workday-evening",
+          "related": "START",
+          "trigger": "-PT4H",
+          "uid": "alarm-34d88c68c678e35e200f42c05c8f2853@panorama.local",
+          "x_wr_alarmuid": "alarm-34d88c68c678e35e200f42c05c8f2853@panorama.local"
+        }
+      ],
+      "calendar_kind": "CN_HOLIDAY",
+      "categories": [
+        "法定节假日",
+        "调休上班"
+      ],
+      "description": "春节调休，这一天需要上班。\n依据：国务院办公厅关于2026年部分节假日安排的通知（国办发明电〔2025〕7号）。\n原文链接见事件 URL。",
+      "dtstamp": "2026-11-02T15:05:35.886231Z",
+      "end_at_utc": null,
+      "end_date_exclusive": "2026-03-01",
+      "end_estimated": false,
+      "event_key": "cn_holiday:workday:2026-02-28",
+      "event_kind": "ADJUSTED_WORKDAY",
+      "last_modified": "2026-11-02T15:05:35.886231Z",
+      "location": "",
+      "result_status": "NOT_AVAILABLE",
+      "sequence": 1,
+      "source_timezone": null,
+      "sources": [
+        {
+          "authority": "国务院办公厅",
+          "content_hash": "429f8e846960d9c1317b2d84077eba8c5bbe9987fa5d8c7f49c710b205c57145",
+          "evidence_id": "国办发明电〔2025〕7号",
+          "retrieved_at": "2026-11-02T15:30:00+08:00",
+          "url": "https://www.gov.cn/zhengce/content/202511/content_7047090.htm"
+        }
+      ],
+      "start_at_utc": null,
+      "start_date": "2026-02-28",
+      "status": "CONFIRMED",
+      "summary": "调休上班｜春节",
+      "transparent": true,
+      "uid": "event-03d240aaf13ee99c448e918ab6b1987c@panorama.local"
+    },
+    {
+      "alarms": [
+        {
+          "action": "DISPLAY",
+          "description": "明天调休上班：劳动节调休，别忘了。",
+          "purpose": "adjusted-workday-evening",
+          "related": "START",
+          "trigger": "-PT4H",
+          "uid": "alarm-3465b711341165c1debae9441df4c739@panorama.local",
+          "x_wr_alarmuid": "alarm-3465b711341165c1debae9441df4c739@panorama.local"
+        }
+      ],
+      "calendar_kind": "CN_HOLIDAY",
+      "categories": [
+        "法定节假日",
+        "调休上班"
+      ],
+      "description": "劳动节调休，这一天需要上班。\n依据：国务院办公厅关于2026年部分节假日安排的通知（国办发明电〔2025〕7号）。\n原文链接见事件 URL。",
+      "dtstamp": "2026-11-02T15:05:35.886231Z",
+      "end_at_utc": null,
+      "end_date_exclusive": "2026-05-10",
+      "end_estimated": false,
+      "event_key": "cn_holiday:workday:2026-05-09",
+      "event_kind": "ADJUSTED_WORKDAY",
+      "last_modified": "2026-11-02T15:05:35.886231Z",
+      "location": "",
+      "result_status": "NOT_AVAILABLE",
+      "sequence": 1,
+      "source_timezone": null,
+      "sources": [
+        {
+          "authority": "国务院办公厅",
+          "content_hash": "429f8e846960d9c1317b2d84077eba8c5bbe9987fa5d8c7f49c710b205c57145",
+          "evidence_id": "国办发明电〔2025〕7号",
+          "retrieved_at": "2026-11-02T15:30:00+08:00",
+          "url": "https://www.gov.cn/zhengce/content/202511/content_7047090.htm"
+        }
+      ],
+      "start_at_utc": null,
+      "start_date": "2026-05-09",
+      "status": "CONFIRMED",
+      "summary": "调休上班｜劳动节",
+      "transparent": true,
+      "uid": "event-f7e19983de132cddbc13761883b5189e@panorama.local"
+    },
+    {
+      "alarms": [
+        {
+          "action": "DISPLAY",
+          "description": "明天调休上班：国庆节调休，别忘了。",
+          "purpose": "adjusted-workday-evening",
+          "related": "START",
+          "trigger": "-PT4H",
+          "uid": "alarm-b040132dfc83458bd6962be6d758e3c3@panorama.local",
+          "x_wr_alarmuid": "alarm-b040132dfc83458bd6962be6d758e3c3@panorama.local"
+        }
+      ],
+      "calendar_kind": "CN_HOLIDAY",
+      "categories": [
+        "法定节假日",
+        "调休上班"
+      ],
+      "description": "国庆节调休，这一天需要上班。\n依据：国务院办公厅关于2026年部分节假日安排的通知（国办发明电〔2025〕7号）。\n原文链接见事件 URL。",
+      "dtstamp": "2026-11-02T15:05:35.886231Z",
+      "end_at_utc": null,
+      "end_date_exclusive": "2026-09-21",
+      "end_estimated": false,
+      "event_key": "cn_holiday:workday:2026-09-20",
+      "event_kind": "ADJUSTED_WORKDAY",
+      "last_modified": "2026-11-02T15:05:35.886231Z",
+      "location": "",
+      "result_status": "NOT_AVAILABLE",
+      "sequence": 1,
+      "source_timezone": null,
+      "sources": [
+        {
+          "authority": "国务院办公厅",
+          "content_hash": "429f8e846960d9c1317b2d84077eba8c5bbe9987fa5d8c7f49c710b205c57145",
+          "evidence_id": "国办发明电〔2025〕7号",
+          "retrieved_at": "2026-11-02T15:30:00+08:00",
+          "url": "https://www.gov.cn/zhengce/content/202511/content_7047090.htm"
+        }
+      ],
+      "start_at_utc": null,
+      "start_date": "2026-09-20",
+      "status": "CONFIRMED",
+      "summary": "调休上班｜国庆节",
+      "transparent": true,
+      "uid": "event-e7400a8613dee747a9352470ce32188f@panorama.local"
+    },
+    {
+      "alarms": [
+        {
+          "action": "DISPLAY",
+          "description": "明天调休上班：国庆节调休，别忘了。",
+          "purpose": "adjusted-workday-evening",
+          "related": "START",
+          "trigger": "-PT4H",
+          "uid": "alarm-e725ae92051a3fadcb3b560c8b8985c8@panorama.local",
+          "x_wr_alarmuid": "alarm-e725ae92051a3fadcb3b560c8b8985c8@panorama.local"
+        }
+      ],
+      "calendar_kind": "CN_HOLIDAY",
+      "categories": [
+        "法定节假日",
+        "调休上班"
+      ],
+      "description": "国庆节调休，这一天需要上班。\n依据：国务院办公厅关于2026年部分节假日安排的通知（国办发明电〔2025〕7号）。\n原文链接见事件 URL。",
+      "dtstamp": "2026-11-02T15:05:35.886231Z",
+      "end_at_utc": null,
+      "end_date_exclusive": "2026-10-11",
+      "end_estimated": false,
+      "event_key": "cn_holiday:workday:2026-10-10",
+      "event_kind": "ADJUSTED_WORKDAY",
+      "last_modified": "2026-11-02T15:05:35.886231Z",
+      "location": "",
+      "result_status": "NOT_AVAILABLE",
+      "sequence": 1,
+      "source_timezone": null,
+      "sources": [
+        {
+          "authority": "国务院办公厅",
+          "content_hash": "429f8e846960d9c1317b2d84077eba8c5bbe9987fa5d8c7f49c710b205c57145",
+          "evidence_id": "国办发明电〔2025〕7号",
+          "retrieved_at": "2026-11-02T15:30:00+08:00",
+          "url": "https://www.gov.cn/zhengce/content/202511/content_7047090.htm"
+        }
+      ],
+      "start_at_utc": null,
+      "start_date": "2026-10-10",
+      "status": "CONFIRMED",
+      "summary": "调休上班｜国庆节",
+      "transparent": true,
+      "uid": "event-6ed97c00f456aeb814c65add88c35e74@panorama.local"
+    }
+  ],
+  "version": 1
+}

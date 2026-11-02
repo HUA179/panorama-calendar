@@ -1,0 +1,40 @@
+{
+  "events": [
+    {
+      "alarms": [],
+      "calendar_kind": "GX_HOLIDAY",
+      "categories": [
+        "广西地方假期",
+        "放假"
+      ],
+      "description": "放假 2026-04-17 至 2026-04-20，共 4 天。\n4月18日、19日为法定放假，4月17日、20日为补休，合并为连续4天区间。补休不是调休上班，不生成上班事件。\n依据：广西壮族自治区人民政府办公厅关于2026年广西三月三放假的通知（广西壮族自治区人民政府办公厅2026年3月4日通知）。\n原文链接见事件 URL。",
+      "dtstamp": "2026-11-02T15:05:35.893659Z",
+      "end_at_utc": null,
+      "end_date_exclusive": "2026-04-21",
+      "end_estimated": false,
+      "event_key": "gx_holiday:rest:2026:广西三月三",
+      "event_kind": "REST_PERIOD",
+      "last_modified": "2026-11-02T15:05:35.893659Z",
+      "location": "",
+      "result_status": "NOT_AVAILABLE",
+      "sequence": 1,
+      "source_timezone": null,
+      "sources": [
+        {
+          "authority": "广西壮族自治区人民政府办公厅",
+          "content_hash": "d47bf9242585ea27cba969e776690fce71f7de558efe14961e00dfebb7d136d1",
+          "evidence_id": "广西壮族自治区人民政府办公厅2026年3月4日通知",
+          "retrieved_at": "2026-11-02T15:32:00+08:00",
+          "url": "http://www.gxzf.gov.cn/gggs/t27317475.shtml"
+        }
+      ],
+      "start_at_utc": null,
+      "start_date": "2026-04-17",
+      "status": "CONFIRMED",
+      "summary": "广西三月三｜放假4天",
+      "transparent": true,
+      "uid": "event-8e26f171e370b5cbb05d81b44acf7239@panorama.local"
+    }
+  ],
+  "version": 1
+}
