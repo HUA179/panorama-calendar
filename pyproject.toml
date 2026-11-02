@@ -1,0 +1,41 @@
+[build-system]
+requires = ["hatchling>=1.26"]
+build-backend = "hatchling.build"
+
+[project]
+name = "personal-panorama-calendar"
+version = "0.1.0"
+description = "ICS core and unified event model for the personal panorama calendar"
+requires-python = ">=3.12"
+dependencies = [
+    "httpx>=0.27,<1",
+    "icalendar>=6,<7",
+    "pydantic>=2.12.4,<2.12.6",
+    "typer>=0.12,<1",
+]
+
+[project.optional-dependencies]
+dev = [
+    "hypothesis>=6.100,<7",
+    "pytest>=8,<10",
+    "ruff>=0.8,<1",
+]
+
+[project.scripts]
+panorama-calendar = "panorama_calendar.cli:app"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/panorama_calendar"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.ruff]
+target-version = "py312"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "ANN"]
+ignore = ["ANN401", "B008"]

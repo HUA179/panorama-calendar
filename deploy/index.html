@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>个人全景日历 · 订阅入口</title>
+<style>
+  :root {
+    --bg: #f4f5f7;
+    --card: #ffffff;
+    --ink: #16181d;
+    --muted: #6b7280;
+    --line: #e5e7eb;
+    --accent: #c8102e;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 40px 20px 64px;
+    background: var(--bg);
+    color: var(--ink);
+    font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC",
+          "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; }
+  h1 { margin: 0 0 8px; font-size: 26px; letter-spacing: -0.3px; }
+  .sub { margin: 0 0 28px; color: var(--muted); font-size: 14px; }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 18px 20px;
+    margin-bottom: 14px;
+  }
+  .name { font-size: 17px; font-weight: 650; }
+  .desc { margin: 6px 0 12px; font-size: 14px; color: var(--muted); }
+  .url {
+    font: 12px/1.5 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    color: #374151;
+    background: #f9fafb;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    padding: 9px 11px;
+    word-break: break-all;
+    display: block;
+    text-decoration: none;
+  }
+  .url:hover { border-color: var(--accent); color: var(--accent); }
+  .tip {
+    margin-top: 26px;
+    font-size: 13px;
+    color: var(--muted);
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 16px 18px;
+  }
+  .tip b { color: var(--ink); }
+  .tip ol { margin: 8px 0 0; padding-left: 20px; }
+  .tip li { margin: 4px 0; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>个人全景日历</h1>
+  <p class="sub">五个独立订阅，互不合并。点链接会唤起系统日历的「订阅」提示。</p>
+
+  <div class="card">
+    <div class="name">全国法定节假日</div>
+    <p class="desc">放假安排、调休上班日，含前一晚提醒。</p>
+    <a class="url" href="cn-holidays-__YEAR__.ics">cn-holidays-__YEAR__.ics</a>
+  </div>
+
+  <div class="card">
+    <div class="name">广西地方假期</div>
+    <p class="desc">广西壮族自治区特色假期。</p>
+    <a class="url" href="guangxi-holidays-__YEAR__.ics">guangxi-holidays-__YEAR__.ics</a>
+  </div>
+
+  <div class="card">
+    <div class="name">纪念日与节气</div>
+    <p class="desc">全年纪念日与重要节点，全天事件。</p>
+    <a class="url" href="memorial-days-__YEAR__.ics">memorial-days-__YEAR__.ics</a>
+  </div>
+
+  <div class="card">
+    <div class="name">F1 赛历</div>
+    <p class="desc">官方赛历：排位、冲刺排位、冲刺赛、正赛；练习赛已排除。</p>
+    <a class="url" href="f1-schedule-__YEAR__.ics">f1-schedule-__YEAR__.ics</a>
+  </div>
+
+  <div class="card">
+    <div class="name">F1 战报</div>
+    <p class="desc">赛后战报：FIA 最终成绩、发车顺位、领奖台与积分。全天事件、不提醒。</p>
+    <a class="url" href="f1-reports-__YEAR__.ics">f1-reports-__YEAR__.ics</a>
+  </div>
+
+  <div class="tip">
+    <b>iPhone 订阅方式</b>
+    <ol>
+      <li>设置 → 日历 → 账户 → 其他 → 添加已订阅的日历</li>
+      <li>粘贴上面对应链接，保存</li>
+      <li>首次拉取需要联网，之后由系统按自己的节奏刷新</li>
+    </ol>
+  </div>
+</div>
+</body>
+</html>

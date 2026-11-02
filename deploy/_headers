@@ -1,0 +1,10 @@
+# iOS/Safari 只有在响应带 text/calendar 时才会「订阅」而不是「下载」。
+# Cloudflare Pages 对 .ics 通常已映射正确，这里显式钉住，避免以后 MIME 表变动。
+/*.ics
+  Content-Type: text/calendar; charset=utf-8
+  Cache-Control: public, max-age=300
+  Access-Control-Allow-Origin: *
+
+/*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: no-referrer

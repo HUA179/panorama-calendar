@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+build/
+
+# 生成物不进仓库：已发布产物由 calendar-state 分支管理
+dist/
+public/
+.state/

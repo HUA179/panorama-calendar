@@ -1,0 +1,210 @@
+name: calendar-publish
+
+# 无状态云端闭环：
+#   1. 从 calendar-state 分支恢复上一版修订状态与上一版 ICS（即客户端已收到的现实）
+#   2. 重新抓取官方源并构建
+#   3. 部署到 Cloudflare Pages
+#   4. 把新的 state/ICS 回写到 calendar-state 分支
+# 先发布、后记状态：状态回写失败时，下一次构建会用线上 ICS 的 SEQUENCE 作为下限自愈。
+
+on:
+  schedule:
+    # UTC 每 6 小时一次。GitHub 的定时任务在整点高峰可能延迟几分钟，避开 :00。
+    - cron: "23 */6 * * *"
+  workflow_dispatch:
+    inputs:
+      year:
+        description: "年度（留空取仓库变量 CALENDAR_YEAR，再缺省 2026）"
+        type: string
+        required: false
+  push:
+    branches: [main]
+    paths:
+      - "src/**"
+      - "scripts/**"
+      - "deploy/**"
+      - "pyproject.toml"
+      - ".github/workflows/calendar.yml"
+
+permissions:
+  contents: write
+
+# 同一时刻只允许一个写者；git 的串行 push 就是分布式锁。
+concurrency:
+  group: calendar-publish
+  cancel-in-progress: false
+
+env:
+  PYTHON_VERSION: "3.13"
+  STATE_BRANCH: calendar-state
+  CALENDAR_YEAR: ${{ github.event.inputs.year || vars.CALENDAR_YEAR || '2026' }}
+  CF_PAGES_PROJECT: ${{ vars.CF_PAGES_PROJECT || 'panorama-calendar' }}
+
+jobs:
+  preflight:
+    name: 数据源可达性
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+
+      - name: 安装探测依赖
+        run: pip install "httpx>=0.27,<1"
+
+      # 只报告不拦截：即使 FIA 对机房 IP 风控，假期订阅也该照常发布。
+      - name: 探测官方数据源
+        run: python scripts/preflight_sources.py --summary "$GITHUB_STEP_SUMMARY"
+
+  publish:
+    name: 构建并发布
+    needs: preflight
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      ALERT_WEBHOOK: ${{ secrets.ALERT_WEBHOOK }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+          cache: pip
+
+      - name: 安装依赖
+        run: pip install -e .
+
+      - name: 恢复修订状态与上一版产物
+        run: |
+          set -euo pipefail
+          mkdir -p dist state
+          if git fetch --depth=1 origin "$STATE_BRANCH"; then
+            git archive FETCH_HEAD | tar -x -C state
+            echo "已从 $STATE_BRANCH 恢复 $(ls state | wc -l) 个文件"
+          else
+            echo "首跑：$STATE_BRANCH 尚不存在，按全新订阅处理"
+          fi
+          shopt -s nullglob
+          for file in state/*.json state/*.ics; do
+            cp -f "$file" dist/
+          done
+          ls -la dist
+
+      - name: 构建订阅
+        id: build
+        run: |
+          set -uo pipefail
+          failed=""
+          run_feed() {
+            label="$1"; shift
+            if "$@"; then
+              echo "::notice title=构建成功::${label}"
+            else
+              echo "::error title=构建失败::${label} 未更新，保留上一版"
+              failed="${failed} ${label}"
+            fi
+          }
+          run_feed "F1 赛历" python -m panorama_calendar f1-schedule --year "$CALENDAR_YEAR" --out dist
+          run_feed "F1 战报" python -m panorama_calendar f1-report --year "$CALENDAR_YEAR" --out dist
+          run_feed "假期与纪念日" python -m panorama_calendar build --year "$CALENDAR_YEAR" --calendar all --out dist
+          if [ -n "$failed" ]; then
+            echo "failed=1" >> "$GITHUB_OUTPUT"
+            echo "::warning::以下订阅未更新:${failed}"
+          else
+            echo "failed=0" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: 部署到 Cloudflare Pages
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          set -euo pipefail
+          if [ -z "${CLOUDFLARE_API_TOKEN}" ] || [ -z "${CLOUDFLARE_ACCOUNT_ID}" ]; then
+            echo "::error title=缺少密钥::请配置仓库 Secrets：CLOUDFLARE_API_TOKEN / CLOUDFLARE_ACCOUNT_ID"
+            exit 1
+          fi
+          # 只把订阅文件与入口页推送上线：state.json / revisions.jsonl 属于构建内部状态，
+          # 既不面向读者，也不该出现在公开站点上。
+          mkdir -p public
+          cp dist/*.ics public/
+          cp deploy/_headers public/_headers
+          sed "s/__YEAR__/${CALENDAR_YEAR}/g" deploy/index.html > public/index.html
+          npx --yes wrangler@4 pages deploy public \
+            --project-name "${CF_PAGES_PROJECT}" \
+            --branch main \
+            --commit-dirty=true
+
+      - name: 回写修订状态
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          rm -rf .state
+          mkdir -p .state
+          cd .state
+          git init -q
+          git config user.name  "calendar-bot"
+          git config user.email "calendar-bot@users.noreply.github.com"
+          git remote add origin \
+            "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+          if git fetch -q --depth=1 origin "$STATE_BRANCH"; then
+            git checkout -q -B "$STATE_BRANCH" FETCH_HEAD
+          else
+            git checkout -q --orphan "$STATE_BRANCH"
+          fi
+          shopt -s nullglob
+          for file in ../dist/*.state.json ../dist/*.ics ../dist/*.revisions.jsonl; do
+            cp -f "$file" .
+          done
+          git add -A
+          if git diff --cached --quiet; then
+            echo "状态无变化，跳过提交"
+            exit 0
+          fi
+          git commit -q -m "state: $(date -u +%Y-%m-%dT%H:%M:%SZ)"
+          for attempt in 1 2 3; do
+            if git push -q origin "HEAD:${STATE_BRANCH}"; then
+              echo "已回写 ${STATE_BRANCH}"
+              exit 0
+            fi
+            echo "推送被拒，第 ${attempt} 次重试"
+            git fetch -q --depth=1 origin "$STATE_BRANCH" || true
+            git rebase -q FETCH_HEAD || git rebase --abort || true
+            sleep $((attempt * 2))
+          done
+          echo "::error::状态回写失败，下次构建将用线上 ICS 的 SEQUENCE 自愈"
+          exit 1
+
+      - name: 汇总
+        run: |
+          {
+            echo "### 发布结果"
+            echo ""
+            echo "| 文件 | 大小 | 事件数 | 最高 SEQUENCE |"
+            echo "| --- | --- | --- | --- |"
+            for file in dist/*.ics; do
+              [ -e "$file" ] || continue
+              size=$(wc -c < "$file")
+              events=$(grep -c '^BEGIN:VEVENT' "$file" || true)
+              seq=$(grep -o '^SEQUENCE:[0-9]*' "$file" | cut -d: -f2 | sort -n | tail -1)
+              echo "| $(basename "$file") | ${size} B | ${events} | ${seq:-0} |"
+            done
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: 标记部分失败
+        if: steps.build.outputs.failed == '1'
+        run: |
+          echo "有订阅未更新，详见上方日志"
+          exit 1
+
+      - name: 失败告警
+        if: failure() && env.ALERT_WEBHOOK != ''
+        run: |
+          curl -fsS -X POST "$ALERT_WEBHOOK" \
+            -H 'Content-Type: application/json' \
+            -d "{\"text\":\"日历发布失败 ${GITHUB_REPOSITORY} run #${GITHUB_RUN_NUMBER}\\n${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}\"}" \
+            || echo "告警推送失败，忽略"

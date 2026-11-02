@@ -1,0 +1,32 @@
+{
+  "2026": {
+    "events": {
+      "abu-dhabi": "Abu Dhabi Grand Prix",
+      "australia": "Australian Grand Prix",
+      "austria": "Austrian Grand Prix",
+      "azerbaijan": "Azerbaijan Grand Prix",
+      "bahrain": "Bahrain Grand Prix",
+      "barcelona-catalunya": "Barcelona-Catalunya Grand Prix",
+      "belgium": "Belgian Grand Prix",
+      "brazil": "São Paulo Grand Prix",
+      "canada": "Canadian Grand Prix",
+      "china": "Chinese Grand Prix",
+      "great-britain": "British Grand Prix",
+      "hungary": "Hungarian Grand Prix",
+      "italy": "Italian Grand Prix",
+      "japan": "Japanese Grand Prix",
+      "las-vegas": "Las Vegas Grand Prix",
+      "mexico": "Mexico City Grand Prix",
+      "miami": "Miami Grand Prix",
+      "monaco": "Monaco Grand Prix",
+      "netherlands": "Dutch Grand Prix",
+      "qatar": "Qatar Grand Prix",
+      "singapore": "Singapore Grand Prix",
+      "spain": "Spanish Grand Prix",
+      "united-states": "United States Grand Prix"
+    },
+    "aliases": {
+      "united-arab-emirates": "abu-dhabi"
+    }
+  }
+}

@@ -1,0 +1,150 @@
+{
+  "schema_version": 1,
+  "description": "国家正式设立且有明确日期的纪念日登记册。只收录全国性、有法律或国务院文件依据的日期；地方性活动一律不收。全部为非放假日、无提醒。",
+  "entries": [
+    {
+      "key": "memorial:police-day",
+      "name": "中国人民警察节",
+      "category": "行业性纪念日",
+      "rule": { "type": "fixed", "month": 1, "day": 10 },
+      "since": 2021,
+      "legal_basis": "国务院关于同意设立“中国人民警察节”的批复（国函〔2020〕78号）"
+    },
+    {
+      "key": "memorial:arbor-day",
+      "name": "植树节",
+      "category": "法定纪念日",
+      "rule": { "type": "fixed", "month": 3, "day": 12 },
+      "since": 1979,
+      "legal_basis": "第五届全国人民代表大会常务委员会第六次会议决定（1979年2月23日）"
+    },
+    {
+      "key": "memorial:national-security-education-day",
+      "name": "全民国家安全教育日",
+      "category": "法定纪念日",
+      "rule": { "type": "fixed", "month": 4, "day": 15 },
+      "since": 2016,
+      "legal_basis": "《中华人民共和国国家安全法》第十四条"
+    },
+    {
+      "key": "memorial:space-day",
+      "name": "中国航天日",
+      "category": "行业性纪念日",
+      "rule": { "type": "fixed", "month": 4, "day": 24 },
+      "since": 2016,
+      "legal_basis": "国务院关于同意设立“中国航天日”的批复（国函〔2016〕44号）"
+    },
+    {
+      "key": "memorial:disaster-prevention-day",
+      "name": "全国防灾减灾日",
+      "category": "法定纪念日",
+      "rule": { "type": "fixed", "month": 5, "day": 12 },
+      "since": 2009,
+      "legal_basis": "国务院批准设立（2009年3月2日）"
+    },
+    {
+      "key": "memorial:national-disability-day",
+      "name": "全国助残日",
+      "category": "法定纪念日",
+      "rule": { "type": "nth_weekday", "month": 5, "weekday": 6, "nth": 3 },
+      "since": 1991,
+      "legal_basis": "《中华人民共和国残疾人保障法》第十四条：每年五月第三个星期日"
+    },
+    {
+      "key": "memorial:environment-day",
+      "name": "六五环境日",
+      "category": "法定纪念日",
+      "rule": { "type": "fixed", "month": 6, "day": 5 },
+      "since": 2015,
+      "legal_basis": "《中华人民共和国环境保护法》第十二条：每年6月5日为环境日"
+    },
+    {
+      "key": "memorial:land-day",
+      "name": "全国土地日",
+      "category": "法定纪念日",
+      "rule": { "type": "fixed", "month": 6, "day": 25 },
+      "since": 1991,
+      "legal_basis": "国务院第83次常务会议决定（1991年5月24日）"
+    },
+    {
+      "key": "memorial:maritime-day",
+      "name": "中国航海日",
+      "category": "行业性纪念日",
+      "rule": { "type": "fixed", "month": 7, "day": 11 },
+      "since": 2005,
+      "legal_basis": "国务院批准设立（2005年，郑和下西洋600周年）"
+    },
+    {
+      "key": "memorial:fitness-day",
+      "name": "全民健身日",
+      "category": "法定纪念日",
+      "rule": { "type": "fixed", "month": 8, "day": 8 },
+      "since": 2009,
+      "legal_basis": "国务院批准设立（2009年），《全民健身条例》第十二条"
+    },
+    {
+      "key": "memorial:doctors-day",
+      "name": "中国医师节",
+      "category": "行业性纪念日",
+      "rule": { "type": "fixed", "month": 8, "day": 19 },
+      "since": 2018,
+      "legal_basis": "国务院关于同意设立“中国医师节”的批复（国函〔2017〕136号）"
+    },
+    {
+      "key": "memorial:victory-day",
+      "name": "中国人民抗日战争胜利纪念日",
+      "category": "法定纪念日",
+      "rule": { "type": "fixed", "month": 9, "day": 3 },
+      "since": 2014,
+      "legal_basis": "全国人民代表大会常务委员会关于确定中国人民抗日战争胜利纪念日的决定（2014年2月27日）"
+    },
+    {
+      "key": "memorial:teachers-day",
+      "name": "教师节",
+      "category": "法定纪念日",
+      "rule": { "type": "fixed", "month": 9, "day": 10 },
+      "since": 1985,
+      "legal_basis": "全国人民代表大会常务委员会关于教师节的决定（1985年1月21日）"
+    },
+    {
+      "key": "memorial:martyrs-day",
+      "name": "烈士纪念日",
+      "category": "法定纪念日",
+      "rule": { "type": "fixed", "month": 9, "day": 30 },
+      "since": 2014,
+      "legal_basis": "全国人民代表大会常务委员会关于设立烈士纪念日的决定（2014年8月31日）"
+    },
+    {
+      "key": "memorial:taiwan-restoration-day",
+      "name": "台湾光复纪念日",
+      "category": "法定纪念日",
+      "rule": { "type": "fixed", "month": 10, "day": 25 },
+      "since": 2025,
+      "legal_basis": "全国人民代表大会常务委员会关于设立台湾光复纪念日的决定（2025年10月24日）"
+    },
+    {
+      "key": "memorial:journalists-day",
+      "name": "记者节",
+      "category": "行业性纪念日",
+      "rule": { "type": "fixed", "month": 11, "day": 8 },
+      "since": 2000,
+      "legal_basis": "国务院批准设立（2000年，中国记协成立日）"
+    },
+    {
+      "key": "memorial:constitution-day",
+      "name": "国家宪法日",
+      "category": "法定纪念日",
+      "rule": { "type": "fixed", "month": 12, "day": 4 },
+      "since": 2014,
+      "legal_basis": "全国人民代表大会常务委员会关于设立国家宪法日的决定（2014年11月1日）"
+    },
+    {
+      "key": "memorial:national-memorial-day",
+      "name": "南京大屠杀死难者国家公祭日",
+      "category": "法定纪念日",
+      "rule": { "type": "fixed", "month": 12, "day": 13 },
+      "since": 2014,
+      "legal_basis": "全国人民代表大会常务委员会关于设立南京大屠杀死难者国家公祭日的决定（2014年2月27日）"
+    }
+  ]
+}
