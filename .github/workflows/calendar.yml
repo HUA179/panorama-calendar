@@ -132,6 +132,7 @@ jobs:
           mkdir -p public
           cp dist/*.ics public/
           cp deploy/_headers public/_headers
+          cp deploy/404.html public/404.html
           sed "s/__YEAR__/${CALENDAR_YEAR}/g" deploy/index.html > public/index.html
           npx --yes wrangler@4 pages deploy public \
             --project-name "${CF_PAGES_PROJECT}" \

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>页面不存在 · 个人全景日历</title>
+<style>
+  :root {
+    --bg: #f4f5f7;
+    --card: #ffffff;
+    --ink: #16181d;
+    --muted: #6b7280;
+    --line: #e5e7eb;
+    --accent: #c8102e;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 40px 20px 64px;
+    background: var(--bg);
+    color: var(--ink);
+    font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC",
+          "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; }
+  h1 { margin: 0 0 8px; font-size: 26px; letter-spacing: -0.3px; }
+  .sub { margin: 0 0 28px; color: var(--muted); font-size: 14px; }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 18px 20px;
+  }
+  code {
+    font: 12px/1.5 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    color: #374151;
+    background: #f9fafb;
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    padding: 2px 6px;
+  }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>这个地址没有日历</h1>
+  <p class="sub">404 · 请求的订阅文件不存在</p>
+  <div class="card">
+    <p>本站在 <code>/</code> 只提供五个 ICS 订阅文件，没有其它页面。
+    请回到 <a href="/">订阅入口</a> 取正确地址。</p>
+    <p>如果你是从日历客户端来的，多半是订阅链接少了字或被改了年份：
+    文件名格式为 <code>&lt;名称&gt;-&lt;年份&gt;.ics</code>，例如
+    <code>f1-reports-2026.ics</code>。</p>
+  </div>
+</div>
+</body>
+</html>
