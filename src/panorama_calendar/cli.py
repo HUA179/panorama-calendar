@@ -38,6 +38,7 @@ from panorama_calendar.services.feed_snapshot import (
     read_published_sequences,
 )
 from panorama_calendar.services.guardrails import PublishGuardError
+from panorama_calendar.services.revision import reconcile_events
 from panorama_calendar.services.rollback import RollbackError, rollback_to_snapshot
 from panorama_calendar.sources.datasets import (
     DatasetError,
@@ -175,15 +176,30 @@ def build(
     failures = 0
     for name in selected:
         kind, calendar_name, pattern = CALENDAR_SPECS[name]
+        feed = pattern.removesuffix("{year}.ics").rstrip("-") or name
+        output = out / pattern.format(year=target_year)
+        state_path = out / f"{feed}-{target_year}.state.json"
         try:
-            events = _events_for(kind, target_year)
+            previous = load_event_state(state_path)
+            events = reconcile_events(
+                previous,
+                _events_for(kind, target_year),
+                minimum_sequences=read_published_sequences(output),
+            )
             artifact = write_calendar(
                 events,
                 calendar_name,
-                out / pattern.format(year=target_year),
+                output,
                 calendar_kind=kind,
             )
-        except (DatasetError, PublishGuardError) as error:
+            save_event_state(state_path, events)
+            _record_publication(out, feed, target_year, "build", events, artifact)
+        except (
+            DatasetError,
+            PublishGuardError,
+            EventStateError,
+            FeedSnapshotError,
+        ) as error:
             failures += 1
             typer.echo(f"[FAILED] {name}: {error}", err=True)
             continue
