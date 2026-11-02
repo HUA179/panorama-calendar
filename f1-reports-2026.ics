@@ -1,0 +1,418 @@
+BEGIN:VCALENDAR
+PRODID:-//Personal Panorama Calendar//ICS Core 1.0//CN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:F1 战报｜正赛成绩
+BEGIN:VEVENT
+UID:event-8144f45369447ea77723fe76d1526858@panorama.local
+DTSTAMP:20261102T143625Z
+DTSTART;VALUE=DATE:20260308
+DTEND;VALUE=DATE:20260309
+SUMMARY:F1战报｜Australian Grand Prix｜正赛
+DESCRIPTION:状态：FIA 最终成绩\n赛事：FORMULA 1 QATAR AIRWAYS AUS
+ TRALIAN GRAND PRIX 2026\n冠军：George Russell（Mercedes，25 分）\n
+ 亚军：Kimi Antonelli（Mercedes，18 分）\n季军：Charles Leclerc
+ （Ferrari，15 分）\n杆位：George Russell（Mercedes，1:18.518）\n
+ 完赛：16 人；退赛：6 人\n来源：F1 官方成绩页 https://www.
+ formula1.com/en/results/2026/races/1279/australia/race-result\n发车顺
+ 位：https://www.formula1.com/en/results/2026/races/1279/australia/starti
+ ng-grid\nFIA 最终成绩文件：https://www.fia.com/system/files/decisio
+ n-document/2026_australian_grand_prix_-_final_race_classification.pdf
+STATUS:CONFIRMED
+SEQUENCE:0
+TRANSP:TRANSPARENT
+URL:https://www.formula1.com/en/results/2026/races/1279/australia/race-resu
+ lt
+CATEGORIES:F1,战报
+END:VEVENT
+BEGIN:VEVENT
+UID:event-262443ff8deb7bb1023b0c287d65c171@panorama.local
+DTSTAMP:20261102T143625Z
+DTSTART;VALUE=DATE:20260315
+DTEND;VALUE=DATE:20260316
+SUMMARY:F1战报｜Chinese Grand Prix｜正赛
+DESCRIPTION:状态：FIA 最终成绩\n赛事：FORMULA 1 HEINEKEN CHINESE 
+ GRAND PRIX 2026\n冠军：Kimi Antonelli（Mercedes，25 分）\n亚军：
+ George Russell（Mercedes，18 分）\n季军：Lewis Hamilton（Ferrari
+ ，15 分）\n杆位：Kimi Antonelli（Mercedes，1:32.064）\n完赛：1
+ 5 人；退赛：7 人\n来源：F1 官方成绩页 https://www.formula1.c
+ om/en/results/2026/races/1280/china/race-result\n发车顺位：https://ww
+ w.formula1.com/en/results/2026/races/1280/china/starting-grid\nFIA 最终
+ 成绩文件：https://www.fia.com/system/files/decision-document/2026_chi
+ nese_grand_prix_-_final_race_classification.pdf
+STATUS:CONFIRMED
+SEQUENCE:0
+TRANSP:TRANSPARENT
+URL:https://www.formula1.com/en/results/2026/races/1280/china/race-result
+CATEGORIES:F1,战报
+END:VEVENT
+BEGIN:VEVENT
+UID:event-f41d87fed3e59ef44e62f831c8e90cae@panorama.local
+DTSTAMP:20261102T143625Z
+DTSTART;VALUE=DATE:20260329
+DTEND;VALUE=DATE:20260330
+SUMMARY:F1战报｜Japanese Grand Prix｜正赛
+DESCRIPTION:状态：FIA 最终成绩\n赛事：FORMULA 1 ARAMCO JAPANESE G
+ RAND PRIX 2026\n冠军：Kimi Antonelli（Mercedes，25 分）\n亚军：O
+ scar Piastri（McLaren，18 分）\n季军：Charles Leclerc（Ferrari，1
+ 5 分）\n杆位：Kimi Antonelli（Mercedes，1:28.778）\n完赛：20 
+ 人；退赛：2 人\n来源：F1 官方成绩页 https://www.formula1.com
+ /en/results/2026/races/1281/japan/race-result\n发车顺位：https://www.
+ formula1.com/en/results/2026/races/1281/japan/starting-grid\nFIA 最终成
+ 绩文件：https://www.fia.com/system/files/decision-document/2026_japane
+ se_grand_prix_-_final_race_classification.pdf
+STATUS:CONFIRMED
+SEQUENCE:0
+TRANSP:TRANSPARENT
+URL:https://www.formula1.com/en/results/2026/races/1281/japan/race-result
+CATEGORIES:F1,战报
+END:VEVENT
+BEGIN:VEVENT
+UID:event-31016d61118ea4456bed316280b07e5c@panorama.local
+DTSTAMP:20261102T143625Z
+DTSTART;VALUE=DATE:20260503
+DTEND;VALUE=DATE:20260504
+SUMMARY:F1战报｜Miami Grand Prix｜正赛
+DESCRIPTION:状态：FIA 最终成绩\n赛事：FORMULA 1 CRYPTO.COM MIAMI 
+ GRAND PRIX 2026\n冠军：Kimi Antonelli（Mercedes，25 分）\n亚军：
+ Lando Norris（McLaren，18 分）\n季军：Oscar Piastri（McLaren，15 
+ 分）\n杆位：Kimi Antonelli（Mercedes，1:27.798）\n完赛：18 人
+ ；退赛：4 人\n来源：F1 官方成绩页 https://www.formula1.com/en
+ /results/2026/races/1284/miami/race-result\n发车顺位：https://www.for
+ mula1.com/en/results/2026/races/1284/miami/starting-grid\nFIA 最终成绩
+ 文件：https://www.fia.com/system/files/decision-document/2026_miami_gra
+ nd_prix_-_final_race_classification.pdf
+STATUS:CONFIRMED
+SEQUENCE:0
+TRANSP:TRANSPARENT
+URL:https://www.formula1.com/en/results/2026/races/1284/miami/race-result
+CATEGORIES:F1,战报
+END:VEVENT
+BEGIN:VEVENT
+UID:event-8fc46885e247c7cdb808945c12ab7c69@panorama.local
+DTSTAMP:20261102T143625Z
+DTSTART;VALUE=DATE:20260524
+DTEND;VALUE=DATE:20260525
+SUMMARY:F1战报｜Canadian Grand Prix｜正赛
+DESCRIPTION:状态：FIA 最终成绩\n赛事：FORMULA 1 LENOVO GRAND PRIX
+  DU CANADA 2026\n冠军：Kimi Antonelli（Mercedes，25 分）\n亚军：
+ Lewis Hamilton（Ferrari，18 分）\n季军：Max Verstappen（Red Bull R
+ acing，15 分）\n杆位：George Russell（Mercedes，1:12.578）\n完
+ 赛：16 人；退赛：6 人\n来源：F1 官方成绩页 https://www.for
+ mula1.com/en/results/2026/races/1285/canada/race-result\n发车顺位：ht
+ tps://www.formula1.com/en/results/2026/races/1285/canada/starting-grid\nFI
+ A 最终成绩文件：https://www.fia.com/system/files/decision-document/
+ 2026_canadian_grand_prix_-_final_race_classification.pdf
+STATUS:CONFIRMED
+SEQUENCE:0
+TRANSP:TRANSPARENT
+URL:https://www.formula1.com/en/results/2026/races/1285/canada/race-result
+CATEGORIES:F1,战报
+END:VEVENT
+BEGIN:VEVENT
+UID:event-515b8a532346b2e66034658ccdf24de2@panorama.local
+DTSTAMP:20261102T143625Z
+DTSTART;VALUE=DATE:20260607
+DTEND;VALUE=DATE:20260608
+SUMMARY:F1战报｜Monaco Grand Prix｜正赛
+DESCRIPTION:状态：FIA 最终成绩\n赛事：FORMULA 1 LOUIS VUITTON GRA
+ ND PRIX DE MONACO 2026\n冠军：Kimi Antonelli（Mercedes，25 分）\n
+ 亚军：Lewis Hamilton（Ferrari，18 分）\n季军：Isack Hadjar（Red
+  Bull Racing，15 分）\n杆位：Kimi Antonelli（Mercedes，1:12.051）
+ \n完赛：16 人；退赛：6 人\n来源：F1 官方成绩页 https://ww
+ w.formula1.com/en/results/2026/races/1286/monaco/race-result\n发车顺位
+ ：https://www.formula1.com/en/results/2026/races/1286/monaco/starting-gri
+ d\nFIA 最终成绩文件：https://www.fia.com/system/files/decision-docu
+ ment/2026_monaco_grand_prix_-_final_race_classification.pdf
+STATUS:CONFIRMED
+SEQUENCE:0
+TRANSP:TRANSPARENT
+URL:https://www.formula1.com/en/results/2026/races/1286/monaco/race-result
+CATEGORIES:F1,战报
+END:VEVENT
+BEGIN:VEVENT
+UID:event-79c43aa4154dd33ce114360fea334da9@panorama.local
+DTSTAMP:20261102T143625Z
+DTSTART;VALUE=DATE:20260614
+DTEND;VALUE=DATE:20260615
+SUMMARY:F1战报｜Barcelona-Catalunya Grand Prix｜正赛
+DESCRIPTION:状态：FIA 最终成绩\n赛事：FORMULA 1 MSC CRUISES GRAN 
+ PREMIO DE BARCELONA-CATALUNYA 2026\n冠军：Lewis Hamilton（Ferrari，25
+  分）\n亚军：George Russell（Mercedes，18 分）\n季军：Lando No
+ rris（McLaren，15 分）\n杆位：George Russell（Mercedes，1:14.679
+ ）\n完赛：17 人；退赛：5 人\n来源：F1 官方成绩页 https:/
+ /www.formula1.com/en/results/2026/races/1287/barcelona-catalunya/race-resu
+ lt\n发车顺位：https://www.formula1.com/en/results/2026/races/1287/bar
+ celona-catalunya/starting-grid\nFIA 最终成绩文件：https://www.fia.c
+ om/system/files/decision-document/2026_barcelona-catalunya_grand_prix_-_fi
+ nal_race_classification.pdf
+STATUS:CONFIRMED
+SEQUENCE:0
+TRANSP:TRANSPARENT
+URL:https://www.formula1.com/en/results/2026/races/1287/barcelona-catalunya
+ /race-result
+CATEGORIES:F1,战报
+END:VEVENT
+BEGIN:VEVENT
+UID:event-cc2e219b6d624ea33f809a939b9c5e37@panorama.local
+DTSTAMP:20261102T143625Z
+DTSTART;VALUE=DATE:20260628
+DTEND;VALUE=DATE:20260629
+SUMMARY:F1战报｜Austrian Grand Prix｜正赛
+DESCRIPTION:状态：FIA 最终成绩\n赛事：FORMULA 1 LENOVO AUSTRIAN G
+ RAND PRIX 2026\n冠军：George Russell（Mercedes，25 分）\n亚军：M
+ ax Verstappen（Red Bull Racing，18 分）\n季军：Kimi Antonelli（Mer
+ cedes，15 分）\n杆位：George Russell（Mercedes，1:06.113）\n完
+ 赛：18 人；退赛：4 人\n来源：F1 官方成绩页 https://www.for
+ mula1.com/en/results/2026/races/1288/austria/race-result\n发车顺位：h
+ ttps://www.formula1.com/en/results/2026/races/1288/austria/starting-grid\n
+ FIA 最终成绩文件：https://www.fia.com/system/files/decision-documen
+ t/2026_austrian_grand_prix_-_final_race_classification.pdf
+STATUS:CONFIRMED
+SEQUENCE:0
+TRANSP:TRANSPARENT
+URL:https://www.formula1.com/en/results/2026/races/1288/austria/race-result
+CATEGORIES:F1,战报
+END:VEVENT
+BEGIN:VEVENT
+UID:event-4e1c49d94f222bc0ccd89cfa1cd236c3@panorama.local
+DTSTAMP:20261102T143625Z
+DTSTART;VALUE=DATE:20260705
+DTEND;VALUE=DATE:20260706
+SUMMARY:F1战报｜British Grand Prix｜正赛
+DESCRIPTION:状态：FIA 最终成绩\n赛事：FORMULA 1 PIRELLI BRITISH G
+ RAND PRIX 2026\n冠军：Charles Leclerc（Ferrari，25 分）\n亚军：G
+ eorge Russell（Mercedes，18 分）\n季军：Lewis Hamilton（Ferrari，
+ 15 分）\n杆位：Kimi Antonelli（Mercedes，1:28.111）\n完赛：20 
+ 人；退赛：2 人\n来源：F1 官方成绩页 https://www.formula1.com
+ /en/results/2026/races/1289/great-britain/race-result\n发车顺位：http
+ s://www.formula1.com/en/results/2026/races/1289/great-britain/starting-gri
+ d\nFIA 最终成绩文件：https://www.fia.com/system/files/decision-docu
+ ment/2026_british_grand_prix_-_final_race_classification.pdf
+STATUS:CONFIRMED
+SEQUENCE:0
+TRANSP:TRANSPARENT
+URL:https://www.formula1.com/en/results/2026/races/1289/great-britain/race-
+ result
+CATEGORIES:F1,战报
+END:VEVENT
+BEGIN:VEVENT
+UID:event-5459baa7beeebbeffe19bc14b02f5071@panorama.local
+DTSTAMP:20261102T143625Z
+DTSTART;VALUE=DATE:20260719
+DTEND;VALUE=DATE:20260720
+SUMMARY:F1战报｜Belgian Grand Prix｜正赛
+DESCRIPTION:状态：FIA 最终成绩\n赛事：FORMULA 1 MOËT & CHANDON B
+ ELGIAN GRAND PRIX 2026\n冠军：Kimi Antonelli（Mercedes，25 分）\n
+ 亚军：Charles Leclerc（Ferrari，18 分）\n季军：Max Verstappen（
+ Red Bull Racing，15 分）\n杆位：Kimi Antonelli（Mercedes，1:44.361
+ ）\n完赛：19 人；退赛：3 人\n来源：F1 官方成绩页 https:/
+ /www.formula1.com/en/results/2026/races/1290/belgium/race-result\n发车
+ 顺位：https://www.formula1.com/en/results/2026/races/1290/belgium/start
+ ing-grid\nFIA 最终成绩文件：https://www.fia.com/system/files/decisi
+ on-document/2026_belgian_grand_prix_-_final_race_classification.pdf
+STATUS:CONFIRMED
+SEQUENCE:0
+TRANSP:TRANSPARENT
+URL:https://www.formula1.com/en/results/2026/races/1290/belgium/race-result
+CATEGORIES:F1,战报
+END:VEVENT
+BEGIN:VEVENT
+UID:event-4898a9578e679bf518181453da5bb27e@panorama.local
+DTSTAMP:20261102T143625Z
+DTSTART;VALUE=DATE:20260726
+DTEND;VALUE=DATE:20260727
+SUMMARY:F1战报｜Hungarian Grand Prix｜正赛
+DESCRIPTION:状态：FIA 最终成绩\n赛事：FORMULA 1 AWS HUNGARIAN GRA
+ ND PRIX 2026\n冠军：Lando Norris（McLaren，25 分）\n亚军：Max Ve
+ rstappen（Red Bull Racing，18 分）\n季军：Kimi Antonelli（Mercedes
+ ，15 分）\n杆位：Lando Norris（McLaren，1:17.207）\n完赛：19 
+ 人；退赛：3 人\n来源：F1 官方成绩页 https://www.formula1.com
+ /en/results/2026/races/1291/hungary/race-result\n发车顺位：https://ww
+ w.formula1.com/en/results/2026/races/1291/hungary/starting-grid\nFIA 最
+ 终成绩文件：https://www.fia.com/system/files/decision-document/2026_
+ hungarian_grand_prix_-_final_race_classification.pdf
+STATUS:CONFIRMED
+SEQUENCE:0
+TRANSP:TRANSPARENT
+URL:https://www.formula1.com/en/results/2026/races/1291/hungary/race-result
+CATEGORIES:F1,战报
+END:VEVENT
+BEGIN:VEVENT
+UID:event-b4f7a58fb0c79eb911135ec243cc64fa@panorama.local
+DTSTAMP:20261102T143625Z
+DTSTART;VALUE=DATE:20260823
+DTEND;VALUE=DATE:20260824
+SUMMARY:F1战报｜Dutch Grand Prix｜正赛
+DESCRIPTION:状态：FIA 最终成绩\n赛事：FORMULA 1 HEINEKEN DUTCH GR
+ AND PRIX 2026\n冠军：Lando Norris（McLaren，25 分）\n亚军：Kimi 
+ Antonelli（Mercedes，18 分）\n季军：George Russell（Mercedes，15 
+ 分）\n杆位：Lando Norris（McLaren，1:11.163）\n完赛：17 人；
+ 退赛：5 人\n来源：F1 官方成绩页 https://www.formula1.com/en/re
+ sults/2026/races/1292/netherlands/race-result\n发车顺位：https://www.
+ formula1.com/en/results/2026/races/1292/netherlands/starting-grid\nFIA 最
+ 终成绩文件：https://www.fia.com/system/files/decision-document/2026_
+ dutch_grand_prix_-_final_race_classification.pdf
+STATUS:CONFIRMED
+SEQUENCE:0
+TRANSP:TRANSPARENT
+URL:https://www.formula1.com/en/results/2026/races/1292/netherlands/race-re
+ sult
+CATEGORIES:F1,战报
+END:VEVENT
+BEGIN:VEVENT
+UID:event-f008633c9cea3a69f04e3987a1feef59@panorama.local
+DTSTAMP:20261102T143625Z
+DTSTART;VALUE=DATE:20260906
+DTEND;VALUE=DATE:20260907
+SUMMARY:F1战报｜Italian Grand Prix｜正赛
+DESCRIPTION:状态：FIA 最终成绩\n赛事：FORMULA 1 PIRELLI GRAN PREM
+ IO D’ITALIA 2026\n冠军：Kimi Antonelli（Mercedes，25 分）\n亚军
+ ：George Russell（Mercedes，18 分）\n季军：Max Verstappen（Red Bu
+ ll Racing，15 分）\n杆位：Pierre Gasly（Alpine，1:21.786）\n完
+ 赛：19 人；退赛：3 人\n来源：F1 官方成绩页 https://www.for
+ mula1.com/en/results/2026/races/1293/italy/race-result\n发车顺位：htt
+ ps://www.formula1.com/en/results/2026/races/1293/italy/starting-grid\nFIA 
+ 最终成绩文件：https://www.fia.com/system/files/decision-document/20
+ 26_italian_grand_prix_-_final_race_classification.pdf
+STATUS:CONFIRMED
+SEQUENCE:0
+TRANSP:TRANSPARENT
+URL:https://www.formula1.com/en/results/2026/races/1293/italy/race-result
+CATEGORIES:F1,战报
+END:VEVENT
+BEGIN:VEVENT
+UID:event-1ab4f52f49a15602251bdcb17b3e73a4@panorama.local
+DTSTAMP:20261102T143625Z
+DTSTART;VALUE=DATE:20260913
+DTEND;VALUE=DATE:20260914
+SUMMARY:F1战报｜Spanish Grand Prix｜正赛
+DESCRIPTION:状态：FIA 最终成绩\n赛事：FORMULA 1 TAG HEUER GRAN PR
+ EMIO DE ESPAÑA 2026\n冠军：Kimi Antonelli（Mercedes，25 分）\n亚
+ 军：Max Verstappen（Red Bull Racing，18 分）\n季军：Lando Norris
+ （McLaren，15 分）\n杆位：Lando Norris（McLaren，1:31.824）\n完
+ 赛：18 人；退赛：4 人\n来源：F1 官方成绩页 https://www.for
+ mula1.com/en/results/2026/races/1294/spain/race-result\n发车顺位：htt
+ ps://www.formula1.com/en/results/2026/races/1294/spain/starting-grid\nFIA 
+ 最终成绩文件：https://www.fia.com/system/files/decision-document/20
+ 26_spanish_grand_prix_-_final_race_classification.pdf
+STATUS:CONFIRMED
+SEQUENCE:0
+TRANSP:TRANSPARENT
+URL:https://www.formula1.com/en/results/2026/races/1294/spain/race-result
+CATEGORIES:F1,战报
+END:VEVENT
+BEGIN:VEVENT
+UID:event-bbce2a7846005ed515377b05366548d2@panorama.local
+DTSTAMP:20261102T143625Z
+DTSTART;VALUE=DATE:20260926
+DTEND;VALUE=DATE:20260927
+SUMMARY:F1战报｜Azerbaijan Grand Prix｜正赛
+DESCRIPTION:状态：FIA 最终成绩\n赛事：FORMULA 1 QATAR AIRWAYS AZE
+ RBAIJAN GRAND PRIX 2026\n冠军：George Russell（Mercedes，25 分）\n
+ 亚军：Max Verstappen（Red Bull Racing，18 分）\n季军：Isack Hadj
+ ar（Red Bull Racing，15 分）\n杆位：George Russell（Mercedes，1:4
+ 2.526）\n完赛：16 人；退赛：6 人\n来源：F1 官方成绩页 ht
+ tps://www.formula1.com/en/results/2026/races/1295/azerbaijan/race-result\n
+ 发车顺位：https://www.formula1.com/en/results/2026/races/1295/azerbai
+ jan/starting-grid\nFIA 最终成绩文件：https://www.fia.com/system/fil
+ es/decision-document/2026_azerbaijan_grand_prix_-_final_race_classificatio
+ n.pdf
+STATUS:CONFIRMED
+SEQUENCE:0
+TRANSP:TRANSPARENT
+URL:https://www.formula1.com/en/results/2026/races/1295/azerbaijan/race-res
+ ult
+CATEGORIES:F1,战报
+END:VEVENT
+BEGIN:VEVENT
+UID:event-282e5200da13acd8a2ea881d19f328fd@panorama.local
+DTSTAMP:20261102T143625Z
+DTSTART;VALUE=DATE:20261004
+DTEND;VALUE=DATE:20261005
+SUMMARY:F1战报｜Bahrain Grand Prix｜正赛
+DESCRIPTION:状态：FIA 最终成绩\n赛事：FORMULA 1 GULF AIR BAHRAIN 
+ GRAND PRIX IN MALAYSIA 2026\n冠军：Max Verstappen（Red Bull Racing，2
+ 5 分）\n亚军：Kimi Antonelli（Mercedes，18 分）\n季军：Lewis H
+ amilton（Ferrari，15 分）\n杆位：Max Verstappen（Red Bull Racing
+ ，1:35.130）\n完赛：20 人；退赛：2 人\n来源：F1 官方成绩
+ 页 https://www.formula1.com/en/results/2026/races/1308/bahrain/race-resul
+ t\n发车顺位：https://www.formula1.com/en/results/2026/races/1308/bahr
+ ain/starting-grid\nFIA 最终成绩文件：https://www.fia.com/system/fil
+ es/decision-document/2026_bahrain_grand_prix_in_malaysia_-_final_race_clas
+ sification.pdf
+STATUS:CONFIRMED
+SEQUENCE:0
+TRANSP:TRANSPARENT
+URL:https://www.formula1.com/en/results/2026/races/1308/bahrain/race-result
+CATEGORIES:F1,战报
+END:VEVENT
+BEGIN:VEVENT
+UID:event-32e8d91e58cbcec6a2b9a2273b05b3d3@panorama.local
+DTSTAMP:20261102T143625Z
+DTSTART;VALUE=DATE:20261011
+DTEND;VALUE=DATE:20261012
+SUMMARY:F1战报｜Singapore Grand Prix｜正赛
+DESCRIPTION:状态：FIA 最终成绩\n赛事：FORMULA 1 SINGAPORE AIRLINE
+ S SINGAPORE GRAND PRIX 2026\n冠军：Max Verstappen（Red Bull Racing，2
+ 5 分）\n亚军：Charles Leclerc（Ferrari，18 分）\n季军：Kimi An
+ tonelli（Mercedes，15 分）\n杆位：Max Verstappen（Red Bull Racing
+ ，1:31.373）\n完赛：19 人；退赛：3 人\n来源：F1 官方成绩
+ 页 https://www.formula1.com/en/results/2026/races/1296/singapore/race-res
+ ult\n发车顺位：https://www.formula1.com/en/results/2026/races/1296/si
+ ngapore/starting-grid\nFIA 最终成绩文件：https://www.fia.com/system
+ /files/decision-document/2026_singapore_grand_prix_-_final_race_classifica
+ tion.pdf
+STATUS:CONFIRMED
+SEQUENCE:0
+TRANSP:TRANSPARENT
+URL:https://www.formula1.com/en/results/2026/races/1296/singapore/race-resu
+ lt
+CATEGORIES:F1,战报
+END:VEVENT
+BEGIN:VEVENT
+UID:event-aa84d0c40fea82ed59b0a467c7e33e15@panorama.local
+DTSTAMP:20261102T143625Z
+DTSTART;VALUE=DATE:20261025
+DTEND;VALUE=DATE:20261026
+SUMMARY:F1战报｜United States Grand Prix｜正赛
+DESCRIPTION:状态：FIA 最终成绩\n赛事：FORMULA 1 MSC CRUISES UNITE
+ D STATES GRAND PRIX 2026\n冠军：Kimi Antonelli（Mercedes，25 分）\n
+ 亚军：Charles Leclerc（Ferrari，18 分）\n季军：Max Verstappen（
+ Red Bull Racing，15 分）\n杆位：Kimi Antonelli（Mercedes，1:34.035
+ ）\n完赛：19 人；退赛：3 人\n来源：F1 官方成绩页 https:/
+ /www.formula1.com/en/results/2026/races/1297/united-states/race-result\n
+ 发车顺位：https://www.formula1.com/en/results/2026/races/1297/united-
+ states/starting-grid\nFIA 最终成绩文件：https://www.fia.com/system/
+ files/decision-document/2026_united_states_grand_prix_-_final_race_classif
+ ication.pdf
+STATUS:CONFIRMED
+SEQUENCE:0
+TRANSP:TRANSPARENT
+URL:https://www.formula1.com/en/results/2026/races/1297/united-states/race-
+ result
+CATEGORIES:F1,战报
+END:VEVENT
+BEGIN:VEVENT
+UID:event-c80670d256cb3a1dbfa2802c5eeec161@panorama.local
+DTSTAMP:20261102T143625Z
+DTSTART;VALUE=DATE:20261101
+DTEND;VALUE=DATE:20261102
+SUMMARY:F1战报｜Mexico City Grand Prix｜正赛
+DESCRIPTION:状态：FIA 最终成绩\n赛事：FORMULA 1 GRAN PREMIO DE LA
+  CIUDAD DE MÉXICO 2026\n冠军：Max Verstappen（Red Bull Racing，25 
+ 分）\n亚军：Lewis Hamilton（Ferrari，18 分）\n季军：Kimi Anton
+ elli（Mercedes，15 分）\n杆位：Lewis Hamilton（Ferrari，1:16.514
+ ）\n完赛：17 人；退赛：5 人\n来源：F1 官方成绩页 https:/
+ /www.formula1.com/en/results/2026/races/1298/mexico/race-result\n发车顺
+ 位：https://www.formula1.com/en/results/2026/races/1298/mexico/starting-
+ grid\nFIA 最终成绩文件：https://www.fia.com/system/files/decision-d
+ ocument/2026_mexico_city_grand_prix_-_final_race_classification.pdf
+STATUS:CONFIRMED
+SEQUENCE:0
+TRANSP:TRANSPARENT
+URL:https://www.formula1.com/en/results/2026/races/1298/mexico/race-result
+CATEGORIES:F1,战报
+END:VEVENT
+END:VCALENDAR

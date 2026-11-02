@@ -1,0 +1,2035 @@
+{
+  "events": [
+    {
+      "alarms": [],
+      "calendar_kind": "F1_SCHEDULE",
+      "categories": [
+        "F1",
+        "排位赛"
+      ],
+      "description": "赛事：FORMULA 1 GRAN PREMIO DE LA CIUDAD DE MÉXICO 2026\n北京时间：2026-11-01 05:00\n赛道当地时间：2026-10-31 15:00（America/Mexico_City）\n来源：Formula 1 官方分站赛历",
+      "dtstamp": "2026-11-02T14:36:13.134606Z",
+      "end_at_utc": "2026-10-31T22:00:00Z",
+      "end_date_exclusive": null,
+      "end_estimated": false,
+      "event_key": "f1:session:2026:mexico:QUALIFYING",
+      "event_kind": "F1_SESSION",
+      "last_modified": null,
+      "location": "Mexico City",
+      "result_status": "NOT_AVAILABLE",
+      "sequence": 0,
+      "source_timezone": "UTC",
+      "sources": [
+        {
+          "authority": "Formula 1",
+          "content_hash": "475581db15b3c07aaac9343377a970102a33413f406f01a41400c0f8bb6880b6",
+          "evidence_id": null,
+          "retrieved_at": "2026-11-02T14:36:10.718173Z",
+          "url": "https://www.formula1.com/en/racing/2026/mexico"
+        }
+      ],
+      "start_at_utc": "2026-10-31T21:00:00Z",
+      "start_date": null,
+      "status": "CONFIRMED",
+      "summary": "F1｜Mexico City｜排位赛",
+      "transparent": false,
+      "uid": "event-38cf3d9ca1f38ea1778590139bc87e26@panorama.local"
+    },
+    {
+      "alarms": [],
+      "calendar_kind": "F1_SCHEDULE",
+      "categories": [
+        "F1",
+        "正赛"
+      ],
+      "description": "赛事：FORMULA 1 GRAN PREMIO DE LA CIUDAD DE MÉXICO 2026\n北京时间：2026-11-02 04:00\n赛道当地时间：2026-11-01 14:00（America/Mexico_City）\n来源：Formula 1 官方分站赛历",
+      "dtstamp": "2026-11-02T14:36:13.134606Z",
+      "end_at_utc": "2026-11-01T22:00:00Z",
+      "end_date_exclusive": null,
+      "end_estimated": false,
+      "event_key": "f1:session:2026:mexico:RACE",
+      "event_kind": "F1_SESSION",
+      "last_modified": null,
+      "location": "Mexico City",
+      "result_status": "NOT_AVAILABLE",
+      "sequence": 0,
+      "source_timezone": "UTC",
+      "sources": [
+        {
+          "authority": "Formula 1",
+          "content_hash": "475581db15b3c07aaac9343377a970102a33413f406f01a41400c0f8bb6880b6",
+          "evidence_id": null,
+          "retrieved_at": "2026-11-02T14:36:10.718173Z",
+          "url": "https://www.formula1.com/en/racing/2026/mexico"
+        }
+      ],
+      "start_at_utc": "2026-11-01T20:00:00Z",
+      "start_date": null,
+      "status": "CONFIRMED",
+      "summary": "F1｜Mexico City｜正赛",
+      "transparent": false,
+      "uid": "event-c8e2ccbb96725edf5e7a68053fda4096@panorama.local"
+    },
+    {
+      "alarms": [],
+      "calendar_kind": "F1_SCHEDULE",
+      "categories": [
+        "F1",
+        "排位赛"
+      ],
+      "description": "赛事：FORMULA 1 MSC CRUISES GRANDE PRÊMIO DE SÃO PAULO 2026\n北京时间：2026-11-08 02:00\n赛道当地时间：2026-11-07 15:00（America/Sao_Paulo）\n来源：Formula 1 官方分站赛历",
+      "dtstamp": "2026-11-02T14:36:13.134606Z",
+      "end_at_utc": "2026-11-07T19:00:00Z",
+      "end_date_exclusive": null,
+      "end_estimated": false,
+      "event_key": "f1:session:2026:brazil:QUALIFYING",
+      "event_kind": "F1_SESSION",
+      "last_modified": null,
+      "location": "São Paulo",
+      "result_status": "NOT_AVAILABLE",
+      "sequence": 0,
+      "source_timezone": "UTC",
+      "sources": [
+        {
+          "authority": "Formula 1",
+          "content_hash": "2791837b74ccd3ad9b47920c240a0ac89e98618995e399dc61fbfb5e5bc6397f",
+          "evidence_id": null,
+          "retrieved_at": "2026-11-02T14:36:10.752565Z",
+          "url": "https://www.formula1.com/en/racing/2026/brazil"
+        }
+      ],
+      "start_at_utc": "2026-11-07T18:00:00Z",
+      "start_date": null,
+      "status": "CONFIRMED",
+      "summary": "F1｜São Paulo｜排位赛",
+      "transparent": false,
+      "uid": "event-3ed17910d6b1f8f4f94b7046c4e1a846@panorama.local"
+    },
+    {
+      "alarms": [],
+      "calendar_kind": "F1_SCHEDULE",
+      "categories": [
+        "F1",
+        "正赛"
+      ],
+      "description": "赛事：FORMULA 1 MSC CRUISES GRANDE PRÊMIO DE SÃO PAULO 2026\n北京时间：2026-11-09 01:00\n赛道当地时间：2026-11-08 14:00（America/Sao_Paulo）\n来源：Formula 1 官方分站赛历",
+      "dtstamp": "2026-11-02T14:36:13.134606Z",
+      "end_at_utc": "2026-11-08T19:00:00Z",
+      "end_date_exclusive": null,
+      "end_estimated": false,
+      "event_key": "f1:session:2026:brazil:RACE",
+      "event_kind": "F1_SESSION",
+      "last_modified": null,
+      "location": "São Paulo",
+      "result_status": "NOT_AVAILABLE",
+      "sequence": 0,
+      "source_timezone": "UTC",
+      "sources": [
+        {
+          "authority": "Formula 1",
+          "content_hash": "2791837b74ccd3ad9b47920c240a0ac89e98618995e399dc61fbfb5e5bc6397f",
+          "evidence_id": null,
+          "retrieved_at": "2026-11-02T14:36:10.752565Z",
+          "url": "https://www.formula1.com/en/racing/2026/brazil"
+        }
+      ],
+      "start_at_utc": "2026-11-08T17:00:00Z",
+      "start_date": null,
+      "status": "CONFIRMED",
+      "summary": "F1｜São Paulo｜正赛",
+      "transparent": false,
+      "uid": "event-461aa536600cebca3d5cdddfb9b5a47e@panorama.local"
+    },
+    {
+      "alarms": [],
+      "calendar_kind": "F1_SCHEDULE",
+      "categories": [
+        "F1",
+        "排位赛"
+      ],
+      "description": "赛事：FORMULA 1 HEINEKEN LAS VEGAS GRAND PRIX 2026\n北京时间：2026-11-21 12:00\n赛道当地时间：2026-11-20 20:00（America/Los_Angeles）\n来源：Formula 1 官方分站赛历",
+      "dtstamp": "2026-11-02T14:36:13.134606Z",
+      "end_at_utc": "2026-11-21T05:00:00Z",
+      "end_date_exclusive": null,
+      "end_estimated": false,
+      "event_key": "f1:session:2026:las-vegas:QUALIFYING",
+      "event_kind": "F1_SESSION",
+      "last_modified": null,
+      "location": "Las Vegas",
+      "result_status": "NOT_AVAILABLE",
+      "sequence": 0,
+      "source_timezone": "UTC",
+      "sources": [
+        {
+          "authority": "Formula 1",
+          "content_hash": "2ce6ae5090d6755017bbde521fe11be3ccacdb3b82a1b4533ee1d841a947da22",
+          "evidence_id": null,
+          "retrieved_at": "2026-11-02T14:36:10.786334Z",
+          "url": "https://www.formula1.com/en/racing/2026/las-vegas"
+        }
+      ],
+      "start_at_utc": "2026-11-21T04:00:00Z",
+      "start_date": null,
+      "status": "CONFIRMED",
+      "summary": "F1｜Las Vegas｜排位赛",
+      "transparent": false,
+      "uid": "event-27786b8deebd9ab3be1d4707d6a50435@panorama.local"
+    },
+    {
+      "alarms": [],
+      "calendar_kind": "F1_SCHEDULE",
+      "categories": [
+        "F1",
+        "正赛"
+      ],
+      "description": "赛事：FORMULA 1 HEINEKEN LAS VEGAS GRAND PRIX 2026\n北京时间：2026-11-22 12:00\n赛道当地时间：2026-11-21 20:00（America/Los_Angeles）\n来源：Formula 1 官方分站赛历",
+      "dtstamp": "2026-11-02T14:36:13.134606Z",
+      "end_at_utc": "2026-11-22T06:00:00Z",
+      "end_date_exclusive": null,
+      "end_estimated": false,
+      "event_key": "f1:session:2026:las-vegas:RACE",
+      "event_kind": "F1_SESSION",
+      "last_modified": null,
+      "location": "Las Vegas",
+      "result_status": "NOT_AVAILABLE",
+      "sequence": 0,
+      "source_timezone": "UTC",
+      "sources": [
+        {
+          "authority": "Formula 1",
+          "content_hash": "2ce6ae5090d6755017bbde521fe11be3ccacdb3b82a1b4533ee1d841a947da22",
+          "evidence_id": null,
+          "retrieved_at": "2026-11-02T14:36:10.786334Z",
+          "url": "https://www.formula1.com/en/racing/2026/las-vegas"
+        }
+      ],
+      "start_at_utc": "2026-11-22T04:00:00Z",
+      "start_date": null,
+      "status": "CONFIRMED",
+      "summary": "F1｜Las Vegas｜正赛",
+      "transparent": false,
+      "uid": "event-d471b3aa21fdea9830cb77f5bb060af4@panorama.local"
+    },
+    {
+      "alarms": [],
+      "calendar_kind": "F1_SCHEDULE",
+      "categories": [
+        "F1",
+        "排位赛"
+      ],
+      "description": "赛事：FORMULA 1 QATAR AIRWAYS QATAR GRAND PRIX 2026\n北京时间：2026-11-29 02:00\n赛道当地时间：2026-11-28 21:00（Asia/Qatar）\n来源：Formula 1 官方分站赛历",
+      "dtstamp": "2026-11-02T14:36:13.134606Z",
+      "end_at_utc": "2026-11-28T19:00:00Z",
+      "end_date_exclusive": null,
+      "end_estimated": false,
+      "event_key": "f1:session:2026:qatar:QUALIFYING",
+      "event_kind": "F1_SESSION",
+      "last_modified": null,
+      "location": "Lusail",
+      "result_status": "NOT_AVAILABLE",
+      "sequence": 0,
+      "source_timezone": "UTC",
+      "sources": [
+        {
+          "authority": "Formula 1",
+          "content_hash": "f456da964fb91e566ebc83905fc6bf9dca4978cb22a59099f409dac23434bd19",
+          "evidence_id": null,
+          "retrieved_at": "2026-11-02T14:36:10.815269Z",
+          "url": "https://www.formula1.com/en/racing/2026/qatar"
+        }
+      ],
+      "start_at_utc": "2026-11-28T18:00:00Z",
+      "start_date": null,
+      "status": "CONFIRMED",
+      "summary": "F1｜Lusail｜排位赛",
+      "transparent": false,
+      "uid": "event-cf3d31dd39068542a233ff1a65ce7dda@panorama.local"
+    },
+    {
+      "alarms": [],
+      "calendar_kind": "F1_SCHEDULE",
+      "categories": [
+        "F1",
+        "正赛"
+      ],
+      "description": "赛事：FORMULA 1 QATAR AIRWAYS QATAR GRAND PRIX 2026\n北京时间：2026-11-30 00:00\n赛道当地时间：2026-11-29 19:00（Asia/Qatar）\n来源：Formula 1 官方分站赛历",
+      "dtstamp": "2026-11-02T14:36:13.134606Z",
+      "end_at_utc": "2026-11-29T18:00:00Z",
+      "end_date_exclusive": null,
+      "end_estimated": false,
+      "event_key": "f1:session:2026:qatar:RACE",
+      "event_kind": "F1_SESSION",
+      "last_modified": null,
+      "location": "Lusail",
+      "result_status": "NOT_AVAILABLE",
+      "sequence": 0,
+      "source_timezone": "UTC",
+      "sources": [
+        {
+          "authority": "Formula 1",
+          "content_hash": "f456da964fb91e566ebc83905fc6bf9dca4978cb22a59099f409dac23434bd19",
+          "evidence_id": null,
+          "retrieved_at": "2026-11-02T14:36:10.815269Z",
+          "url": "https://www.formula1.com/en/racing/2026/qatar"
+        }
+      ],
+      "start_at_utc": "2026-11-29T16:00:00Z",
+      "start_date": null,
+      "status": "CONFIRMED",
+      "summary": "F1｜Lusail｜正赛",
+      "transparent": false,
+      "uid": "event-c369f3f82304fb576d96e29b1bb584f4@panorama.local"
+    },
+    {
+      "alarms": [],
+      "calendar_kind": "F1_SCHEDULE",
+      "categories": [
+        "F1",
+        "排位赛"
+      ],
+      "description": "赛事：FORMULA 1 QATAR AIRWAYS AUSTRALIAN GRAND PRIX 2026\n北京时间：2026-03-07 13:00\n赛道当地时间：2026-03-07 16:00（Australia/Melbourne）\n来源：Formula 1 官方分站赛历",
+      "dtstamp": "2026-11-02T14:36:13.134606Z",
+      "end_at_utc": "2026-03-07T06:00:00Z",
+      "end_date_exclusive": null,
+      "end_estimated": false,
+      "event_key": "f1:session:2026:australia:QUALIFYING",
+      "event_kind": "F1_SESSION",
+      "last_modified": null,
+      "location": "Melbourne",
+      "result_status": "NOT_AVAILABLE",
+      "sequence": 0,
+      "source_timezone": "UTC",
+      "sources": [
+        {
+          "authority": "Formula 1",
+          "content_hash": "c083d6cc9019f96e079cc5969d82791e70d56fc42375b9a5786f7ccdba32abd0",
+          "evidence_id": null,
+          "retrieved_at": "2026-11-02T14:36:11.071429Z",
+          "url": "https://www.formula1.com/en/racing/2026/australia"
+        }
+      ],
+      "start_at_utc": "2026-03-07T05:00:00Z",
+      "start_date": null,
+      "status": "CONFIRMED",
+      "summary": "F1｜Melbourne｜排位赛",
+      "transparent": false,
+      "uid": "event-fd2e8a40920afc1abfa3925d987fcf38@panorama.local"
+    },
+    {
+      "alarms": [],
+      "calendar_kind": "F1_SCHEDULE",
+      "categories": [
+        "F1",
+        "正赛"
+      ],
+      "description": "赛事：FORMULA 1 QATAR AIRWAYS AUSTRALIAN GRAND PRIX 2026\n北京时间：2026-03-08 12:00\n赛道当地时间：2026-03-08 15:00（Australia/Melbourne）\n来源：Formula 1 官方分站赛历",
+      "dtstamp": "2026-11-02T14:36:13.134606Z",
+      "end_at_utc": "2026-03-08T06:00:00Z",
+      "end_date_exclusive": null,
+      "end_estimated": false,
+      "event_key": "f1:session:2026:australia:RACE",
+      "event_kind": "F1_SESSION",
+      "last_modified": null,
+      "location": "Melbourne",
+      "result_status": "NOT_AVAILABLE",
+      "sequence": 0,
+      "source_timezone": "UTC",
+      "sources": [
+        {
+          "authority": "Formula 1",
+          "content_hash": "c083d6cc9019f96e079cc5969d82791e70d56fc42375b9a5786f7ccdba32abd0",
+          "evidence_id": null,
+          "retrieved_at": "2026-11-02T14:36:11.071429Z",
+          "url": "https://www.formula1.com/en/racing/2026/australia"
+        }
+      ],
+      "start_at_utc": "2026-03-08T04:00:00Z",
+      "start_date": null,
+      "status": "CONFIRMED",
+      "summary": "F1｜Melbourne｜正赛",
+      "transparent": false,
+      "uid": "event-729e0103d100fa6df58c05701ab7aea2@panorama.local"
+    },
+    {
+      "alarms": [],
+      "calendar_kind": "F1_SCHEDULE",
+      "categories": [
+        "F1",
+        "冲刺排位赛"
+      ],
+      "description": "赛事：FORMULA 1 HEINEKEN CHINESE GRAND PRIX 2026\n北京时间：2026-03-13 15:30\n赛道当地时间：2026-03-13 15:30（Asia/Shanghai）\n来源：Formula 1 官方分站赛历",
+      "dtstamp": "2026-11-02T14:36:13.134606Z",
+      "end_at_utc": "2026-03-13T08:14:00Z",
+      "end_date_exclusive": null,
+      "end_estimated": false,
+      "event_key": "f1:session:2026:china:SPRINT_QUALIFYING",
+      "event_kind": "F1_SESSION",
+      "last_modified": null,
+      "location": "Shanghai",
+      "result_status": "NOT_AVAILABLE",
+      "sequence": 0,
+      "source_timezone": "UTC",
+      "sources": [
+        {
+          "authority": "Formula 1",
+          "content_hash": "22a44adaf44ca34af7a0142fd91abb8b9f520fb61ffae5ee531cca32960e5740",
+          "evidence_id": null,
+          "retrieved_at": "2026-11-02T14:36:11.313611Z",
+          "url": "https://www.formula1.com/en/racing/2026/china"
+        }
+      ],
+      "start_at_utc": "2026-03-13T07:30:00Z",
+      "start_date": null,
+      "status": "CONFIRMED",
+      "summary": "F1｜Shanghai｜冲刺排位赛",
+      "transparent": false,
+      "uid": "event-4cee0fac7a35ce195abb6c9c53c25264@panorama.local"
+    },
+    {
+      "alarms": [],
+      "calendar_kind": "F1_SCHEDULE",
+      "categories": [
+        "F1",
+        "冲刺赛"
+      ],
+      "description": "赛事：FORMULA 1 HEINEKEN CHINESE GRAND PRIX 2026\n北京时间：2026-03-14 11:00\n赛道当地时间：2026-03-14 11:00（Asia/Shanghai）\n来源：Formula 1 官方分站赛历",
+      "dtstamp": "2026-11-02T14:36:13.134606Z",
+      "end_at_utc": "2026-03-14T04:00:00Z",
+      "end_date_exclusive": null,
+      "end_estimated": false,
+      "event_key": "f1:session:2026:china:SPRINT",
+      "event_kind": "F1_SESSION",
+      "last_modified": null,
+      "location": "Shanghai",
+      "result_status": "NOT_AVAILABLE",
+      "sequence": 0,
+      "source_timezone": "UTC",
+      "sources": [
+        {
+          "authority": "Formula 1",
+          "content_hash": "22a44adaf44ca34af7a0142fd91abb8b9f520fb61ffae5ee531cca32960e5740",
+          "evidence_id": null,
+          "retrieved_at": "2026-11-02T14:36:11.313611Z",
+          "url": "https://www.formula1.com/en/racing/2026/china"
+        }
+      ],
+      "start_at_utc": "2026-03-14T03:00:00Z",
+      "start_date": null,
+      "status": "CONFIRMED",
+      "summary": "F1｜Shanghai｜冲刺赛",
+      "transparent": false,
+      "uid": "event-1887bb77ac9d9c1497fdeb5db325f3e0@panorama.local"
+    },
+    {
+      "alarms": [],
+      "calendar_kind": "F1_SCHEDULE",
+      "categories": [
+        "F1",
+        "排位赛"
+      ],
+      "description": "赛事：FORMULA 1 HEINEKEN CHINESE GRAND PRIX 2026\n北京时间：2026-03-14 15:00\n赛道当地时间：2026-03-14 15:00（Asia/Shanghai）\n来源：Formula 1 官方分站赛历",
+      "dtstamp": "2026-11-02T14:36:13.134606Z",
+      "end_at_utc": "2026-03-14T08:00:00Z",
+      "end_date_exclusive": null,
+      "end_estimated": false,
+      "event_key": "f1:session:2026:china:QUALIFYING",
+      "event_kind": "F1_SESSION",
+      "last_modified": null,
+      "location": "Shanghai",
+      "result_status": "NOT_AVAILABLE",
+      "sequence": 0,
+      "source_timezone": "UTC",
+      "sources": [
+        {
+          "authority": "Formula 1",
+          "content_hash": "22a44adaf44ca34af7a0142fd91abb8b9f520fb61ffae5ee531cca32960e5740",
+          "evidence_id": null,
+          "retrieved_at": "2026-11-02T14:36:11.313611Z",
+          "url": "https://www.formula1.com/en/racing/2026/china"
+        }
+      ],
+      "start_at_utc": "2026-03-14T07:00:00Z",
+      "start_date": null,
+      "status": "CONFIRMED",
+      "summary": "F1｜Shanghai｜排位赛",
+      "transparent": false,
+      "uid": "event-975450d258641442576982db7a27bed3@panorama.local"
+    },
+    {
+      "alarms": [],
+      "calendar_kind": "F1_SCHEDULE",
+      "categories": [
+        "F1",
+        "正赛"
+      ],
+      "description": "赛事：FORMULA 1 HEINEKEN CHINESE GRAND PRIX 2026\n北京时间：2026-03-15 15:00\n赛道当地时间：2026-03-15 15:00（Asia/Shanghai）\n来源：Formula 1 官方分站赛历",
+      "dtstamp": "2026-11-02T14:36:13.134606Z",
+      "end_at_utc": "2026-03-15T09:00:00Z",
+      "end_date_exclusive": null,
+      "end_estimated": false,
+      "event_key": "f1:session:2026:china:RACE",
+      "event_kind": "F1_SESSION",
+      "last_modified": null,
+      "location": "Shanghai",
+      "result_status": "NOT_AVAILABLE",
+      "sequence": 0,
+      "source_timezone": "UTC",
+      "sources": [
+        {
+          "authority": "Formula 1",
+          "content_hash": "22a44adaf44ca34af7a0142fd91abb8b9f520fb61ffae5ee531cca32960e5740",
+          "evidence_id": null,
+          "retrieved_at": "2026-11-02T14:36:11.313611Z",
+          "url": "https://www.formula1.com/en/racing/2026/china"
+        }
+      ],
+      "start_at_utc": "2026-03-15T07:00:00Z",
+      "start_date": null,
+      "status": "CONFIRMED",
+      "summary": "F1｜Shanghai｜正赛",
+      "transparent": false,
+      "uid": "event-8bae9bda98b9ce30ad3908cdaf5edaac@panorama.local"
+    },
+    {
+      "alarms": [],
+      "calendar_kind": "F1_SCHEDULE",
+      "categories": [
+        "F1",
+        "排位赛"
+      ],
+      "description": "赛事：FORMULA 1 ARAMCO JAPANESE GRAND PRIX 2026\n北京时间：2026-03-28 14:00\n赛道当地时间：2026-03-28 15:00（Asia/Tokyo）\n来源：Formula 1 官方分站赛历",
+      "dtstamp": "2026-11-02T14:36:13.134606Z",
+      "end_at_utc": "2026-03-28T07:00:00Z",
+      "end_date_exclusive": null,
+      "end_estimated": false,
+      "event_key": "f1:session:2026:japan:QUALIFYING",
+      "event_kind": "F1_SESSION",
+      "last_modified": null,
+      "location": "Suzuka",
+      "result_status": "NOT_AVAILABLE",
+      "sequence": 0,
+      "source_timezone": "UTC",
+      "sources": [
+        {
+          "authority": "Formula 1",
+          "content_hash": "d17142cbb09e6e944084c3a5a70460811521c0c070695c1a84084d4ccba466e2",
+          "evidence_id": null,
+          "retrieved_at": "2026-11-02T14:36:11.577381Z",
+          "url": "https://www.formula1.com/en/racing/2026/japan"
+        }
+      ],
+      "start_at_utc": "2026-03-28T06:00:00Z",
+      "start_date": null,
+      "status": "CONFIRMED",
+      "summary": "F1｜Suzuka｜排位赛",
+      "transparent": false,
+      "uid": "event-6f82efce4016fe76eb0c130cba4dcbac@panorama.local"
+    },
+    {
+      "alarms": [],
+      "calendar_kind": "F1_SCHEDULE",
+      "categories": [
+        "F1",
+        "正赛"
+      ],
+      "description": "赛事：FORMULA 1 ARAMCO JAPANESE GRAND PRIX 2026\n北京时间：2026-03-29 13:00\n赛道当地时间：2026-03-29 14:00（Asia/Tokyo）\n来源：Formula 1 官方分站赛历",
+      "dtstamp": "2026-11-02T14:36:13.134606Z",
+      "end_at_utc": "2026-03-29T07:00:00Z",
+      "end_date_exclusive": null,
+      "end_estimated": false,
+      "event_key": "f1:session:2026:japan:RACE",
+      "event_kind": "F1_SESSION",
+      "last_modified": null,
+      "location": "Suzuka",
+      "result_status": "NOT_AVAILABLE",
+      "sequence": 0,
+      "source_timezone": "UTC",
+      "sources": [
+        {
+          "authority": "Formula 1",
+          "content_hash": "d17142cbb09e6e944084c3a5a70460811521c0c070695c1a84084d4ccba466e2",
+          "evidence_id": null,
+          "retrieved_at": "2026-11-02T14:36:11.577381Z",
+          "url": "https://www.formula1.com/en/racing/2026/japan"
+        }
+      ],
+      "start_at_utc": "2026-03-29T05:00:00Z",
+      "start_date": null,
+      "status": "CONFIRMED",
+      "summary": "F1｜Suzuka｜正赛",
+      "transparent": false,
+      "uid": "event-372e433e8a6003612908a0332a97d760@panorama.local"
+    },
+    {
+      "alarms": [],
+      "calendar_kind": "F1_SCHEDULE",
+      "categories": [
+        "F1",
+        "冲刺排位赛"
+      ],
+      "description": "赛事：FORMULA 1 CRYPTO.COM MIAMI GRAND PRIX 2026\n北京时间：2026-05-02 04:30\n赛道当地时间：2026-05-01 16:30（America/New_York）\n来源：Formula 1 官方分站赛历",
+      "dtstamp": "2026-11-02T14:36:13.134606Z",
+      "end_at_utc": "2026-05-01T21:14:00Z",
+      "end_date_exclusive": null,
+      "end_estimated": false,
+      "event_key": "f1:session:2026:miami:SPRINT_QUALIFYING",
+      "event_kind": "F1_SESSION",
+      "last_modified": null,
+      "location": "Miami Gardens",
+      "result_status": "NOT_AVAILABLE",
+      "sequence": 0,
+      "source_timezone": "UTC",
+      "sources": [
+        {
+          "authority": "Formula 1",
+          "content_hash": "60e1e5540f8c182fc276ceea6666cad0d2549893e0619b80514aad0fca8e2212",
+          "evidence_id": null,
+          "retrieved_at": "2026-11-02T14:36:11.938931Z",
+          "url": "https://www.formula1.com/en/racing/2026/miami"
+        }
+      ],
+      "start_at_utc": "2026-05-01T20:30:00Z",
+      "start_date": null,
+      "status": "CONFIRMED",
+      "summary": "F1｜Miami Gardens｜冲刺排位赛",
+      "transparent": false,
+      "uid": "event-17735a41125f1c0443fce1e4c9f1d2f8@panorama.local"
+    },
+    {
+      "alarms": [],
+      "calendar_kind": "F1_SCHEDULE",
+      "categories": [
+        "F1",
+        "冲刺赛"
+      ],
+      "description": "赛事：FORMULA 1 CRYPTO.COM MIAMI GRAND PRIX 2026\n北京时间：2026-05-03 00:00\n赛道当地时间：2026-05-02 12:00（America/New_York）\n来源：Formula 1 官方分站赛历",
+      "dtstamp": "2026-11-02T14:36:13.134606Z",
+      "end_at_utc": "2026-05-02T17:00:00Z",
+      "end_date_exclusive": null,
+      "end_estimated": false,
+      "event_key": "f1:session:2026:miami:SPRINT",
+      "event_kind": "F1_SESSION",
+      "last_modified": null,
+      "location": "Miami Gardens",
+      "result_status": "NOT_AVAILABLE",
+      "sequence": 0,
+      "source_timezone": "UTC",
+      "sources": [
+        {
+          "authority": "Formula 1",
+          "content_hash": "60e1e5540f8c182fc276ceea6666cad0d2549893e0619b80514aad0fca8e2212",
+          "evidence_id": null,
+          "retrieved_at": "2026-11-02T14:36:11.938931Z",
+          "url": "https://www.formula1.com/en/racing/2026/miami"
+        }
+      ],
+      "start_at_utc": "2026-05-02T16:00:00Z",
+      "start_date": null,
+      "status": "CONFIRMED",
+      "summary": "F1｜Miami Gardens｜冲刺赛",
+      "transparent": false,
+      "uid": "event-26dc2ee40a481645727691dd5ac27d66@panorama.local"
+    },
+    {
+      "alarms": [],
+      "calendar_kind": "F1_SCHEDULE",
+      "categories": [
+        "F1",
+        "排位赛"
+      ],
+      "description": "赛事：FORMULA 1 CRYPTO.COM MIAMI GRAND PRIX 2026\n北京时间：2026-05-03 04:00\n赛道当地时间：2026-05-02 16:00（America/New_York）\n来源：Formula 1 官方分站赛历",
+      "dtstamp": "2026-11-02T14:36:13.134606Z",
+      "end_at_utc": "2026-05-02T21:00:00Z",
+      "end_date_exclusive": null,
+      "end_estimated": false,
+      "event_key": "f1:session:2026:miami:QUALIFYING",
+      "event_kind": "F1_SESSION",
+      "last_modified": null,
+      "location": "Miami Gardens",
+      "result_status": "NOT_AVAILABLE",
+      "sequence": 0,
+      "source_timezone": "UTC",
+      "sources": [
+        {
+          "authority": "Formula 1",
+          "content_hash": "60e1e5540f8c182fc276ceea6666cad0d2549893e0619b80514aad0fca8e2212",
+          "evidence_id": null,
+          "retrieved_at": "2026-11-02T14:36:11.938931Z",
+          "url": "https://www.formula1.com/en/racing/2026/miami"
+        }
+      ],
+      "start_at_utc": "2026-05-02T20:00:00Z",
+      "start_date": null,
+      "status": "CONFIRMED",
+      "summary": "F1｜Miami Gardens｜排位赛",
+      "transparent": false,
+      "uid": "event-9b7fbce274176010d7a7350720025d56@panorama.local"
+    },
+    {
+      "alarms": [],
+      "calendar_kind": "F1_SCHEDULE",
+      "categories": [
+        "F1",
+        "正赛"
+      ],
+      "description": "赛事：FORMULA 1 CRYPTO.COM MIAMI GRAND PRIX 2026\n北京时间：2026-05-04 01:00\n赛道当地时间：2026-05-03 13:00（America/New_York）\n来源：Formula 1 官方分站赛历",
+      "dtstamp": "2026-11-02T14:36:13.134606Z",
+      "end_at_utc": "2026-05-03T19:00:00Z",
+      "end_date_exclusive": null,
+      "end_estimated": false,
+      "event_key": "f1:session:2026:miami:RACE",
+      "event_kind": "F1_SESSION",
+      "last_modified": null,
+      "location": "Miami Gardens",
+      "result_status": "NOT_AVAILABLE",
+      "sequence": 0,
+      "source_timezone": "UTC",
+      "sources": [
+        {
+          "authority": "Formula 1",
+          "content_hash": "60e1e5540f8c182fc276ceea6666cad0d2549893e0619b80514aad0fca8e2212",
+          "evidence_id": null,
+          "retrieved_at": "2026-11-02T14:36:11.938931Z",
+          "url": "https://www.formula1.com/en/racing/2026/miami"
+        }
+      ],
+      "start_at_utc": "2026-05-03T17:00:00Z",
+      "start_date": null,
+      "status": "CONFIRMED",
+      "summary": "F1｜Miami Gardens｜正赛",
+      "transparent": false,
+      "uid": "event-c2e4c77f7ebb5ccb5c3cfebeb6a17547@panorama.local"
+    },
+    {
+      "alarms": [],
+      "calendar_kind": "F1_SCHEDULE",
+      "categories": [
+        "F1",
+        "冲刺排位赛"
+      ],
+      "description": "赛事：FORMULA 1 LENOVO GRAND PRIX DU CANADA 2026\n北京时间：2026-05-23 04:30\n赛道当地时间：2026-05-22 16:30（America/Toronto）\n来源：Formula 1 官方分站赛历",
+      "dtstamp": "2026-11-02T14:36:13.134606Z",
+      "end_at_utc": "2026-05-22T21:14:00Z",
+      "end_date_exclusive": null,
+      "end_estimated": false,
+      "event_key": "f1:session:2026:canada:SPRINT_QUALIFYING",
+      "event_kind": "F1_SESSION",
+      "last_modified": null,
+      "location": "Montréal",
+      "result_status": "NOT_AVAILABLE",
+      "sequence": 0,
+      "source_timezone": "UTC",
+      "sources": [
+        {
+          "authority": "Formula 1",
+          "content_hash": "010e231cb18bcde48f2307c7634344bc7abd91171f671637a063a21f2d686083",
+          "evidence_id": null,
+          "retrieved_at": "2026-11-02T14:36:11.970390Z",
+          "url": "https://www.formula1.com/en/racing/2026/canada"
+        }
+      ],
+      "start_at_utc": "2026-05-22T20:30:00Z",
+      "start_date": null,
+      "status": "CONFIRMED",
+      "summary": "F1｜Montréal｜冲刺排位赛",
+      "transparent": false,
+      "uid": "event-e1db7adac809e7898377efa46dc73dbe@panorama.local"
+    },
+    {
+      "alarms": [],
+      "calendar_kind": "F1_SCHEDULE",
+      "categories": [
+        "F1",
+        "冲刺赛"
+      ],
+      "description": "赛事：FORMULA 1 LENOVO GRAND PRIX DU CANADA 2026\n北京时间：2026-05-24 00:00\n赛道当地时间：2026-05-23 12:00（America/Toronto）\n来源：Formula 1 官方分站赛历",
+      "dtstamp": "2026-11-02T14:36:13.134606Z",
+      "end_at_utc": "2026-05-23T17:00:00Z",
+      "end_date_exclusive": null,
+      "end_estimated": false,
+      "event_key": "f1:session:2026:canada:SPRINT",
+      "event_kind": "F1_SESSION",
+      "last_modified": null,
+      "location": "Montréal",
+      "result_status": "NOT_AVAILABLE",
+      "sequence": 0,
+      "source_timezone": "UTC",
+      "sources": [
+        {
+          "authority": "Formula 1",
+          "content_hash": "010e231cb18bcde48f2307c7634344bc7abd91171f671637a063a21f2d686083",
+          "evidence_id": null,
+          "retrieved_at": "2026-11-02T14:36:11.970390Z",
+          "url": "https://www.formula1.com/en/racing/2026/canada"
+        }
+      ],
+      "start_at_utc": "2026-05-23T16:00:00Z",
+      "start_date": null,
+      "status": "CONFIRMED",
+      "summary": "F1｜Montréal｜冲刺赛",
+      "transparent": false,
+      "uid": "event-45347bbe1618de03c4850f2a76c10b5f@panorama.local"
+    },
+    {
+      "alarms": [],
+      "calendar_kind": "F1_SCHEDULE",
+      "categories": [
+        "F1",
+        "排位赛"
+      ],
+      "description": "赛事：FORMULA 1 LENOVO GRAND PRIX DU CANADA 2026\n北京时间：2026-05-24 04:00\n赛道当地时间：2026-05-23 16:00（America/Toronto）\n来源：Formula 1 官方分站赛历",
+      "dtstamp": "2026-11-02T14:36:13.134606Z",
+      "end_at_utc": "2026-05-23T21:00:00Z",
+      "end_date_exclusive": null,
+      "end_estimated": false,
+      "event_key": "f1:session:2026:canada:QUALIFYING",
+      "event_kind": "F1_SESSION",
+      "last_modified": null,
+      "location": "Montréal",
+      "result_status": "NOT_AVAILABLE",
+      "sequence": 0,
+      "source_timezone": "UTC",
+      "sources": [
+        {
+          "authority": "Formula 1",
+          "content_hash": "010e231cb18bcde48f2307c7634344bc7abd91171f671637a063a21f2d686083",
+          "evidence_id": null,
+          "retrieved_at": "2026-11-02T14:36:11.970390Z",
+          "url": "https://www.formula1.com/en/racing/2026/canada"
+        }
+      ],
+      "start_at_utc": "2026-05-23T20:00:00Z",
+      "start_date": null,
+      "status": "CONFIRMED",
+      "summary": "F1｜Montréal｜排位赛",
+      "transparent": false,
+      "uid": "event-3890669d69740a75dc40b5be39f8c895@panorama.local"
+    },
+    {
+      "alarms": [],
+      "calendar_kind": "F1_SCHEDULE",
+      "categories": [
+        "F1",
+        "正赛"
+      ],
+      "description": "赛事：FORMULA 1 LENOVO GRAND PRIX DU CANADA 2026\n北京时间：2026-05-25 04:00\n赛道当地时间：2026-05-24 16:00（America/Toronto）\n来源：Formula 1 官方分站赛历",
+      "dtstamp": "2026-11-02T14:36:13.134606Z",
+      "end_at_utc": "2026-05-24T22:00:00Z",
+      "end_date_exclusive": null,
+      "end_estimated": false,
+      "event_key": "f1:session:2026:canada:RACE",
+      "event_kind": "F1_SESSION",
+      "last_modified": null,
+      "location": "Montréal",
+      "result_status": "NOT_AVAILABLE",
+      "sequence": 0,
+      "source_timezone": "UTC",
+      "sources": [
+        {
+          "authority": "Formula 1",
+          "content_hash": "010e231cb18bcde48f2307c7634344bc7abd91171f671637a063a21f2d686083",
+          "evidence_id": null,
+          "retrieved_at": "2026-11-02T14:36:11.970390Z",
+          "url": "https://www.formula1.com/en/racing/2026/canada"
+        }
+      ],
+      "start_at_utc": "2026-05-24T20:00:00Z",
+      "start_date": null,
+      "status": "CONFIRMED",
+      "summary": "F1｜Montréal｜正赛",
+      "transparent": false,
+      "uid": "event-00b850885ecf3bd40ebbc26a19e5e5e8@panorama.local"
+    },
+    {
+      "alarms": [],
+      "calendar_kind": "F1_SCHEDULE",
+      "categories": [
+        "F1",
+        "排位赛"
+      ],
+      "description": "赛事：FORMULA 1 LOUIS VUITTON GRAND PRIX DE MONACO 2026\n北京时间：2026-06-06 22:00\n赛道当地时间：2026-06-06 16:00（Europe/Monaco）\n来源：Formula 1 官方分站赛历",
+      "dtstamp": "2026-11-02T14:36:13.134606Z",
+      "end_at_utc": "2026-06-06T15:00:00Z",
+      "end_date_exclusive": null,
+      "end_estimated": false,
+      "event_key": "f1:session:2026:monaco:QUALIFYING",
+      "event_kind": "F1_SESSION",
+      "last_modified": null,
+      "location": "Monte Carlo",
+      "result_status": "NOT_AVAILABLE",
+      "sequence": 0,
+      "source_timezone": "UTC",
+      "sources": [
+        {
+          "authority": "Formula 1",
+          "content_hash": "2c362736b121aedecc290f2c4af5a36d4bcced76e382a45e58c5f1ab5b9cb642",
+          "evidence_id": null,
+          "retrieved_at": "2026-11-02T14:36:12.007820Z",
+          "url": "https://www.formula1.com/en/racing/2026/monaco"
+        }
+      ],
+      "start_at_utc": "2026-06-06T14:00:00Z",
+      "start_date": null,
+      "status": "CONFIRMED",
+      "summary": "F1｜Monte Carlo｜排位赛",
+      "transparent": false,
+      "uid": "event-f69feed644a70eab45de5a9d1466a4cc@panorama.local"
+    },
+    {
+      "alarms": [],
+      "calendar_kind": "F1_SCHEDULE",
+      "categories": [
+        "F1",
+        "正赛"
+      ],
+      "description": "赛事：FORMULA 1 LOUIS VUITTON GRAND PRIX DE MONACO 2026\n北京时间：2026-06-07 21:00\n赛道当地时间：2026-06-07 15:00（Europe/Monaco）\n来源：Formula 1 官方分站赛历",
+      "dtstamp": "2026-11-02T14:36:13.134606Z",
+      "end_at_utc": "2026-06-07T15:00:00Z",
+      "end_date_exclusive": null,
+      "end_estimated": false,
+      "event_key": "f1:session:2026:monaco:RACE",
+      "event_kind": "F1_SESSION",
+      "last_modified": null,
+      "location": "Monte Carlo",
+      "result_status": "NOT_AVAILABLE",
+      "sequence": 0,
+      "source_timezone": "UTC",
+      "sources": [
+        {
+          "authority": "Formula 1",
+          "content_hash": "2c362736b121aedecc290f2c4af5a36d4bcced76e382a45e58c5f1ab5b9cb642",
+          "evidence_id": null,
+          "retrieved_at": "2026-11-02T14:36:12.007820Z",
+          "url": "https://www.formula1.com/en/racing/2026/monaco"
+        }
+      ],
+      "start_at_utc": "2026-06-07T13:00:00Z",
+      "start_date": null,
+      "status": "CONFIRMED",
+      "summary": "F1｜Monte Carlo｜正赛",
+      "transparent": false,
+      "uid": "event-2a70ce5a7bcfbe05b2d0ed7ac0200a1a@panorama.local"
+    },
+    {
+      "alarms": [],
+      "calendar_kind": "F1_SCHEDULE",
+      "categories": [
+        "F1",
+        "排位赛"
+      ],
+      "description": "赛事：FORMULA 1 MSC CRUISES GRAN PREMIO DE BARCELONA-CATALUNYA 2026\n北京时间：2026-06-13 22:00\n赛道当地时间：2026-06-13 16:00（Europe/Madrid）\n来源：Formula 1 官方分站赛历",
+      "dtstamp": "2026-11-02T14:36:13.134606Z",
+      "end_at_utc": "2026-06-13T15:00:00Z",
+      "end_date_exclusive": null,
+      "end_estimated": false,
+      "event_key": "f1:session:2026:barcelona-catalunya:QUALIFYING",
+      "event_kind": "F1_SESSION",
+      "last_modified": null,
+      "location": "Barcelona",
+      "result_status": "NOT_AVAILABLE",
+      "sequence": 0,
+      "source_timezone": "UTC",
+      "sources": [
+        {
+          "authority": "Formula 1",
+          "content_hash": "282f500d11a38e4810d2e4423682885fdb1385c42efff4e8ac6e85e1422ab8e7",
+          "evidence_id": null,
+          "retrieved_at": "2026-11-02T14:36:12.042005Z",
+          "url": "https://www.formula1.com/en/racing/2026/barcelona-catalunya"
+        }
+      ],
+      "start_at_utc": "2026-06-13T14:00:00Z",
+      "start_date": null,
+      "status": "CONFIRMED",
+      "summary": "F1｜Barcelona｜排位赛",
+      "transparent": false,
+      "uid": "event-01af8cbeb57a6a67a49bdf6e0908bd41@panorama.local"
+    },
+    {
+      "alarms": [],
+      "calendar_kind": "F1_SCHEDULE",
+      "categories": [
+        "F1",
+        "正赛"
+      ],
+      "description": "赛事：FORMULA 1 MSC CRUISES GRAN PREMIO DE BARCELONA-CATALUNYA 2026\n北京时间：2026-06-14 21:00\n赛道当地时间：2026-06-14 15:00（Europe/Madrid）\n来源：Formula 1 官方分站赛历",
+      "dtstamp": "2026-11-02T14:36:13.134606Z",
+      "end_at_utc": "2026-06-14T15:00:00Z",
+      "end_date_exclusive": null,
+      "end_estimated": false,
+      "event_key": "f1:session:2026:barcelona-catalunya:RACE",
+      "event_kind": "F1_SESSION",
+      "last_modified": null,
+      "location": "Barcelona",
+      "result_status": "NOT_AVAILABLE",
+      "sequence": 0,
+      "source_timezone": "UTC",
+      "sources": [
+        {
+          "authority": "Formula 1",
+          "content_hash": "282f500d11a38e4810d2e4423682885fdb1385c42efff4e8ac6e85e1422ab8e7",
+          "evidence_id": null,
+          "retrieved_at": "2026-11-02T14:36:12.042005Z",
+          "url": "https://www.formula1.com/en/racing/2026/barcelona-catalunya"
+        }
+      ],
+      "start_at_utc": "2026-06-14T13:00:00Z",
+      "start_date": null,
+      "status": "CONFIRMED",
+      "summary": "F1｜Barcelona｜正赛",
+      "transparent": false,
+      "uid": "event-3f9572a24fa0ff413fc9282109cad03b@panorama.local"
+    },
+    {
+      "alarms": [],
+      "calendar_kind": "F1_SCHEDULE",
+      "categories": [
+        "F1",
+        "排位赛"
+      ],
+      "description": "赛事：FORMULA 1 LENOVO AUSTRIAN GRAND PRIX 2026\n北京时间：2026-06-27 22:00\n赛道当地时间：2026-06-27 16:00（Europe/Vienna）\n来源：Formula 1 官方分站赛历",
+      "dtstamp": "2026-11-02T14:36:13.134606Z",
+      "end_at_utc": "2026-06-27T15:00:00Z",
+      "end_date_exclusive": null,
+      "end_estimated": false,
+      "event_key": "f1:session:2026:austria:QUALIFYING",
+      "event_kind": "F1_SESSION",
+      "last_modified": null,
+      "location": "Spielberg",
+      "result_status": "NOT_AVAILABLE",
+      "sequence": 0,
+      "source_timezone": "UTC",
+      "sources": [
+        {
+          "authority": "Formula 1",
+          "content_hash": "23533b37838c4a759070e66b97f8796f65def392ce5e8544eca1ae374ad760f5",
+          "evidence_id": null,
+          "retrieved_at": "2026-11-02T14:36:12.360622Z",
+          "url": "https://www.formula1.com/en/racing/2026/austria"
+        }
+      ],
+      "start_at_utc": "2026-06-27T14:00:00Z",
+      "start_date": null,
+      "status": "CONFIRMED",
+      "summary": "F1｜Spielberg｜排位赛",
+      "transparent": false,
+      "uid": "event-396c9d10c8a9b724d0fcb72a9b01f4c8@panorama.local"
+    },
+    {
+      "alarms": [],
+      "calendar_kind": "F1_SCHEDULE",
+      "categories": [
+        "F1",
+        "正赛"
+      ],
+      "description": "赛事：FORMULA 1 LENOVO AUSTRIAN GRAND PRIX 2026\n北京时间：2026-06-28 21:00\n赛道当地时间：2026-06-28 15:00（Europe/Vienna）\n来源：Formula 1 官方分站赛历",
+      "dtstamp": "2026-11-02T14:36:13.134606Z",
+      "end_at_utc": "2026-06-28T15:00:00Z",
+      "end_date_exclusive": null,
+      "end_estimated": false,
+      "event_key": "f1:session:2026:austria:RACE",
+      "event_kind": "F1_SESSION",
+      "last_modified": null,
+      "location": "Spielberg",
+      "result_status": "NOT_AVAILABLE",
+      "sequence": 0,
+      "source_timezone": "UTC",
+      "sources": [
+        {
+          "authority": "Formula 1",
+          "content_hash": "23533b37838c4a759070e66b97f8796f65def392ce5e8544eca1ae374ad760f5",
+          "evidence_id": null,
+          "retrieved_at": "2026-11-02T14:36:12.360622Z",
+          "url": "https://www.formula1.com/en/racing/2026/austria"
+        }
+      ],
+      "start_at_utc": "2026-06-28T13:00:00Z",
+      "start_date": null,
+      "status": "CONFIRMED",
+      "summary": "F1｜Spielberg｜正赛",
+      "transparent": false,
+      "uid": "event-b1e828e8733329d18d4adf29ae7df6b5@panorama.local"
+    },
+    {
+      "alarms": [],
+      "calendar_kind": "F1_SCHEDULE",
+      "categories": [
+        "F1",
+        "冲刺排位赛"
+      ],
+      "description": "赛事：FORMULA 1 PIRELLI BRITISH GRAND PRIX 2026\n北京时间：2026-07-03 23:30\n赛道当地时间：2026-07-03 16:30（Europe/London）\n来源：Formula 1 官方分站赛历",
+      "dtstamp": "2026-11-02T14:36:13.134606Z",
+      "end_at_utc": "2026-07-03T16:14:00Z",
+      "end_date_exclusive": null,
+      "end_estimated": false,
+      "event_key": "f1:session:2026:great-britain:SPRINT_QUALIFYING",
+      "event_kind": "F1_SESSION",
+      "last_modified": null,
+      "location": "Silverstone",
+      "result_status": "NOT_AVAILABLE",
+      "sequence": 0,
+      "source_timezone": "UTC",
+      "sources": [
+        {
+          "authority": "Formula 1",
+          "content_hash": "ff16843e4c5a2e2af143d047fb38ae2f1cd1809330d83f7e9e8109d52382923d",
+          "evidence_id": null,
+          "retrieved_at": "2026-11-02T14:36:12.397328Z",
+          "url": "https://www.formula1.com/en/racing/2026/great-britain"
+        }
+      ],
+      "start_at_utc": "2026-07-03T15:30:00Z",
+      "start_date": null,
+      "status": "CONFIRMED",
+      "summary": "F1｜Silverstone｜冲刺排位赛",
+      "transparent": false,
+      "uid": "event-78dedb926b7c38faef1dd42781769d30@panorama.local"
+    },
+    {
+      "alarms": [],
+      "calendar_kind": "F1_SCHEDULE",
+      "categories": [
+        "F1",
+        "冲刺赛"
+      ],
+      "description": "赛事：FORMULA 1 PIRELLI BRITISH GRAND PRIX 2026\n北京时间：2026-07-04 19:00\n赛道当地时间：2026-07-04 12:00（Europe/London）\n来源：Formula 1 官方分站赛历",
+      "dtstamp": "2026-11-02T14:36:13.134606Z",
+      "end_at_utc": "2026-07-04T12:00:00Z",
+      "end_date_exclusive": null,
+      "end_estimated": false,
+      "event_key": "f1:session:2026:great-britain:SPRINT",
+      "event_kind": "F1_SESSION",
+      "last_modified": null,
+      "location": "Silverstone",
+      "result_status": "NOT_AVAILABLE",
+      "sequence": 0,
+      "source_timezone": "UTC",
+      "sources": [
+        {
+          "authority": "Formula 1",
+          "content_hash": "ff16843e4c5a2e2af143d047fb38ae2f1cd1809330d83f7e9e8109d52382923d",
+          "evidence_id": null,
+          "retrieved_at": "2026-11-02T14:36:12.397328Z",
+          "url": "https://www.formula1.com/en/racing/2026/great-britain"
+        }
+      ],
+      "start_at_utc": "2026-07-04T11:00:00Z",
+      "start_date": null,
+      "status": "CONFIRMED",
+      "summary": "F1｜Silverstone｜冲刺赛",
+      "transparent": false,
+      "uid": "event-d6dad4a72f94dbcb42487542c3b2d35e@panorama.local"
+    },
+    {
+      "alarms": [],
+      "calendar_kind": "F1_SCHEDULE",
+      "categories": [
+        "F1",
+        "排位赛"
+      ],
+      "description": "赛事：FORMULA 1 PIRELLI BRITISH GRAND PRIX 2026\n北京时间：2026-07-04 23:00\n赛道当地时间：2026-07-04 16:00（Europe/London）\n来源：Formula 1 官方分站赛历",
+      "dtstamp": "2026-11-02T14:36:13.134606Z",
+      "end_at_utc": "2026-07-04T16:00:00Z",
+      "end_date_exclusive": null,
+      "end_estimated": false,
+      "event_key": "f1:session:2026:great-britain:QUALIFYING",
+      "event_kind": "F1_SESSION",
+      "last_modified": null,
+      "location": "Silverstone",
+      "result_status": "NOT_AVAILABLE",
+      "sequence": 0,
+      "source_timezone": "UTC",
+      "sources": [
+        {
+          "authority": "Formula 1",
+          "content_hash": "ff16843e4c5a2e2af143d047fb38ae2f1cd1809330d83f7e9e8109d52382923d",
+          "evidence_id": null,
+          "retrieved_at": "2026-11-02T14:36:12.397328Z",
+          "url": "https://www.formula1.com/en/racing/2026/great-britain"
+        }
+      ],
+      "start_at_utc": "2026-07-04T15:00:00Z",
+      "start_date": null,
+      "status": "CONFIRMED",
+      "summary": "F1｜Silverstone｜排位赛",
+      "transparent": false,
+      "uid": "event-ee1dbb1e93ab835a5ece0ca2c1c88b9b@panorama.local"
+    },
+    {
+      "alarms": [],
+      "calendar_kind": "F1_SCHEDULE",
+      "categories": [
+        "F1",
+        "正赛"
+      ],
+      "description": "赛事：FORMULA 1 PIRELLI BRITISH GRAND PRIX 2026\n北京时间：2026-07-05 22:00\n赛道当地时间：2026-07-05 15:00（Europe/London）\n来源：Formula 1 官方分站赛历",
+      "dtstamp": "2026-11-02T14:36:13.134606Z",
+      "end_at_utc": "2026-07-05T16:00:00Z",
+      "end_date_exclusive": null,
+      "end_estimated": false,
+      "event_key": "f1:session:2026:great-britain:RACE",
+      "event_kind": "F1_SESSION",
+      "last_modified": null,
+      "location": "Silverstone",
+      "result_status": "NOT_AVAILABLE",
+      "sequence": 0,
+      "source_timezone": "UTC",
+      "sources": [
+        {
+          "authority": "Formula 1",
+          "content_hash": "ff16843e4c5a2e2af143d047fb38ae2f1cd1809330d83f7e9e8109d52382923d",
+          "evidence_id": null,
+          "retrieved_at": "2026-11-02T14:36:12.397328Z",
+          "url": "https://www.formula1.com/en/racing/2026/great-britain"
+        }
+      ],
+      "start_at_utc": "2026-07-05T14:00:00Z",
+      "start_date": null,
+      "status": "CONFIRMED",
+      "summary": "F1｜Silverstone｜正赛",
+      "transparent": false,
+      "uid": "event-6344810efc43c543fa651c20dd5490c5@panorama.local"
+    },
+    {
+      "alarms": [],
+      "calendar_kind": "F1_SCHEDULE",
+      "categories": [
+        "F1",
+        "排位赛"
+      ],
+      "description": "赛事：FORMULA 1 MOËT & CHANDON BELGIAN GRAND PRIX 2026\n北京时间：2026-07-18 22:00\n赛道当地时间：2026-07-18 16:00（Europe/Brussels）\n来源：Formula 1 官方分站赛历",
+      "dtstamp": "2026-11-02T14:36:13.134606Z",
+      "end_at_utc": "2026-07-18T15:00:00Z",
+      "end_date_exclusive": null,
+      "end_estimated": false,
+      "event_key": "f1:session:2026:belgium:QUALIFYING",
+      "event_kind": "F1_SESSION",
+      "last_modified": null,
+      "location": "Spa-Francorchamps",
+      "result_status": "NOT_AVAILABLE",
+      "sequence": 0,
+      "source_timezone": "UTC",
+      "sources": [
+        {
+          "authority": "Formula 1",
+          "content_hash": "864adcd3ae73081a9b5a582d8e0ad0b524b470e22183c79933fdd1aa07bcb1a0",
+          "evidence_id": null,
+          "retrieved_at": "2026-11-02T14:36:12.695277Z",
+          "url": "https://www.formula1.com/en/racing/2026/belgium"
+        }
+      ],
+      "start_at_utc": "2026-07-18T14:00:00Z",
+      "start_date": null,
+      "status": "CONFIRMED",
+      "summary": "F1｜Spa-Francorchamps｜排位赛",
+      "transparent": false,
+      "uid": "event-6a2330e9b97798f6e1ea4b940fb8be77@panorama.local"
+    },
+    {
+      "alarms": [],
+      "calendar_kind": "F1_SCHEDULE",
+      "categories": [
+        "F1",
+        "正赛"
+      ],
+      "description": "赛事：FORMULA 1 MOËT & CHANDON BELGIAN GRAND PRIX 2026\n北京时间：2026-07-19 21:00\n赛道当地时间：2026-07-19 15:00（Europe/Brussels）\n来源：Formula 1 官方分站赛历",
+      "dtstamp": "2026-11-02T14:36:13.134606Z",
+      "end_at_utc": "2026-07-19T15:00:00Z",
+      "end_date_exclusive": null,
+      "end_estimated": false,
+      "event_key": "f1:session:2026:belgium:RACE",
+      "event_kind": "F1_SESSION",
+      "last_modified": null,
+      "location": "Spa-Francorchamps",
+      "result_status": "NOT_AVAILABLE",
+      "sequence": 0,
+      "source_timezone": "UTC",
+      "sources": [
+        {
+          "authority": "Formula 1",
+          "content_hash": "864adcd3ae73081a9b5a582d8e0ad0b524b470e22183c79933fdd1aa07bcb1a0",
+          "evidence_id": null,
+          "retrieved_at": "2026-11-02T14:36:12.695277Z",
+          "url": "https://www.formula1.com/en/racing/2026/belgium"
+        }
+      ],
+      "start_at_utc": "2026-07-19T13:00:00Z",
+      "start_date": null,
+      "status": "CONFIRMED",
+      "summary": "F1｜Spa-Francorchamps｜正赛",
+      "transparent": false,
+      "uid": "event-1312cbfde6d9c17ccfe4e11434eee0f6@panorama.local"
+    },
+    {
+      "alarms": [],
+      "calendar_kind": "F1_SCHEDULE",
+      "categories": [
+        "F1",
+        "排位赛"
+      ],
+      "description": "赛事：FORMULA 1 AWS HUNGARIAN GRAND PRIX 2026\n北京时间：2026-07-25 22:00\n赛道当地时间：2026-07-25 16:00（Europe/Budapest）\n来源：Formula 1 官方分站赛历",
+      "dtstamp": "2026-11-02T14:36:13.134606Z",
+      "end_at_utc": "2026-07-25T15:00:00Z",
+      "end_date_exclusive": null,
+      "end_estimated": false,
+      "event_key": "f1:session:2026:hungary:QUALIFYING",
+      "event_kind": "F1_SESSION",
+      "last_modified": null,
+      "location": "Budapest",
+      "result_status": "NOT_AVAILABLE",
+      "sequence": 0,
+      "source_timezone": "UTC",
+      "sources": [
+        {
+          "authority": "Formula 1",
+          "content_hash": "85bbbb993f3c3da18888bcb6f1ccc26052640f4cbe5f0a2a0c9d9f6a7d18000c",
+          "evidence_id": null,
+          "retrieved_at": "2026-11-02T14:36:12.732828Z",
+          "url": "https://www.formula1.com/en/racing/2026/hungary"
+        }
+      ],
+      "start_at_utc": "2026-07-25T14:00:00Z",
+      "start_date": null,
+      "status": "CONFIRMED",
+      "summary": "F1｜Budapest｜排位赛",
+      "transparent": false,
+      "uid": "event-e5a24766a7139ea2ead40ac8f609cc57@panorama.local"
+    },
+    {
+      "alarms": [],
+      "calendar_kind": "F1_SCHEDULE",
+      "categories": [
+        "F1",
+        "正赛"
+      ],
+      "description": "赛事：FORMULA 1 AWS HUNGARIAN GRAND PRIX 2026\n北京时间：2026-07-26 21:00\n赛道当地时间：2026-07-26 15:00（Europe/Budapest）\n来源：Formula 1 官方分站赛历",
+      "dtstamp": "2026-11-02T14:36:13.134606Z",
+      "end_at_utc": "2026-07-26T15:00:00Z",
+      "end_date_exclusive": null,
+      "end_estimated": false,
+      "event_key": "f1:session:2026:hungary:RACE",
+      "event_kind": "F1_SESSION",
+      "last_modified": null,
+      "location": "Budapest",
+      "result_status": "NOT_AVAILABLE",
+      "sequence": 0,
+      "source_timezone": "UTC",
+      "sources": [
+        {
+          "authority": "Formula 1",
+          "content_hash": "85bbbb993f3c3da18888bcb6f1ccc26052640f4cbe5f0a2a0c9d9f6a7d18000c",
+          "evidence_id": null,
+          "retrieved_at": "2026-11-02T14:36:12.732828Z",
+          "url": "https://www.formula1.com/en/racing/2026/hungary"
+        }
+      ],
+      "start_at_utc": "2026-07-26T13:00:00Z",
+      "start_date": null,
+      "status": "CONFIRMED",
+      "summary": "F1｜Budapest｜正赛",
+      "transparent": false,
+      "uid": "event-3eaafd1bf0de2b14d69b32c845399ea2@panorama.local"
+    },
+    {
+      "alarms": [],
+      "calendar_kind": "F1_SCHEDULE",
+      "categories": [
+        "F1",
+        "冲刺排位赛"
+      ],
+      "description": "赛事：FORMULA 1 HEINEKEN DUTCH GRAND PRIX 2026\n北京时间：2026-08-21 22:30\n赛道当地时间：2026-08-21 16:30（Europe/Amsterdam）\n来源：Formula 1 官方分站赛历",
+      "dtstamp": "2026-11-02T14:36:13.134606Z",
+      "end_at_utc": "2026-08-21T15:14:00Z",
+      "end_date_exclusive": null,
+      "end_estimated": false,
+      "event_key": "f1:session:2026:netherlands:SPRINT_QUALIFYING",
+      "event_kind": "F1_SESSION",
+      "last_modified": null,
+      "location": "Zandvoort",
+      "result_status": "NOT_AVAILABLE",
+      "sequence": 0,
+      "source_timezone": "UTC",
+      "sources": [
+        {
+          "authority": "Formula 1",
+          "content_hash": "3bedb327170d45141dd37307b2e7ce0b6893f9c951ad7c69223ea9f7ad359fe4",
+          "evidence_id": null,
+          "retrieved_at": "2026-11-02T14:36:12.763660Z",
+          "url": "https://www.formula1.com/en/racing/2026/netherlands"
+        }
+      ],
+      "start_at_utc": "2026-08-21T14:30:00Z",
+      "start_date": null,
+      "status": "CONFIRMED",
+      "summary": "F1｜Zandvoort｜冲刺排位赛",
+      "transparent": false,
+      "uid": "event-a9334e03c32ea96cf2e290a225e9e984@panorama.local"
+    },
+    {
+      "alarms": [],
+      "calendar_kind": "F1_SCHEDULE",
+      "categories": [
+        "F1",
+        "冲刺赛"
+      ],
+      "description": "赛事：FORMULA 1 HEINEKEN DUTCH GRAND PRIX 2026\n北京时间：2026-08-22 18:00\n赛道当地时间：2026-08-22 12:00（Europe/Amsterdam）\n来源：Formula 1 官方分站赛历",
+      "dtstamp": "2026-11-02T14:36:13.134606Z",
+      "end_at_utc": "2026-08-22T11:00:00Z",
+      "end_date_exclusive": null,
+      "end_estimated": false,
+      "event_key": "f1:session:2026:netherlands:SPRINT",
+      "event_kind": "F1_SESSION",
+      "last_modified": null,
+      "location": "Zandvoort",
+      "result_status": "NOT_AVAILABLE",
+      "sequence": 0,
+      "source_timezone": "UTC",
+      "sources": [
+        {
+          "authority": "Formula 1",
+          "content_hash": "3bedb327170d45141dd37307b2e7ce0b6893f9c951ad7c69223ea9f7ad359fe4",
+          "evidence_id": null,
+          "retrieved_at": "2026-11-02T14:36:12.763660Z",
+          "url": "https://www.formula1.com/en/racing/2026/netherlands"
+        }
+      ],
+      "start_at_utc": "2026-08-22T10:00:00Z",
+      "start_date": null,
+      "status": "CONFIRMED",
+      "summary": "F1｜Zandvoort｜冲刺赛",
+      "transparent": false,
+      "uid": "event-0819c607c8999fb45762c7614ac72f78@panorama.local"
+    },
+    {
+      "alarms": [],
+      "calendar_kind": "F1_SCHEDULE",
+      "categories": [
+        "F1",
+        "排位赛"
+      ],
+      "description": "赛事：FORMULA 1 HEINEKEN DUTCH GRAND PRIX 2026\n北京时间：2026-08-22 22:00\n赛道当地时间：2026-08-22 16:00（Europe/Amsterdam）\n来源：Formula 1 官方分站赛历",
+      "dtstamp": "2026-11-02T14:36:13.134606Z",
+      "end_at_utc": "2026-08-22T15:00:00Z",
+      "end_date_exclusive": null,
+      "end_estimated": false,
+      "event_key": "f1:session:2026:netherlands:QUALIFYING",
+      "event_kind": "F1_SESSION",
+      "last_modified": null,
+      "location": "Zandvoort",
+      "result_status": "NOT_AVAILABLE",
+      "sequence": 0,
+      "source_timezone": "UTC",
+      "sources": [
+        {
+          "authority": "Formula 1",
+          "content_hash": "3bedb327170d45141dd37307b2e7ce0b6893f9c951ad7c69223ea9f7ad359fe4",
+          "evidence_id": null,
+          "retrieved_at": "2026-11-02T14:36:12.763660Z",
+          "url": "https://www.formula1.com/en/racing/2026/netherlands"
+        }
+      ],
+      "start_at_utc": "2026-08-22T14:00:00Z",
+      "start_date": null,
+      "status": "CONFIRMED",
+      "summary": "F1｜Zandvoort｜排位赛",
+      "transparent": false,
+      "uid": "event-997aee03b401eae1b4fc17c47611cbf2@panorama.local"
+    },
+    {
+      "alarms": [],
+      "calendar_kind": "F1_SCHEDULE",
+      "categories": [
+        "F1",
+        "正赛"
+      ],
+      "description": "赛事：FORMULA 1 HEINEKEN DUTCH GRAND PRIX 2026\n北京时间：2026-08-23 21:00\n赛道当地时间：2026-08-23 15:00（Europe/Amsterdam）\n来源：Formula 1 官方分站赛历",
+      "dtstamp": "2026-11-02T14:36:13.134606Z",
+      "end_at_utc": "2026-08-23T15:00:00Z",
+      "end_date_exclusive": null,
+      "end_estimated": false,
+      "event_key": "f1:session:2026:netherlands:RACE",
+      "event_kind": "F1_SESSION",
+      "last_modified": null,
+      "location": "Zandvoort",
+      "result_status": "NOT_AVAILABLE",
+      "sequence": 0,
+      "source_timezone": "UTC",
+      "sources": [
+        {
+          "authority": "Formula 1",
+          "content_hash": "3bedb327170d45141dd37307b2e7ce0b6893f9c951ad7c69223ea9f7ad359fe4",
+          "evidence_id": null,
+          "retrieved_at": "2026-11-02T14:36:12.763660Z",
+          "url": "https://www.formula1.com/en/racing/2026/netherlands"
+        }
+      ],
+      "start_at_utc": "2026-08-23T13:00:00Z",
+      "start_date": null,
+      "status": "CONFIRMED",
+      "summary": "F1｜Zandvoort｜正赛",
+      "transparent": false,
+      "uid": "event-839a5095a0950b3c5c22f510e86ca960@panorama.local"
+    },
+    {
+      "alarms": [],
+      "calendar_kind": "F1_SCHEDULE",
+      "categories": [
+        "F1",
+        "排位赛"
+      ],
+      "description": "赛事：FORMULA 1 PIRELLI GRAN PREMIO D’ITALIA 2026\n北京时间：2026-09-05 22:00\n赛道当地时间：2026-09-05 16:00（Europe/Rome）\n来源：Formula 1 官方分站赛历",
+      "dtstamp": "2026-11-02T14:36:13.134606Z",
+      "end_at_utc": "2026-09-05T15:00:00Z",
+      "end_date_exclusive": null,
+      "end_estimated": false,
+      "event_key": "f1:session:2026:italy:QUALIFYING",
+      "event_kind": "F1_SESSION",
+      "last_modified": null,
+      "location": "Monza",
+      "result_status": "NOT_AVAILABLE",
+      "sequence": 0,
+      "source_timezone": "UTC",
+      "sources": [
+        {
+          "authority": "Formula 1",
+          "content_hash": "2a5319969b7e68a37ad4d7c0f85b77527abbfc925b5a2a08887597bc8051784c",
+          "evidence_id": null,
+          "retrieved_at": "2026-11-02T14:36:12.794364Z",
+          "url": "https://www.formula1.com/en/racing/2026/italy"
+        }
+      ],
+      "start_at_utc": "2026-09-05T14:00:00Z",
+      "start_date": null,
+      "status": "CONFIRMED",
+      "summary": "F1｜Monza｜排位赛",
+      "transparent": false,
+      "uid": "event-14faceb96002ceb50c56fe4275e1fc37@panorama.local"
+    },
+    {
+      "alarms": [],
+      "calendar_kind": "F1_SCHEDULE",
+      "categories": [
+        "F1",
+        "正赛"
+      ],
+      "description": "赛事：FORMULA 1 PIRELLI GRAN PREMIO D’ITALIA 2026\n北京时间：2026-09-06 21:00\n赛道当地时间：2026-09-06 15:00（Europe/Rome）\n来源：Formula 1 官方分站赛历",
+      "dtstamp": "2026-11-02T14:36:13.134606Z",
+      "end_at_utc": "2026-09-06T15:00:00Z",
+      "end_date_exclusive": null,
+      "end_estimated": false,
+      "event_key": "f1:session:2026:italy:RACE",
+      "event_kind": "F1_SESSION",
+      "last_modified": null,
+      "location": "Monza",
+      "result_status": "NOT_AVAILABLE",
+      "sequence": 0,
+      "source_timezone": "UTC",
+      "sources": [
+        {
+          "authority": "Formula 1",
+          "content_hash": "2a5319969b7e68a37ad4d7c0f85b77527abbfc925b5a2a08887597bc8051784c",
+          "evidence_id": null,
+          "retrieved_at": "2026-11-02T14:36:12.794364Z",
+          "url": "https://www.formula1.com/en/racing/2026/italy"
+        }
+      ],
+      "start_at_utc": "2026-09-06T13:00:00Z",
+      "start_date": null,
+      "status": "CONFIRMED",
+      "summary": "F1｜Monza｜正赛",
+      "transparent": false,
+      "uid": "event-b5d6e8ef83381c29bed86709040d7811@panorama.local"
+    },
+    {
+      "alarms": [],
+      "calendar_kind": "F1_SCHEDULE",
+      "categories": [
+        "F1",
+        "排位赛"
+      ],
+      "description": "赛事：FORMULA 1 TAG HEUER GRAN PREMIO DE ESPAÑA 2026\n北京时间：2026-09-12 22:00\n赛道当地时间：2026-09-12 16:00（Europe/Madrid）\n来源：Formula 1 官方分站赛历",
+      "dtstamp": "2026-11-02T14:36:13.134606Z",
+      "end_at_utc": "2026-09-12T15:00:00Z",
+      "end_date_exclusive": null,
+      "end_estimated": false,
+      "event_key": "f1:session:2026:spain:QUALIFYING",
+      "event_kind": "F1_SESSION",
+      "last_modified": null,
+      "location": "Madrid",
+      "result_status": "NOT_AVAILABLE",
+      "sequence": 0,
+      "source_timezone": "UTC",
+      "sources": [
+        {
+          "authority": "Formula 1",
+          "content_hash": "955fed92072690a532dbb6d050720a1465ae32d633b0da3a4c241628c231ef75",
+          "evidence_id": null,
+          "retrieved_at": "2026-11-02T14:36:12.825722Z",
+          "url": "https://www.formula1.com/en/racing/2026/spain"
+        }
+      ],
+      "start_at_utc": "2026-09-12T14:00:00Z",
+      "start_date": null,
+      "status": "CONFIRMED",
+      "summary": "F1｜Madrid｜排位赛",
+      "transparent": false,
+      "uid": "event-5a45aed250aa458019f6a8b807b209c9@panorama.local"
+    },
+    {
+      "alarms": [],
+      "calendar_kind": "F1_SCHEDULE",
+      "categories": [
+        "F1",
+        "正赛"
+      ],
+      "description": "赛事：FORMULA 1 TAG HEUER GRAN PREMIO DE ESPAÑA 2026\n北京时间：2026-09-13 21:00\n赛道当地时间：2026-09-13 15:00（Europe/Madrid）\n来源：Formula 1 官方分站赛历",
+      "dtstamp": "2026-11-02T14:36:13.134606Z",
+      "end_at_utc": "2026-09-13T15:00:00Z",
+      "end_date_exclusive": null,
+      "end_estimated": false,
+      "event_key": "f1:session:2026:spain:RACE",
+      "event_kind": "F1_SESSION",
+      "last_modified": null,
+      "location": "Madrid",
+      "result_status": "NOT_AVAILABLE",
+      "sequence": 0,
+      "source_timezone": "UTC",
+      "sources": [
+        {
+          "authority": "Formula 1",
+          "content_hash": "955fed92072690a532dbb6d050720a1465ae32d633b0da3a4c241628c231ef75",
+          "evidence_id": null,
+          "retrieved_at": "2026-11-02T14:36:12.825722Z",
+          "url": "https://www.formula1.com/en/racing/2026/spain"
+        }
+      ],
+      "start_at_utc": "2026-09-13T13:00:00Z",
+      "start_date": null,
+      "status": "CONFIRMED",
+      "summary": "F1｜Madrid｜正赛",
+      "transparent": false,
+      "uid": "event-c24149a933b8a9b8551dc21cdbaa8595@panorama.local"
+    },
+    {
+      "alarms": [],
+      "calendar_kind": "F1_SCHEDULE",
+      "categories": [
+        "F1",
+        "排位赛"
+      ],
+      "description": "赛事：FORMULA 1 QATAR AIRWAYS AZERBAIJAN GRAND PRIX 2026\n北京时间：2026-09-25 20:00\n赛道当地时间：2026-09-25 16:00（Asia/Baku）\n来源：Formula 1 官方分站赛历",
+      "dtstamp": "2026-11-02T14:36:13.134606Z",
+      "end_at_utc": "2026-09-25T13:00:00Z",
+      "end_date_exclusive": null,
+      "end_estimated": false,
+      "event_key": "f1:session:2026:azerbaijan:QUALIFYING",
+      "event_kind": "F1_SESSION",
+      "last_modified": null,
+      "location": "Baku",
+      "result_status": "NOT_AVAILABLE",
+      "sequence": 0,
+      "source_timezone": "UTC",
+      "sources": [
+        {
+          "authority": "Formula 1",
+          "content_hash": "6e8c7953b9e92361a3efcce7b1022d65d89f74414320a2095b5168c7a0380206",
+          "evidence_id": null,
+          "retrieved_at": "2026-11-02T14:36:12.856897Z",
+          "url": "https://www.formula1.com/en/racing/2026/azerbaijan"
+        }
+      ],
+      "start_at_utc": "2026-09-25T12:00:00Z",
+      "start_date": null,
+      "status": "CONFIRMED",
+      "summary": "F1｜Baku｜排位赛",
+      "transparent": false,
+      "uid": "event-f5a01ed70cec4ed28daa71403270293d@panorama.local"
+    },
+    {
+      "alarms": [],
+      "calendar_kind": "F1_SCHEDULE",
+      "categories": [
+        "F1",
+        "正赛"
+      ],
+      "description": "赛事：FORMULA 1 QATAR AIRWAYS AZERBAIJAN GRAND PRIX 2026\n北京时间：2026-09-26 19:00\n赛道当地时间：2026-09-26 15:00（Asia/Baku）\n来源：Formula 1 官方分站赛历",
+      "dtstamp": "2026-11-02T14:36:13.134606Z",
+      "end_at_utc": "2026-09-26T13:00:00Z",
+      "end_date_exclusive": null,
+      "end_estimated": false,
+      "event_key": "f1:session:2026:azerbaijan:RACE",
+      "event_kind": "F1_SESSION",
+      "last_modified": null,
+      "location": "Baku",
+      "result_status": "NOT_AVAILABLE",
+      "sequence": 0,
+      "source_timezone": "UTC",
+      "sources": [
+        {
+          "authority": "Formula 1",
+          "content_hash": "6e8c7953b9e92361a3efcce7b1022d65d89f74414320a2095b5168c7a0380206",
+          "evidence_id": null,
+          "retrieved_at": "2026-11-02T14:36:12.856897Z",
+          "url": "https://www.formula1.com/en/racing/2026/azerbaijan"
+        }
+      ],
+      "start_at_utc": "2026-09-26T11:00:00Z",
+      "start_date": null,
+      "status": "CONFIRMED",
+      "summary": "F1｜Baku｜正赛",
+      "transparent": false,
+      "uid": "event-cc1bb360234630537aa26b9072dba1b7@panorama.local"
+    },
+    {
+      "alarms": [],
+      "calendar_kind": "F1_SCHEDULE",
+      "categories": [
+        "F1",
+        "排位赛"
+      ],
+      "description": "赛事：FORMULA 1 GULF AIR BAHRAIN GRAND PRIX IN MALAYSIA 2026\n北京时间：2026-10-03 16:00\n赛道当地时间：2026-10-03 11:00（Asia/Bahrain）\n来源：Formula 1 官方分站赛历",
+      "dtstamp": "2026-11-02T14:36:13.134606Z",
+      "end_at_utc": "2026-10-03T09:00:00Z",
+      "end_date_exclusive": null,
+      "end_estimated": false,
+      "event_key": "f1:session:2026:bahrain:QUALIFYING",
+      "event_kind": "F1_SESSION",
+      "last_modified": null,
+      "location": "Kuala Lumpur",
+      "result_status": "NOT_AVAILABLE",
+      "sequence": 0,
+      "source_timezone": "UTC",
+      "sources": [
+        {
+          "authority": "Formula 1",
+          "content_hash": "d15dcec7e33750d3a764a38c7f355ac7e1ae6146057618a43e75ea895980afe1",
+          "evidence_id": null,
+          "retrieved_at": "2026-11-02T14:36:12.890972Z",
+          "url": "https://www.formula1.com/en/racing/2026/bahrain"
+        }
+      ],
+      "start_at_utc": "2026-10-03T08:00:00Z",
+      "start_date": null,
+      "status": "CONFIRMED",
+      "summary": "F1｜Kuala Lumpur｜排位赛",
+      "transparent": false,
+      "uid": "event-d77a611bf2745914b8f7e0df6afe0a9e@panorama.local"
+    },
+    {
+      "alarms": [],
+      "calendar_kind": "F1_SCHEDULE",
+      "categories": [
+        "F1",
+        "正赛"
+      ],
+      "description": "赛事：FORMULA 1 GULF AIR BAHRAIN GRAND PRIX IN MALAYSIA 2026\n北京时间：2026-10-04 15:00\n赛道当地时间：2026-10-04 10:00（Asia/Bahrain）\n来源：Formula 1 官方分站赛历",
+      "dtstamp": "2026-11-02T14:36:13.134606Z",
+      "end_at_utc": "2026-10-04T09:00:00Z",
+      "end_date_exclusive": null,
+      "end_estimated": false,
+      "event_key": "f1:session:2026:bahrain:RACE",
+      "event_kind": "F1_SESSION",
+      "last_modified": null,
+      "location": "Kuala Lumpur",
+      "result_status": "NOT_AVAILABLE",
+      "sequence": 0,
+      "source_timezone": "UTC",
+      "sources": [
+        {
+          "authority": "Formula 1",
+          "content_hash": "d15dcec7e33750d3a764a38c7f355ac7e1ae6146057618a43e75ea895980afe1",
+          "evidence_id": null,
+          "retrieved_at": "2026-11-02T14:36:12.890972Z",
+          "url": "https://www.formula1.com/en/racing/2026/bahrain"
+        }
+      ],
+      "start_at_utc": "2026-10-04T07:00:00Z",
+      "start_date": null,
+      "status": "CONFIRMED",
+      "summary": "F1｜Kuala Lumpur｜正赛",
+      "transparent": false,
+      "uid": "event-056f1129c9db51591134b012e088a7ec@panorama.local"
+    },
+    {
+      "alarms": [],
+      "calendar_kind": "F1_SCHEDULE",
+      "categories": [
+        "F1",
+        "冲刺排位赛"
+      ],
+      "description": "赛事：FORMULA 1 SINGAPORE AIRLINES SINGAPORE GRAND PRIX 2026\n北京时间：2026-10-09 20:30\n赛道当地时间：2026-10-09 20:30（Asia/Singapore）\n来源：Formula 1 官方分站赛历",
+      "dtstamp": "2026-11-02T14:36:13.134606Z",
+      "end_at_utc": "2026-10-09T13:14:00Z",
+      "end_date_exclusive": null,
+      "end_estimated": false,
+      "event_key": "f1:session:2026:singapore:SPRINT_QUALIFYING",
+      "event_kind": "F1_SESSION",
+      "last_modified": null,
+      "location": "Marina Bay",
+      "result_status": "NOT_AVAILABLE",
+      "sequence": 0,
+      "source_timezone": "UTC",
+      "sources": [
+        {
+          "authority": "Formula 1",
+          "content_hash": "8be83beaa8cad5c4a2d2edd7cae994a9c6acaa3334c41ff9dc4013aa47e5dcda",
+          "evidence_id": null,
+          "retrieved_at": "2026-11-02T14:36:12.926896Z",
+          "url": "https://www.formula1.com/en/racing/2026/singapore"
+        }
+      ],
+      "start_at_utc": "2026-10-09T12:30:00Z",
+      "start_date": null,
+      "status": "CONFIRMED",
+      "summary": "F1｜Marina Bay｜冲刺排位赛",
+      "transparent": false,
+      "uid": "event-12a9ecb8f9fa8bd7174ed4ad82e991fc@panorama.local"
+    },
+    {
+      "alarms": [],
+      "calendar_kind": "F1_SCHEDULE",
+      "categories": [
+        "F1",
+        "冲刺赛"
+      ],
+      "description": "赛事：FORMULA 1 SINGAPORE AIRLINES SINGAPORE GRAND PRIX 2026\n北京时间：2026-10-10 17:00\n赛道当地时间：2026-10-10 17:00（Asia/Singapore）\n来源：Formula 1 官方分站赛历",
+      "dtstamp": "2026-11-02T14:36:13.134606Z",
+      "end_at_utc": "2026-10-10T09:30:00Z",
+      "end_date_exclusive": null,
+      "end_estimated": false,
+      "event_key": "f1:session:2026:singapore:SPRINT",
+      "event_kind": "F1_SESSION",
+      "last_modified": null,
+      "location": "Marina Bay",
+      "result_status": "NOT_AVAILABLE",
+      "sequence": 0,
+      "source_timezone": "UTC",
+      "sources": [
+        {
+          "authority": "Formula 1",
+          "content_hash": "8be83beaa8cad5c4a2d2edd7cae994a9c6acaa3334c41ff9dc4013aa47e5dcda",
+          "evidence_id": null,
+          "retrieved_at": "2026-11-02T14:36:12.926896Z",
+          "url": "https://www.formula1.com/en/racing/2026/singapore"
+        }
+      ],
+      "start_at_utc": "2026-10-10T09:00:00Z",
+      "start_date": null,
+      "status": "CONFIRMED",
+      "summary": "F1｜Marina Bay｜冲刺赛",
+      "transparent": false,
+      "uid": "event-ec6c870a42d112fa2867ef6c1dcf2980@panorama.local"
+    },
+    {
+      "alarms": [],
+      "calendar_kind": "F1_SCHEDULE",
+      "categories": [
+        "F1",
+        "排位赛"
+      ],
+      "description": "赛事：FORMULA 1 SINGAPORE AIRLINES SINGAPORE GRAND PRIX 2026\n北京时间：2026-10-10 21:00\n赛道当地时间：2026-10-10 21:00（Asia/Singapore）\n来源：Formula 1 官方分站赛历",
+      "dtstamp": "2026-11-02T14:36:13.134606Z",
+      "end_at_utc": "2026-10-10T14:00:00Z",
+      "end_date_exclusive": null,
+      "end_estimated": false,
+      "event_key": "f1:session:2026:singapore:QUALIFYING",
+      "event_kind": "F1_SESSION",
+      "last_modified": null,
+      "location": "Marina Bay",
+      "result_status": "NOT_AVAILABLE",
+      "sequence": 0,
+      "source_timezone": "UTC",
+      "sources": [
+        {
+          "authority": "Formula 1",
+          "content_hash": "8be83beaa8cad5c4a2d2edd7cae994a9c6acaa3334c41ff9dc4013aa47e5dcda",
+          "evidence_id": null,
+          "retrieved_at": "2026-11-02T14:36:12.926896Z",
+          "url": "https://www.formula1.com/en/racing/2026/singapore"
+        }
+      ],
+      "start_at_utc": "2026-10-10T13:00:00Z",
+      "start_date": null,
+      "status": "CONFIRMED",
+      "summary": "F1｜Marina Bay｜排位赛",
+      "transparent": false,
+      "uid": "event-27256e86eb030e868ac563ca81ccb1e3@panorama.local"
+    },
+    {
+      "alarms": [],
+      "calendar_kind": "F1_SCHEDULE",
+      "categories": [
+        "F1",
+        "正赛"
+      ],
+      "description": "赛事：FORMULA 1 SINGAPORE AIRLINES SINGAPORE GRAND PRIX 2026\n北京时间：2026-10-11 20:00\n赛道当地时间：2026-10-11 20:00（Asia/Singapore）\n来源：Formula 1 官方分站赛历",
+      "dtstamp": "2026-11-02T14:36:13.134606Z",
+      "end_at_utc": "2026-10-11T14:00:00Z",
+      "end_date_exclusive": null,
+      "end_estimated": false,
+      "event_key": "f1:session:2026:singapore:RACE",
+      "event_kind": "F1_SESSION",
+      "last_modified": null,
+      "location": "Marina Bay",
+      "result_status": "NOT_AVAILABLE",
+      "sequence": 0,
+      "source_timezone": "UTC",
+      "sources": [
+        {
+          "authority": "Formula 1",
+          "content_hash": "8be83beaa8cad5c4a2d2edd7cae994a9c6acaa3334c41ff9dc4013aa47e5dcda",
+          "evidence_id": null,
+          "retrieved_at": "2026-11-02T14:36:12.926896Z",
+          "url": "https://www.formula1.com/en/racing/2026/singapore"
+        }
+      ],
+      "start_at_utc": "2026-10-11T12:00:00Z",
+      "start_date": null,
+      "status": "CONFIRMED",
+      "summary": "F1｜Marina Bay｜正赛",
+      "transparent": false,
+      "uid": "event-c9ce1a28c4064c1990f6814f87bf79c6@panorama.local"
+    },
+    {
+      "alarms": [],
+      "calendar_kind": "F1_SCHEDULE",
+      "categories": [
+        "F1",
+        "排位赛"
+      ],
+      "description": "赛事：FORMULA 1 MSC CRUISES UNITED STATES GRAND PRIX 2026\n北京时间：2026-10-25 05:00\n赛道当地时间：2026-10-24 16:00（America/Chicago）\n来源：Formula 1 官方分站赛历",
+      "dtstamp": "2026-11-02T14:36:13.134606Z",
+      "end_at_utc": "2026-10-24T22:00:00Z",
+      "end_date_exclusive": null,
+      "end_estimated": false,
+      "event_key": "f1:session:2026:united-states:QUALIFYING",
+      "event_kind": "F1_SESSION",
+      "last_modified": null,
+      "location": "Austin",
+      "result_status": "NOT_AVAILABLE",
+      "sequence": 0,
+      "source_timezone": "UTC",
+      "sources": [
+        {
+          "authority": "Formula 1",
+          "content_hash": "97a6427a939b009404edbf6cf5422a80e5eac6f26ad190079c48b30711e0a831",
+          "evidence_id": null,
+          "retrieved_at": "2026-11-02T14:36:12.958510Z",
+          "url": "https://www.formula1.com/en/racing/2026/united-states"
+        }
+      ],
+      "start_at_utc": "2026-10-24T21:00:00Z",
+      "start_date": null,
+      "status": "CONFIRMED",
+      "summary": "F1｜Austin｜排位赛",
+      "transparent": false,
+      "uid": "event-d7f52bc25219af546517a537041acdad@panorama.local"
+    },
+    {
+      "alarms": [],
+      "calendar_kind": "F1_SCHEDULE",
+      "categories": [
+        "F1",
+        "正赛"
+      ],
+      "description": "赛事：FORMULA 1 MSC CRUISES UNITED STATES GRAND PRIX 2026\n北京时间：2026-10-26 04:00\n赛道当地时间：2026-10-25 15:00（America/Chicago）\n来源：Formula 1 官方分站赛历",
+      "dtstamp": "2026-11-02T14:36:13.134606Z",
+      "end_at_utc": "2026-10-25T22:00:00Z",
+      "end_date_exclusive": null,
+      "end_estimated": false,
+      "event_key": "f1:session:2026:united-states:RACE",
+      "event_kind": "F1_SESSION",
+      "last_modified": null,
+      "location": "Austin",
+      "result_status": "NOT_AVAILABLE",
+      "sequence": 0,
+      "source_timezone": "UTC",
+      "sources": [
+        {
+          "authority": "Formula 1",
+          "content_hash": "97a6427a939b009404edbf6cf5422a80e5eac6f26ad190079c48b30711e0a831",
+          "evidence_id": null,
+          "retrieved_at": "2026-11-02T14:36:12.958510Z",
+          "url": "https://www.formula1.com/en/racing/2026/united-states"
+        }
+      ],
+      "start_at_utc": "2026-10-25T20:00:00Z",
+      "start_date": null,
+      "status": "CONFIRMED",
+      "summary": "F1｜Austin｜正赛",
+      "transparent": false,
+      "uid": "event-9f31919d306270a3c3c99f2c04aece18@panorama.local"
+    },
+    {
+      "alarms": [],
+      "calendar_kind": "F1_SCHEDULE",
+      "categories": [
+        "F1",
+        "排位赛"
+      ],
+      "description": "赛事：FORMULA 1 ETIHAD AIRWAYS ABU DHABI GRAND PRIX 2026\n北京时间：2026-12-05 22:00\n赛道当地时间：2026-12-05 18:00（Asia/Dubai）\n来源：Formula 1 官方分站赛历",
+      "dtstamp": "2026-11-02T14:36:13.134606Z",
+      "end_at_utc": "2026-12-05T15:00:00Z",
+      "end_date_exclusive": null,
+      "end_estimated": false,
+      "event_key": "f1:session:2026:united-arab-emirates:QUALIFYING",
+      "event_kind": "F1_SESSION",
+      "last_modified": null,
+      "location": "Yas Marina",
+      "result_status": "NOT_AVAILABLE",
+      "sequence": 0,
+      "source_timezone": "UTC",
+      "sources": [
+        {
+          "authority": "Formula 1",
+          "content_hash": "d50ad858fae5cbc1bc2098a12e7b8c1a46a4d514e685f4f75d23a982d2063613",
+          "evidence_id": null,
+          "retrieved_at": "2026-11-02T14:36:12.990271Z",
+          "url": "https://www.formula1.com/en/racing/2026/united-arab-emirates"
+        }
+      ],
+      "start_at_utc": "2026-12-05T14:00:00Z",
+      "start_date": null,
+      "status": "CONFIRMED",
+      "summary": "F1｜Yas Marina｜排位赛",
+      "transparent": false,
+      "uid": "event-bcaf3ccb72baa28206d75bed35912df3@panorama.local"
+    },
+    {
+      "alarms": [],
+      "calendar_kind": "F1_SCHEDULE",
+      "categories": [
+        "F1",
+        "正赛"
+      ],
+      "description": "赛事：FORMULA 1 ETIHAD AIRWAYS ABU DHABI GRAND PRIX 2026\n北京时间：2026-12-06 21:00\n赛道当地时间：2026-12-06 17:00（Asia/Dubai）\n来源：Formula 1 官方分站赛历",
+      "dtstamp": "2026-11-02T14:36:13.134606Z",
+      "end_at_utc": "2026-12-06T15:00:00Z",
+      "end_date_exclusive": null,
+      "end_estimated": false,
+      "event_key": "f1:session:2026:united-arab-emirates:RACE",
+      "event_kind": "F1_SESSION",
+      "last_modified": null,
+      "location": "Yas Marina",
+      "result_status": "NOT_AVAILABLE",
+      "sequence": 0,
+      "source_timezone": "UTC",
+      "sources": [
+        {
+          "authority": "Formula 1",
+          "content_hash": "d50ad858fae5cbc1bc2098a12e7b8c1a46a4d514e685f4f75d23a982d2063613",
+          "evidence_id": null,
+          "retrieved_at": "2026-11-02T14:36:12.990271Z",
+          "url": "https://www.formula1.com/en/racing/2026/united-arab-emirates"
+        }
+      ],
+      "start_at_utc": "2026-12-06T13:00:00Z",
+      "start_date": null,
+      "status": "CONFIRMED",
+      "summary": "F1｜Yas Marina｜正赛",
+      "transparent": false,
+      "uid": "event-b0ef7e8faedf504fb01901cb63dc99a1@panorama.local"
+    }
+  ],
+  "version": 1
+}
