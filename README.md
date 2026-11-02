@@ -98,9 +98,10 @@ UID 与赛历完全独立。`dist/f1-reports-{year}.state.json` 保存上次发�
 里程碑 A（ICS 内核）、B（全国假期 / 广西 / 纪念日三类订阅）、C（F1 官方赛历 + 战报）、
 D（云端自动更新闭环）均已完成，iPhone 真机 VALARM 验证已通过。
 2026 赛季真实构建：赛历 23 站 / 58 个 Session，战报 19 个已完赛分站。
-当前共 127 项测试全绿。
+当前共 139 项测试全绿。
 
 云端链路：GitHub Actions 每 6 小时构建 → Cloudflare Pages 发布 →
 `calendar-state` 分支持久化修订状态（线上 ICS 作为 `SEQUENCE` 兜底下限）。
 订阅地址形如 `https://panorama-calendar.pages.dev/f1-schedule-2026.ics`。
+入口页：`https://panorama-calendar.pages.dev/`。内容未变时云端不会产生空提交。
 部署与回滚步骤见 `交接说明-进度与续接.md` 第 7.5 节。
