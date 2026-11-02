@@ -88,7 +88,7 @@ jobs:
             echo "首跑：$STATE_BRANCH 尚不存在，按全新订阅处理"
           fi
           shopt -s nullglob
-          for file in state/*.json state/*.ics; do
+          for file in state/*.json state/*.ics state/*.revisions.jsonl; do
             cp -f "$file" dist/
           done
           ls -la dist

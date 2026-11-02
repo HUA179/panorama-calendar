@@ -4,7 +4,7 @@ from datetime import UTC, datetime
 
 import pytest
 
-from panorama_calendar.models import EventRecord
+from panorama_calendar.models import EventRecord, SourceReference
 from panorama_calendar.services.revision import reconcile_events
 
 NOW = datetime(2026, 2, 1, tzinfo=UTC)
@@ -21,6 +21,63 @@ def test_unchanged_event_reuses_revision_metadata(workday_event: EventRecord) ->
     )
     assert result[0].sequence == 4
     assert result[0].dtstamp == original.dtstamp
+
+
+def test_unchanged_event_keeps_its_original_provenance(workday_event: EventRecord) -> None:
+    """Fetch timestamps must not rewrite the snapshot of an unchanged event.
+
+    ``retrieved_at`` sits outside the semantic fingerprint, so a rebuild always
+    carries a new one. Persisting it made the state file differ on every run and
+    produced a commit per schedule tick, even with no content change.
+    """
+    original = workday_event.model_copy(deep=True)
+    original.sequence = 3
+    original.sources = [
+        SourceReference(
+            url="https://www.gov.cn/zhengce/content/202511/content_7047090.htm",
+            authority="中国政府网",
+            retrieved_at=datetime(2026, 1, 1, tzinfo=UTC),
+        )
+    ]
+    refetched = workday_event.model_copy(deep=True)
+    refetched.sources = [
+        SourceReference(
+            url="https://www.gov.cn/zhengce/content/202511/content_7047090.htm",
+            authority="中国政府网",
+            retrieved_at=datetime(2026, 3, 9, tzinfo=UTC),
+        )
+    ]
+
+    result = reconcile_events([original], [refetched], now=NOW)
+
+    assert result[0].sources == original.sources
+    assert result[0].sources[0].retrieved_at == datetime(2026, 1, 1, tzinfo=UTC)
+
+
+def test_changed_event_takes_the_fresh_provenance(workday_event: EventRecord) -> None:
+    """When the content really changed, the new fetch record is the accurate one."""
+    original = workday_event.model_copy(deep=True)
+    original.sources = [
+        SourceReference(
+            url="https://www.gov.cn/a.htm",
+            authority="中国政府网",
+            retrieved_at=datetime(2026, 1, 1, tzinfo=UTC),
+        )
+    ]
+    changed = workday_event.model_copy(deep=True)
+    changed.summary = "调休上班｜已修订"
+    changed.sources = [
+        SourceReference(
+            url="https://www.gov.cn/b.htm",
+            authority="中国政府网",
+            retrieved_at=datetime(2026, 3, 9, tzinfo=UTC),
+        )
+    ]
+
+    result = reconcile_events([original], [changed], now=NOW)
+
+    assert result[0].sequence == original.sequence + 1
+    assert result[0].sources[0].url == "https://www.gov.cn/b.htm"
 
 
 def test_changed_event_advances_only_its_sequence(workday_event: EventRecord) -> None:

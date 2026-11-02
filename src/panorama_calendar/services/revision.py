@@ -79,6 +79,10 @@ def reconcile_events(
             event.sequence = old.sequence
             event.dtstamp = old.dtstamp
             event.last_modified = old.last_modified
+            # Provenance timestamps are fetch metadata, not content. Keeping the
+            # freshly stamped ones would rewrite the snapshot on every run and
+            # turn a quiet feed into a commit per schedule tick.
+            event.sources = old.sources
         elif unchanged:
             # The snapshot lags behind the live feed but the content agrees with
             # it. Catch the number up without inventing a revision clients would
