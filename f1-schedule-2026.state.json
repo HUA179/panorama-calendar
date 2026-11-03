@@ -1688,30 +1688,30 @@
         "排位赛"
       ],
       "description": "赛事：FORMULA 1 GULF AIR BAHRAIN GRAND PRIX IN MALAYSIA 2026\n北京时间：2026-10-03 16:00\n赛道当地时间：2026-10-03 11:00（Asia/Bahrain）\n来源：Formula 1 官方分站赛历",
-      "dtstamp": "2026-11-03T05:17:53.616186Z",
+      "dtstamp": "2026-11-03T05:25:42.580932Z",
       "end_at_utc": "2026-10-03T09:00:00Z",
       "end_date_exclusive": null,
       "end_estimated": false,
       "event_key": "f1:session:2026:bahrain:QUALIFYING",
       "event_kind": "F1_SESSION",
-      "last_modified": "2026-11-03T05:17:53.616186Z",
+      "last_modified": "2026-11-03T05:25:42.580932Z",
       "location": "Kuala Lumpur",
       "result_status": "NOT_AVAILABLE",
-      "sequence": 1,
+      "sequence": 2,
       "source_timezone": "UTC",
       "sources": [
         {
           "authority": "Formula 1",
           "content_hash": "d15dcec7e33750d3a764a38c7f355ac7e1ae6146057618a43e75ea895980afe1",
           "evidence_id": null,
-          "retrieved_at": "2026-11-03T05:17:53.284816Z",
+          "retrieved_at": "2026-11-03T05:25:42.314955Z",
           "url": "https://www.formula1.com/en/racing/2026/bahrain"
         }
       ],
       "start_at_utc": "2026-10-03T08:00:00Z",
       "start_date": null,
       "status": "CONFIRMED",
-      "summary": "🏎️ 巴林大奖赛（吉隆坡, Kuala Lumpur） | 排位赛",
+      "summary": "🏎️ 巴林大奖赛（萨基尔, Sakhir） | 排位赛",
       "transparent": false,
       "uid": "event-d77a611bf2745914b8f7e0df6afe0a9e@panorama.local"
     },
@@ -1723,30 +1723,30 @@
         "正赛"
       ],
       "description": "赛事：FORMULA 1 GULF AIR BAHRAIN GRAND PRIX IN MALAYSIA 2026\n北京时间：2026-10-04 15:00\n赛道当地时间：2026-10-04 10:00（Asia/Bahrain）\n来源：Formula 1 官方分站赛历",
-      "dtstamp": "2026-11-03T05:17:53.616186Z",
+      "dtstamp": "2026-11-03T05:25:42.580932Z",
       "end_at_utc": "2026-10-04T09:00:00Z",
       "end_date_exclusive": null,
       "end_estimated": false,
       "event_key": "f1:session:2026:bahrain:RACE",
       "event_kind": "F1_SESSION",
-      "last_modified": "2026-11-03T05:17:53.616186Z",
+      "last_modified": "2026-11-03T05:25:42.580932Z",
       "location": "Kuala Lumpur",
       "result_status": "NOT_AVAILABLE",
-      "sequence": 1,
+      "sequence": 2,
       "source_timezone": "UTC",
       "sources": [
         {
           "authority": "Formula 1",
           "content_hash": "d15dcec7e33750d3a764a38c7f355ac7e1ae6146057618a43e75ea895980afe1",
           "evidence_id": null,
-          "retrieved_at": "2026-11-03T05:17:53.284816Z",
+          "retrieved_at": "2026-11-03T05:25:42.314955Z",
           "url": "https://www.formula1.com/en/racing/2026/bahrain"
         }
       ],
       "start_at_utc": "2026-10-04T07:00:00Z",
       "start_date": null,
       "status": "CONFIRMED",
-      "summary": "🏎️ 巴林大奖赛（吉隆坡, Kuala Lumpur） | 正赛",
+      "summary": "🏎️ 巴林大奖赛（萨基尔, Sakhir） | 正赛",
       "transparent": false,
       "uid": "event-056f1129c9db51591134b012e088a7ec@panorama.local"
     },

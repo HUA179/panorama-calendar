@@ -1,2 +1,3 @@
 {"action": "build", "events": 19, "feed": "f1-reports", "ics_sha256": "77b6e5d4a4eab4243bede2600a740d02fb5e3e80dac2cd49bdf9329e5c438708", "published_at": "2026-11-02T15:29:43.604613+00:00", "sequence_max": 0, "sequence_min": 0}
 {"action": "build", "events": 19, "feed": "f1-reports", "ics_sha256": "9fef6f84311dcf83acb31512cff7db784e6c2d6d5be8bb678f92993b37584e30", "published_at": "2026-11-03T05:17:57.840680+00:00", "sequence_max": 1, "sequence_min": 0}
+{"action": "build", "events": 19, "feed": "f1-reports", "ics_sha256": "cbbcf55685b079b0a980de16814bfa7efe035c3ef3c24009e7f54deafef6642e", "published_at": "2026-11-03T05:25:56.864877+00:00", "sequence_max": 2, "sequence_min": 1}

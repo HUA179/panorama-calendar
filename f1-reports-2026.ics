@@ -6,10 +6,10 @@ METHOD:PUBLISH
 X-WR-CALNAME:F1 战报｜正赛成绩
 BEGIN:VEVENT
 UID:event-8144f45369447ea77723fe76d1526858@panorama.local
-DTSTAMP:20261103T051757Z
+DTSTAMP:20261103T052556Z
 DTSTART;VALUE=DATE:20260308
 DTEND;VALUE=DATE:20260309
-SUMMARY:F1战报｜Australian Grand Prix｜正赛
+SUMMARY:🏁 澳大利亚大奖赛（墨尔本\, Melbourne） | 战报
 DESCRIPTION:状态：FIA 最终成绩\n赛事：FORMULA 1 QATAR AIRWAYS AUS
  TRALIAN GRAND PRIX 2026\n【正赛】\n杆位：63 RUS 拉塞尔 🇬🇧 
  George Russell (Mercedes\, 1:18.518)\n成绩：\n🏅 P1 63 RUS 拉塞尔 
@@ -18,19 +18,19 @@ DESCRIPTION:状态：FIA 最终成绩\n赛事：FORMULA 1 QATAR AIRWAYS AUS
  lerc (Ferrari)\n完赛：16 人；退赛：6 人\n来源：https://www.for
  mula1.com/en/results/2026/races/1279/australia/race-result
 STATUS:CONFIRMED
-SEQUENCE:1
+SEQUENCE:2
 TRANSP:TRANSPARENT
 URL:https://www.formula1.com/en/results/2026/races/1279/australia/race-resu
  lt
-LAST-MODIFIED:20261103T051757Z
+LAST-MODIFIED:20261103T052556Z
 CATEGORIES:F1,战报
 END:VEVENT
 BEGIN:VEVENT
 UID:event-262443ff8deb7bb1023b0c287d65c171@panorama.local
-DTSTAMP:20261103T051757Z
+DTSTAMP:20261103T052556Z
 DTSTART;VALUE=DATE:20260315
 DTEND;VALUE=DATE:20260316
-SUMMARY:F1战报｜Chinese Grand Prix｜正赛
+SUMMARY:🏁 中国大奖赛（上海\, Shanghai） | 战报
 DESCRIPTION:状态：FIA 最终成绩\n赛事：FORMULA 1 HEINEKEN CHINESE 
  GRAND PRIX 2026\n【冲刺赛】\n杆位：63 RUS 拉塞尔 🇬🇧 Georg
  e Russell (Mercedes\, 1:31.520)\n成绩：\n🏅 P1 63 RUS 拉塞尔 🇬
@@ -43,18 +43,18 @@ DESCRIPTION:状态：FIA 最终成绩\n赛事：FORMULA 1 HEINEKEN CHINESE
  i)\n完赛：15 人；退赛：7 人\n来源：https://www.formula1.com/en
  /results/2026/races/1280/china/race-result
 STATUS:CONFIRMED
-SEQUENCE:1
+SEQUENCE:2
 TRANSP:TRANSPARENT
 URL:https://www.formula1.com/en/results/2026/races/1280/china/race-result
-LAST-MODIFIED:20261103T051757Z
+LAST-MODIFIED:20261103T052556Z
 CATEGORIES:F1,战报
 END:VEVENT
 BEGIN:VEVENT
 UID:event-f41d87fed3e59ef44e62f831c8e90cae@panorama.local
-DTSTAMP:20261103T051757Z
+DTSTAMP:20261103T052556Z
 DTSTART;VALUE=DATE:20260329
 DTEND;VALUE=DATE:20260330
-SUMMARY:F1战报｜Japanese Grand Prix｜正赛
+SUMMARY:🏁 日本大奖赛（铃鹿\, Suzuka） | 战报
 DESCRIPTION:状态：FIA 最终成绩\n赛事：FORMULA 1 ARAMCO JAPANESE G
  RAND PRIX 2026\n【正赛】\n杆位：12 ANT 安东内利 🇮🇹 Kimi A
  ntonelli (Mercedes\, 1:28.778)\n成绩：\n🏅 P1 12 ANT 安东内利 
@@ -63,39 +63,42 @@ DESCRIPTION:状态：FIA 最终成绩\n赛事：FORMULA 1 ARAMCO JAPANESE G
   Leclerc (Ferrari)\n完赛：20 人；退赛：2 人\n来源：https://www
  .formula1.com/en/results/2026/races/1281/japan/race-result
 STATUS:CONFIRMED
-SEQUENCE:1
+SEQUENCE:2
 TRANSP:TRANSPARENT
 URL:https://www.formula1.com/en/results/2026/races/1281/japan/race-result
-LAST-MODIFIED:20261103T051757Z
+LAST-MODIFIED:20261103T052556Z
 CATEGORIES:F1,战报
 END:VEVENT
 BEGIN:VEVENT
 UID:event-31016d61118ea4456bed316280b07e5c@panorama.local
-DTSTAMP:20261102T143625Z
+DTSTAMP:20261103T052556Z
 DTSTART;VALUE=DATE:20260503
 DTEND;VALUE=DATE:20260504
-SUMMARY:F1战报｜Miami Grand Prix｜正赛
+SUMMARY:🏁 迈阿密大奖赛（迈阿密\, Miami） | 战报
 DESCRIPTION:状态：FIA 最终成绩\n赛事：FORMULA 1 CRYPTO.COM MIAMI 
- GRAND PRIX 2026\n冠军：Kimi Antonelli（Mercedes，25 分）\n亚军：
- Lando Norris（McLaren，18 分）\n季军：Oscar Piastri（McLaren，15 
- 分）\n杆位：Kimi Antonelli（Mercedes，1:27.798）\n完赛：18 人
- ；退赛：4 人\n来源：F1 官方成绩页 https://www.formula1.com/en
- /results/2026/races/1284/miami/race-result\n发车顺位：https://www.for
- mula1.com/en/results/2026/races/1284/miami/starting-grid\nFIA 最终成绩
- 文件：https://www.fia.com/system/files/decision-document/2026_miami_gra
- nd_prix_-_final_race_classification.pdf
+ GRAND PRIX 2026\n【冲刺赛】\n杆位：1 NOR 诺里斯 🇬🇧 Lando 
+ Norris (McLaren\, 1:27.869)\n成绩：\n🏅 P1 1 NOR 诺里斯 🇬🇧 L
+ ando Norris (McLaren)\n🥈 P2 81 PIA 皮亚斯特里 🇦🇺 Oscar Piast
+ ri (McLaren)\n🥉 P3 16 LEC 勒克莱尔 🇲🇨 Charles Leclerc (Ferrar
+ i)\n【正赛】\n杆位：12 ANT 安东内利 🇮🇹 Kimi Antonelli (Me
+ rcedes\, 1:27.798)\n成绩：\n🏅 P1 12 ANT 安东内利 🇮🇹 Kimi A
+ ntonelli (Mercedes)\n🥈 P2 1 NOR 诺里斯 🇬🇧 Lando Norris (McLare
+ n)\n🥉 P3 81 PIA 皮亚斯特里 🇦🇺 Oscar Piastri (McLaren)\n完
+ 赛：18 人；退赛：4 人\n来源：https://www.formula1.com/en/result
+ s/2026/races/1284/miami/race-result
 STATUS:CONFIRMED
-SEQUENCE:0
+SEQUENCE:1
 TRANSP:TRANSPARENT
 URL:https://www.formula1.com/en/results/2026/races/1284/miami/race-result
+LAST-MODIFIED:20261103T052556Z
 CATEGORIES:F1,战报
 END:VEVENT
 BEGIN:VEVENT
 UID:event-8fc46885e247c7cdb808945c12ab7c69@panorama.local
-DTSTAMP:20261103T051757Z
+DTSTAMP:20261103T052556Z
 DTSTART;VALUE=DATE:20260524
 DTEND;VALUE=DATE:20260525
-SUMMARY:F1战报｜Canadian Grand Prix｜正赛
+SUMMARY:🏁 加拿大大奖赛（蒙特利尔\, Montréal） | 战报
 DESCRIPTION:状态：FIA 最终成绩\n赛事：FORMULA 1 LENOVO GRAND PRIX
   DU CANADA 2026\n【冲刺赛】\n杆位：63 RUS 拉塞尔 🇬🇧 Georg
  e Russell (Mercedes\, 1:12.965)\n成绩：\n🏅 P1 63 RUS 拉塞尔 🇬
@@ -108,18 +111,18 @@ DESCRIPTION:状态：FIA 最终成绩\n赛事：FORMULA 1 LENOVO GRAND PRIX
  g)\n完赛：16 人；退赛：6 人\n来源：https://www.formula1.com/en
  /results/2026/races/1285/canada/race-result
 STATUS:CONFIRMED
-SEQUENCE:1
+SEQUENCE:2
 TRANSP:TRANSPARENT
 URL:https://www.formula1.com/en/results/2026/races/1285/canada/race-result
-LAST-MODIFIED:20261103T051757Z
+LAST-MODIFIED:20261103T052556Z
 CATEGORIES:F1,战报
 END:VEVENT
 BEGIN:VEVENT
 UID:event-515b8a532346b2e66034658ccdf24de2@panorama.local
-DTSTAMP:20261103T051757Z
+DTSTAMP:20261103T052556Z
 DTSTART;VALUE=DATE:20260607
 DTEND;VALUE=DATE:20260608
-SUMMARY:F1战报｜Monaco Grand Prix｜正赛
+SUMMARY:🏁 摩纳哥大奖赛（蒙特卡洛\, Monte Carlo） | 战报
 DESCRIPTION:状态：FIA 最终成绩\n赛事：FORMULA 1 LOUIS VUITTON GRA
  ND PRIX DE MONACO 2026\n【正赛】\n杆位：12 ANT 安东内利 🇮
  🇹 Kimi Antonelli (Mercedes\, 1:12.051)\n成绩：\n🏅 P1 12 ANT 安
@@ -128,18 +131,19 @@ DESCRIPTION:状态：FIA 最终成绩\n赛事：FORMULA 1 LOUIS VUITTON GRA
  Hadjar (Red Bull Racing)\n完赛：16 人；退赛：6 人\n来源：https
  ://www.formula1.com/en/results/2026/races/1286/monaco/race-result
 STATUS:CONFIRMED
-SEQUENCE:1
+SEQUENCE:2
 TRANSP:TRANSPARENT
 URL:https://www.formula1.com/en/results/2026/races/1286/monaco/race-result
-LAST-MODIFIED:20261103T051757Z
+LAST-MODIFIED:20261103T052556Z
 CATEGORIES:F1,战报
 END:VEVENT
 BEGIN:VEVENT
 UID:event-79c43aa4154dd33ce114360fea334da9@panorama.local
-DTSTAMP:20261103T051757Z
+DTSTAMP:20261103T052556Z
 DTSTART;VALUE=DATE:20260614
 DTEND;VALUE=DATE:20260615
-SUMMARY:F1战报｜Barcelona-Catalunya Grand Prix｜正赛
+SUMMARY:🏁 巴塞罗那-加泰罗尼亚大奖赛（巴塞罗那\, Barcelo
+ na） | 战报
 DESCRIPTION:状态：FIA 最终成绩\n赛事：FORMULA 1 MSC CRUISES GRAN 
  PREMIO DE BARCELONA-CATALUNYA 2026\n【正赛】\n杆位：63 RUS 拉塞
  尔 🇬🇧 George Russell (Mercedes\, 1:14.679)\n成绩：\n🏅 P1 44 H
@@ -149,19 +153,19 @@ DESCRIPTION:状态：FIA 最终成绩\n赛事：FORMULA 1 MSC CRUISES GRAN
  www.formula1.com/en/results/2026/races/1287/barcelona-catalunya/race-resul
  t
 STATUS:CONFIRMED
-SEQUENCE:1
+SEQUENCE:2
 TRANSP:TRANSPARENT
 URL:https://www.formula1.com/en/results/2026/races/1287/barcelona-catalunya
  /race-result
-LAST-MODIFIED:20261103T051757Z
+LAST-MODIFIED:20261103T052556Z
 CATEGORIES:F1,战报
 END:VEVENT
 BEGIN:VEVENT
 UID:event-cc2e219b6d624ea33f809a939b9c5e37@panorama.local
-DTSTAMP:20261103T051757Z
+DTSTAMP:20261103T052556Z
 DTSTART;VALUE=DATE:20260628
 DTEND;VALUE=DATE:20260629
-SUMMARY:F1战报｜Austrian Grand Prix｜正赛
+SUMMARY:🏁 奥地利大奖赛（斯皮尔伯格\, Spielberg） | 战报
 DESCRIPTION:状态：FIA 最终成绩\n赛事：FORMULA 1 LENOVO AUSTRIAN G
  RAND PRIX 2026\n【正赛】\n杆位：63 RUS 拉塞尔 🇬🇧 George Ru
  ssell (Mercedes\, 1:06.113)\n成绩：\n🏅 P1 63 RUS 拉塞尔 🇬🇧 
@@ -170,18 +174,18 @@ DESCRIPTION:状态：FIA 最终成绩\n赛事：FORMULA 1 LENOVO AUSTRIAN G
   (Mercedes)\n完赛：18 人；退赛：4 人\n来源：https://www.formul
  a1.com/en/results/2026/races/1288/austria/race-result
 STATUS:CONFIRMED
-SEQUENCE:1
+SEQUENCE:2
 TRANSP:TRANSPARENT
 URL:https://www.formula1.com/en/results/2026/races/1288/austria/race-result
-LAST-MODIFIED:20261103T051757Z
+LAST-MODIFIED:20261103T052556Z
 CATEGORIES:F1,战报
 END:VEVENT
 BEGIN:VEVENT
 UID:event-4e1c49d94f222bc0ccd89cfa1cd236c3@panorama.local
-DTSTAMP:20261103T051757Z
+DTSTAMP:20261103T052556Z
 DTSTART;VALUE=DATE:20260705
 DTEND;VALUE=DATE:20260706
-SUMMARY:F1战报｜British Grand Prix｜正赛
+SUMMARY:🏁 英国大奖赛（银石\, Silverstone） | 战报
 DESCRIPTION:状态：FIA 最终成绩\n赛事：FORMULA 1 PIRELLI BRITISH G
  RAND PRIX 2026\n【冲刺赛】\n杆位：44 HAM 汉密尔顿 🇬🇧 Lew
  is Hamilton (Ferrari\, 1:28.376)\n成绩：\n🏅 P1 12 ANT 安东内利 
@@ -194,19 +198,19 @@ DESCRIPTION:状态：FIA 最终成绩\n赛事：FORMULA 1 PIRELLI BRITISH G
  n完赛：20 人；退赛：2 人\n来源：https://www.formula1.com/en/re
  sults/2026/races/1289/great-britain/race-result
 STATUS:CONFIRMED
-SEQUENCE:1
+SEQUENCE:2
 TRANSP:TRANSPARENT
 URL:https://www.formula1.com/en/results/2026/races/1289/great-britain/race-
  result
-LAST-MODIFIED:20261103T051757Z
+LAST-MODIFIED:20261103T052556Z
 CATEGORIES:F1,战报
 END:VEVENT
 BEGIN:VEVENT
 UID:event-5459baa7beeebbeffe19bc14b02f5071@panorama.local
-DTSTAMP:20261103T051757Z
+DTSTAMP:20261103T052556Z
 DTSTART;VALUE=DATE:20260719
 DTEND;VALUE=DATE:20260720
-SUMMARY:F1战报｜Belgian Grand Prix｜正赛
+SUMMARY:🏁 比利时大奖赛（斯帕\, Spa-Francorchamps） | 战报
 DESCRIPTION:状态：FIA 最终成绩\n赛事：FORMULA 1 MOËT & CHANDON B
  ELGIAN GRAND PRIX 2026\n【正赛】\n杆位：12 ANT 安东内利 🇮
  🇹 Kimi Antonelli (Mercedes\, 1:44.361)\n成绩：\n🏅 P1 12 ANT 安
@@ -215,18 +219,18 @@ DESCRIPTION:状态：FIA 最终成绩\n赛事：FORMULA 1 MOËT & CHANDON B
  x Verstappen (Red Bull Racing)\n完赛：19 人；退赛：3 人\n来源
  ：https://www.formula1.com/en/results/2026/races/1290/belgium/race-result
 STATUS:CONFIRMED
-SEQUENCE:1
+SEQUENCE:2
 TRANSP:TRANSPARENT
 URL:https://www.formula1.com/en/results/2026/races/1290/belgium/race-result
-LAST-MODIFIED:20261103T051757Z
+LAST-MODIFIED:20261103T052556Z
 CATEGORIES:F1,战报
 END:VEVENT
 BEGIN:VEVENT
 UID:event-4898a9578e679bf518181453da5bb27e@panorama.local
-DTSTAMP:20261103T051757Z
+DTSTAMP:20261103T052556Z
 DTSTART;VALUE=DATE:20260726
 DTEND;VALUE=DATE:20260727
-SUMMARY:F1战报｜Hungarian Grand Prix｜正赛
+SUMMARY:🏁 匈牙利大奖赛（布达佩斯\, Budapest） | 战报
 DESCRIPTION:状态：FIA 最终成绩\n赛事：FORMULA 1 AWS HUNGARIAN GRA
  ND PRIX 2026\n【正赛】\n杆位：1 NOR 诺里斯 🇬🇧 Lando Norris
   (McLaren\, 1:17.207)\n成绩：\n🏅 P1 1 NOR 诺里斯 🇬🇧 Lando N
@@ -235,18 +239,18 @@ DESCRIPTION:状态：FIA 最终成绩\n赛事：FORMULA 1 AWS HUNGARIAN GRA
  )\n完赛：19 人；退赛：3 人\n来源：https://www.formula1.com/en/
  results/2026/races/1291/hungary/race-result
 STATUS:CONFIRMED
-SEQUENCE:1
+SEQUENCE:2
 TRANSP:TRANSPARENT
 URL:https://www.formula1.com/en/results/2026/races/1291/hungary/race-result
-LAST-MODIFIED:20261103T051757Z
+LAST-MODIFIED:20261103T052556Z
 CATEGORIES:F1,战报
 END:VEVENT
 BEGIN:VEVENT
 UID:event-b4f7a58fb0c79eb911135ec243cc64fa@panorama.local
-DTSTAMP:20261103T051757Z
+DTSTAMP:20261103T052556Z
 DTSTART;VALUE=DATE:20260823
 DTEND;VALUE=DATE:20260824
-SUMMARY:F1战报｜Dutch Grand Prix｜正赛
+SUMMARY:🏁 荷兰大奖赛（赞德福特\, Zandvoort） | 战报
 DESCRIPTION:状态：FIA 最终成绩\n赛事：FORMULA 1 HEINEKEN DUTCH GR
  AND PRIX 2026\n【冲刺赛】\n杆位：63 RUS 拉塞尔 🇬🇧 George 
  Russell (Mercedes\, 1:11.567)\n成绩：\n🏅 P1 63 RUS 拉塞尔 🇬
@@ -259,19 +263,19 @@ DESCRIPTION:状态：FIA 最终成绩\n赛事：FORMULA 1 HEINEKEN DUTCH GR
  人；退赛：5 人\n来源：https://www.formula1.com/en/results/2026/ra
  ces/1292/netherlands/race-result
 STATUS:CONFIRMED
-SEQUENCE:1
+SEQUENCE:2
 TRANSP:TRANSPARENT
 URL:https://www.formula1.com/en/results/2026/races/1292/netherlands/race-re
  sult
-LAST-MODIFIED:20261103T051757Z
+LAST-MODIFIED:20261103T052556Z
 CATEGORIES:F1,战报
 END:VEVENT
 BEGIN:VEVENT
 UID:event-f008633c9cea3a69f04e3987a1feef59@panorama.local
-DTSTAMP:20261103T051757Z
+DTSTAMP:20261103T052556Z
 DTSTART;VALUE=DATE:20260906
 DTEND;VALUE=DATE:20260907
-SUMMARY:F1战报｜Italian Grand Prix｜正赛
+SUMMARY:🏁 意大利大奖赛（蒙扎\, Monza） | 战报
 DESCRIPTION:状态：FIA 最终成绩\n赛事：FORMULA 1 PIRELLI GRAN PREM
  IO D’ITALIA 2026\n【正赛】\n杆位：10 GAS 加斯利 🇫🇷 Pierr
  e Gasly (Alpine\, 1:21.786)\n成绩：\n🏅 P1 12 ANT 安东内利 🇮
@@ -280,18 +284,18 @@ DESCRIPTION:状态：FIA 最终成绩\n赛事：FORMULA 1 PIRELLI GRAN PREM
   Bull Racing)\n完赛：19 人；退赛：3 人\n来源：https://www.form
  ula1.com/en/results/2026/races/1293/italy/race-result
 STATUS:CONFIRMED
-SEQUENCE:1
+SEQUENCE:2
 TRANSP:TRANSPARENT
 URL:https://www.formula1.com/en/results/2026/races/1293/italy/race-result
-LAST-MODIFIED:20261103T051757Z
+LAST-MODIFIED:20261103T052556Z
 CATEGORIES:F1,战报
 END:VEVENT
 BEGIN:VEVENT
 UID:event-1ab4f52f49a15602251bdcb17b3e73a4@panorama.local
-DTSTAMP:20261103T051757Z
+DTSTAMP:20261103T052556Z
 DTSTART;VALUE=DATE:20260913
 DTEND;VALUE=DATE:20260914
-SUMMARY:F1战报｜Spanish Grand Prix｜正赛
+SUMMARY:🏁 西班牙大奖赛（马德里\, Madrid） | 战报
 DESCRIPTION:状态：FIA 最终成绩\n赛事：FORMULA 1 TAG HEUER GRAN PR
  EMIO DE ESPAÑA 2026\n【正赛】\n杆位：1 NOR 诺里斯 🇬🇧 Land
  o Norris (McLaren\, 1:31.824)\n成绩：\n🏅 P1 12 ANT 安东内利 🇮
@@ -300,18 +304,18 @@ DESCRIPTION:状态：FIA 最终成绩\n赛事：FORMULA 1 TAG HEUER GRAN PR
  (McLaren)\n完赛：18 人；退赛：4 人\n来源：https://www.formula1
  .com/en/results/2026/races/1294/spain/race-result
 STATUS:CONFIRMED
-SEQUENCE:1
+SEQUENCE:2
 TRANSP:TRANSPARENT
 URL:https://www.formula1.com/en/results/2026/races/1294/spain/race-result
-LAST-MODIFIED:20261103T051757Z
+LAST-MODIFIED:20261103T052556Z
 CATEGORIES:F1,战报
 END:VEVENT
 BEGIN:VEVENT
 UID:event-bbce2a7846005ed515377b05366548d2@panorama.local
-DTSTAMP:20261103T051757Z
+DTSTAMP:20261103T052556Z
 DTSTART;VALUE=DATE:20260926
 DTEND;VALUE=DATE:20260927
-SUMMARY:F1战报｜Azerbaijan Grand Prix｜正赛
+SUMMARY:🏁 阿塞拜疆大奖赛（巴库\, Baku） | 战报
 DESCRIPTION:状态：FIA 最终成绩\n赛事：FORMULA 1 QATAR AIRWAYS AZE
  RBAIJAN GRAND PRIX 2026\n【正赛】\n杆位：63 RUS 拉塞尔 🇬🇧 
  George Russell (Mercedes\, 1:42.526)\n成绩：\n🏅 P1 63 RUS 拉塞尔 
@@ -320,19 +324,19 @@ DESCRIPTION:状态：FIA 最终成绩\n赛事：FORMULA 1 QATAR AIRWAYS AZE
  jar (Red Bull Racing)\n完赛：16 人；退赛：6 人\n来源：https://
  www.formula1.com/en/results/2026/races/1295/azerbaijan/race-result
 STATUS:CONFIRMED
-SEQUENCE:1
+SEQUENCE:2
 TRANSP:TRANSPARENT
 URL:https://www.formula1.com/en/results/2026/races/1295/azerbaijan/race-res
  ult
-LAST-MODIFIED:20261103T051757Z
+LAST-MODIFIED:20261103T052556Z
 CATEGORIES:F1,战报
 END:VEVENT
 BEGIN:VEVENT
 UID:event-282e5200da13acd8a2ea881d19f328fd@panorama.local
-DTSTAMP:20261103T051757Z
+DTSTAMP:20261103T052556Z
 DTSTART;VALUE=DATE:20261004
 DTEND;VALUE=DATE:20261005
-SUMMARY:F1战报｜Bahrain Grand Prix｜正赛
+SUMMARY:🏁 巴林大奖赛（萨基尔\, Sakhir） | 战报
 DESCRIPTION:状态：FIA 最终成绩\n赛事：FORMULA 1 GULF AIR BAHRAIN 
  GRAND PRIX IN MALAYSIA 2026\n【正赛】\n杆位：3 VER 维斯塔潘 
  🇳🇱 Max Verstappen (Red Bull Racing\, 1:35.130)\n成绩：\n🏅 P1 3
@@ -342,18 +346,18 @@ DESCRIPTION:状态：FIA 最终成绩\n赛事：FORMULA 1 GULF AIR BAHRAIN
  \n来源：https://www.formula1.com/en/results/2026/races/1308/bahrain/rac
  e-result
 STATUS:CONFIRMED
-SEQUENCE:1
+SEQUENCE:2
 TRANSP:TRANSPARENT
 URL:https://www.formula1.com/en/results/2026/races/1308/bahrain/race-result
-LAST-MODIFIED:20261103T051757Z
+LAST-MODIFIED:20261103T052556Z
 CATEGORIES:F1,战报
 END:VEVENT
 BEGIN:VEVENT
 UID:event-32e8d91e58cbcec6a2b9a2273b05b3d3@panorama.local
-DTSTAMP:20261103T051757Z
+DTSTAMP:20261103T052556Z
 DTSTART;VALUE=DATE:20261011
 DTEND;VALUE=DATE:20261012
-SUMMARY:F1战报｜Singapore Grand Prix｜正赛
+SUMMARY:🏁 新加坡大奖赛（新加坡\, Singapore） | 战报
 DESCRIPTION:状态：FIA 最终成绩\n赛事：FORMULA 1 SINGAPORE AIRLINE
  S SINGAPORE GRAND PRIX 2026\n【冲刺赛】\n杆位：3 VER 维斯塔潘 
  🇳🇱 Max Verstappen (Red Bull Racing\, 1:31.156)\n成绩：\n🏅 P1 3
@@ -367,19 +371,19 @@ DESCRIPTION:状态：FIA 最终成绩\n赛事：FORMULA 1 SINGAPORE AIRLINE
  退赛：3 人\n来源：https://www.formula1.com/en/results/2026/races/12
  96/singapore/race-result
 STATUS:CONFIRMED
-SEQUENCE:1
+SEQUENCE:2
 TRANSP:TRANSPARENT
 URL:https://www.formula1.com/en/results/2026/races/1296/singapore/race-resu
  lt
-LAST-MODIFIED:20261103T051757Z
+LAST-MODIFIED:20261103T052556Z
 CATEGORIES:F1,战报
 END:VEVENT
 BEGIN:VEVENT
 UID:event-aa84d0c40fea82ed59b0a467c7e33e15@panorama.local
-DTSTAMP:20261103T051757Z
+DTSTAMP:20261103T052556Z
 DTSTART;VALUE=DATE:20261025
 DTEND;VALUE=DATE:20261026
-SUMMARY:F1战报｜United States Grand Prix｜正赛
+SUMMARY:🏁 美国大奖赛（奥斯汀\, Austin） | 战报
 DESCRIPTION:状态：FIA 最终成绩\n赛事：FORMULA 1 MSC CRUISES UNITE
  D STATES GRAND PRIX 2026\n【正赛】\n杆位：12 ANT 安东内利 🇮
  🇹 Kimi Antonelli (Mercedes\, 1:34.035)\n成绩：\n🏅 P1 12 ANT 安
@@ -389,19 +393,19 @@ DESCRIPTION:状态：FIA 最终成绩\n赛事：FORMULA 1 MSC CRUISES UNITE
  ：https://www.formula1.com/en/results/2026/races/1297/united-states/race-
  result
 STATUS:CONFIRMED
-SEQUENCE:1
+SEQUENCE:2
 TRANSP:TRANSPARENT
 URL:https://www.formula1.com/en/results/2026/races/1297/united-states/race-
  result
-LAST-MODIFIED:20261103T051757Z
+LAST-MODIFIED:20261103T052556Z
 CATEGORIES:F1,战报
 END:VEVENT
 BEGIN:VEVENT
 UID:event-c80670d256cb3a1dbfa2802c5eeec161@panorama.local
-DTSTAMP:20261103T051757Z
+DTSTAMP:20261103T052556Z
 DTSTART;VALUE=DATE:20261101
 DTEND;VALUE=DATE:20261102
-SUMMARY:F1战报｜Mexico City Grand Prix｜正赛
+SUMMARY:🏁 墨西哥城大奖赛（墨西哥城\, Mexico City） | 战报
 DESCRIPTION:状态：FIA 最终成绩\n赛事：FORMULA 1 GRAN PREMIO DE LA
   CIUDAD DE MÉXICO 2026\n【正赛】\n杆位：44 HAM 汉密尔顿 🇬
  🇧 Lewis Hamilton (Ferrari\, 1:16.514)\n成绩：\n🏅 P1 3 VER 维斯
@@ -410,10 +414,10 @@ DESCRIPTION:状态：FIA 最终成绩\n赛事：FORMULA 1 GRAN PREMIO DE LA
  🇹 Kimi Antonelli (Mercedes)\n完赛：17 人；退赛：5 人\n来源
  ：https://www.formula1.com/en/results/2026/races/1298/mexico/race-result
 STATUS:CONFIRMED
-SEQUENCE:1
+SEQUENCE:2
 TRANSP:TRANSPARENT
 URL:https://www.formula1.com/en/results/2026/races/1298/mexico/race-result
-LAST-MODIFIED:20261103T051757Z
+LAST-MODIFIED:20261103T052556Z
 CATEGORIES:F1,战报
 END:VEVENT
 END:VCALENDAR

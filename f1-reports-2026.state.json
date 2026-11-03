@@ -8,37 +8,37 @@
         "战报"
       ],
       "description": "状态：FIA 最终成绩\n赛事：FORMULA 1 QATAR AIRWAYS AUSTRALIAN GRAND PRIX 2026\n【正赛】\n杆位：63 RUS 拉塞尔 🇬🇧 George Russell (Mercedes, 1:18.518)\n成绩：\n🏅 P1 63 RUS 拉塞尔 🇬🇧 George Russell (Mercedes)\n🥈 P2 12 ANT 安东内利 🇮🇹 Kimi Antonelli (Mercedes)\n🥉 P3 16 LEC 勒克莱尔 🇲🇨 Charles Leclerc (Ferrari)\n完赛：16 人；退赛：6 人\n来源：https://www.formula1.com/en/results/2026/races/1279/australia/race-result",
-      "dtstamp": "2026-11-03T05:17:57.825278Z",
+      "dtstamp": "2026-11-03T05:25:56.847507Z",
       "end_at_utc": null,
       "end_date_exclusive": "2026-03-09",
       "end_estimated": false,
       "event_key": "report:2026:australia",
       "event_kind": "F1_REPORT",
-      "last_modified": "2026-11-03T05:17:57.825278Z",
+      "last_modified": "2026-11-03T05:25:56.847507Z",
       "location": "",
       "result_status": "FINAL",
-      "sequence": 1,
+      "sequence": 2,
       "source_timezone": null,
       "sources": [
         {
           "authority": "Formula 1",
           "content_hash": "ad498ee86567835e5333b23bb2726ca05a148508fe9d1efe3a2eb92bc27ecec1",
           "evidence_id": null,
-          "retrieved_at": "2026-11-03T05:17:54.494455Z",
+          "retrieved_at": "2026-11-03T05:25:44.122422Z",
           "url": "https://www.formula1.com/en/results/2026/races/1279/australia/race-result"
         },
         {
           "authority": "Formula 1",
           "content_hash": "4eb000154590a3b9ecfbd5b04e1238600f84853e4b1fd57d878301c0393602d0",
           "evidence_id": null,
-          "retrieved_at": "2026-11-03T05:17:54.515008Z",
+          "retrieved_at": "2026-11-03T05:25:44.146276Z",
           "url": "https://www.formula1.com/en/results/2026/races/1279/australia/qualifying"
         }
       ],
       "start_at_utc": null,
       "start_date": "2026-03-08",
       "status": "CONFIRMED",
-      "summary": "F1战报｜Australian Grand Prix｜正赛",
+      "summary": "🏁 澳大利亚大奖赛（墨尔本, Melbourne） | 战报",
       "transparent": true,
       "uid": "event-8144f45369447ea77723fe76d1526858@panorama.local"
     },
@@ -50,51 +50,51 @@
         "战报"
       ],
       "description": "状态：FIA 最终成绩\n赛事：FORMULA 1 HEINEKEN CHINESE GRAND PRIX 2026\n【冲刺赛】\n杆位：63 RUS 拉塞尔 🇬🇧 George Russell (Mercedes, 1:31.520)\n成绩：\n🏅 P1 63 RUS 拉塞尔 🇬🇧 George Russell (Mercedes)\n🥈 P2 16 LEC 勒克莱尔 🇲🇨 Charles Leclerc (Ferrari)\n🥉 P3 44 HAM 汉密尔顿 🇬🇧 Lewis Hamilton (Ferrari)\n【正赛】\n杆位：12 ANT 安东内利 🇮🇹 Kimi Antonelli (Mercedes, 1:32.064)\n成绩：\n🏅 P1 12 ANT 安东内利 🇮🇹 Kimi Antonelli (Mercedes)\n🥈 P2 63 RUS 拉塞尔 🇬🇧 George Russell (Mercedes)\n🥉 P3 44 HAM 汉密尔顿 🇬🇧 Lewis Hamilton (Ferrari)\n完赛：15 人；退赛：7 人\n来源：https://www.formula1.com/en/results/2026/races/1280/china/race-result",
-      "dtstamp": "2026-11-03T05:17:57.825278Z",
+      "dtstamp": "2026-11-03T05:25:56.847507Z",
       "end_at_utc": null,
       "end_date_exclusive": "2026-03-16",
       "end_estimated": false,
       "event_key": "report:2026:china",
       "event_kind": "F1_REPORT",
-      "last_modified": "2026-11-03T05:17:57.825278Z",
+      "last_modified": "2026-11-03T05:25:56.847507Z",
       "location": "",
       "result_status": "FINAL",
-      "sequence": 1,
+      "sequence": 2,
       "source_timezone": null,
       "sources": [
         {
           "authority": "Formula 1",
           "content_hash": "87075cae86755ccff6fb106a670289a6f5c8648638f2abf68bfcf580d357d378",
           "evidence_id": null,
-          "retrieved_at": "2026-11-03T05:17:54.781851Z",
+          "retrieved_at": "2026-11-03T05:25:45.713690Z",
           "url": "https://www.formula1.com/en/results/2026/races/1280/china/race-result"
         },
         {
           "authority": "Formula 1",
           "content_hash": "09617c1b45450fac64ed78a8b8e3fbc3a83683f07598b5ebd86ec2b6c04d7ac3",
           "evidence_id": null,
-          "retrieved_at": "2026-11-03T05:17:54.801839Z",
+          "retrieved_at": "2026-11-03T05:25:45.737907Z",
           "url": "https://www.formula1.com/en/results/2026/races/1280/china/qualifying"
         },
         {
           "authority": "Formula 1",
           "content_hash": "18ce8d1dab47f4ec2b6148d63a257f68fbc9b262b90622934d4cbed8983ae27e",
           "evidence_id": null,
-          "retrieved_at": "2026-11-03T05:17:54.821861Z",
+          "retrieved_at": "2026-11-03T05:25:45.763273Z",
           "url": "https://www.formula1.com/en/results/2026/races/1280/china/sprint-results"
         },
         {
           "authority": "Formula 1",
           "content_hash": "eb4f22f48c2d2417282eaf86305106ce4351317715a5e12d293ddf0a26db95d0",
           "evidence_id": null,
-          "retrieved_at": "2026-11-03T05:17:54.842045Z",
+          "retrieved_at": "2026-11-03T05:25:45.812630Z",
           "url": "https://www.formula1.com/en/results/2026/races/1280/china/sprint-qualifying"
         }
       ],
       "start_at_utc": null,
       "start_date": "2026-03-15",
       "status": "CONFIRMED",
-      "summary": "F1战报｜Chinese Grand Prix｜正赛",
+      "summary": "🏁 中国大奖赛（上海, Shanghai） | 战报",
       "transparent": true,
       "uid": "event-262443ff8deb7bb1023b0c287d65c171@panorama.local"
     },
@@ -106,37 +106,37 @@
         "战报"
       ],
       "description": "状态：FIA 最终成绩\n赛事：FORMULA 1 ARAMCO JAPANESE GRAND PRIX 2026\n【正赛】\n杆位：12 ANT 安东内利 🇮🇹 Kimi Antonelli (Mercedes, 1:28.778)\n成绩：\n🏅 P1 12 ANT 安东内利 🇮🇹 Kimi Antonelli (Mercedes)\n🥈 P2 81 PIA 皮亚斯特里 🇦🇺 Oscar Piastri (McLaren)\n🥉 P3 16 LEC 勒克莱尔 🇲🇨 Charles Leclerc (Ferrari)\n完赛：20 人；退赛：2 人\n来源：https://www.formula1.com/en/results/2026/races/1281/japan/race-result",
-      "dtstamp": "2026-11-03T05:17:57.825278Z",
+      "dtstamp": "2026-11-03T05:25:56.847507Z",
       "end_at_utc": null,
       "end_date_exclusive": "2026-03-30",
       "end_estimated": false,
       "event_key": "report:2026:japan",
       "event_kind": "F1_REPORT",
-      "last_modified": "2026-11-03T05:17:57.825278Z",
+      "last_modified": "2026-11-03T05:25:56.847507Z",
       "location": "",
       "result_status": "FINAL",
-      "sequence": 1,
+      "sequence": 2,
       "source_timezone": null,
       "sources": [
         {
           "authority": "Formula 1",
           "content_hash": "418cf2fb0974b2435d0681941d4787e57556ce6dc6d8b3ddecec9de68e4b58df",
           "evidence_id": null,
-          "retrieved_at": "2026-11-03T05:17:54.991626Z",
+          "retrieved_at": "2026-11-03T05:25:46.700158Z",
           "url": "https://www.formula1.com/en/results/2026/races/1281/japan/race-result"
         },
         {
           "authority": "Formula 1",
           "content_hash": "0e69738b2702bb84cfc429363add3cc96805d1c12a4a52fe7ad9d8cbc00b722e",
           "evidence_id": null,
-          "retrieved_at": "2026-11-03T05:17:55.010772Z",
+          "retrieved_at": "2026-11-03T05:25:46.723088Z",
           "url": "https://www.formula1.com/en/results/2026/races/1281/japan/qualifying"
         }
       ],
       "start_at_utc": null,
       "start_date": "2026-03-29",
       "status": "CONFIRMED",
-      "summary": "F1战报｜Japanese Grand Prix｜正赛",
+      "summary": "🏁 日本大奖赛（铃鹿, Suzuka） | 战报",
       "transparent": true,
       "uid": "event-f41d87fed3e59ef44e62f831c8e90cae@panorama.local"
     },
@@ -147,14 +147,14 @@
         "F1",
         "战报"
       ],
-      "description": "状态：FIA 最终成绩\n赛事：FORMULA 1 LENOVO GRAND PRIX DU CANADA 2026\n【冲刺赛】\n杆位：63 RUS 拉塞尔 🇬🇧 George Russell (Mercedes, 1:12.965)\n成绩：\n🏅 P1 63 RUS 拉塞尔 🇬🇧 George Russell (Mercedes)\n🥈 P2 1 NOR 诺里斯 🇬🇧 Lando Norris (McLaren)\n🥉 P3 12 ANT 安东内利 🇮🇹 Kimi Antonelli (Mercedes)\n【正赛】\n杆位：63 RUS 拉塞尔 🇬🇧 George Russell (Mercedes, 1:12.578)\n成绩：\n🏅 P1 12 ANT 安东内利 🇮🇹 Kimi Antonelli (Mercedes)\n🥈 P2 44 HAM 汉密尔顿 🇬🇧 Lewis Hamilton (Ferrari)\n🥉 P3 3 VER 维斯塔潘 🇳🇱 Max Verstappen (Red Bull Racing)\n完赛：16 人；退赛：6 人\n来源：https://www.formula1.com/en/results/2026/races/1285/canada/race-result",
-      "dtstamp": "2026-11-03T05:17:57.825278Z",
+      "description": "状态：FIA 最终成绩\n赛事：FORMULA 1 CRYPTO.COM MIAMI GRAND PRIX 2026\n【冲刺赛】\n杆位：1 NOR 诺里斯 🇬🇧 Lando Norris (McLaren, 1:27.869)\n成绩：\n🏅 P1 1 NOR 诺里斯 🇬🇧 Lando Norris (McLaren)\n🥈 P2 81 PIA 皮亚斯特里 🇦🇺 Oscar Piastri (McLaren)\n🥉 P3 16 LEC 勒克莱尔 🇲🇨 Charles Leclerc (Ferrari)\n【正赛】\n杆位：12 ANT 安东内利 🇮🇹 Kimi Antonelli (Mercedes, 1:27.798)\n成绩：\n🏅 P1 12 ANT 安东内利 🇮🇹 Kimi Antonelli (Mercedes)\n🥈 P2 1 NOR 诺里斯 🇬🇧 Lando Norris (McLaren)\n🥉 P3 81 PIA 皮亚斯特里 🇦🇺 Oscar Piastri (McLaren)\n完赛：18 人；退赛：4 人\n来源：https://www.formula1.com/en/results/2026/races/1284/miami/race-result",
+      "dtstamp": "2026-11-03T05:25:56.847507Z",
       "end_at_utc": null,
-      "end_date_exclusive": "2026-05-25",
+      "end_date_exclusive": "2026-05-04",
       "end_estimated": false,
-      "event_key": "report:2026:canada",
+      "event_key": "report:2026:miami",
       "event_kind": "F1_REPORT",
-      "last_modified": "2026-11-03T05:17:57.825278Z",
+      "last_modified": "2026-11-03T05:25:56.847507Z",
       "location": "",
       "result_status": "FINAL",
       "sequence": 1,
@@ -162,37 +162,93 @@
       "sources": [
         {
           "authority": "Formula 1",
+          "content_hash": "3600ca2c2d57ee80b8665d5af250a5c076493d9eb35e908935ab5a58b791dda3",
+          "evidence_id": null,
+          "retrieved_at": "2026-11-03T05:25:47.655478Z",
+          "url": "https://www.formula1.com/en/results/2026/races/1284/miami/race-result"
+        },
+        {
+          "authority": "Formula 1",
+          "content_hash": "6afa3b72b928e30dac0ad321387dc86b406dd6e7d0ebe99527637fc550f93d24",
+          "evidence_id": null,
+          "retrieved_at": "2026-11-03T05:25:47.699350Z",
+          "url": "https://www.formula1.com/en/results/2026/races/1284/miami/qualifying"
+        },
+        {
+          "authority": "Formula 1",
+          "content_hash": "cf2b17507ce9a6369efa176578358630e17bb331397d25d3d9550589391897dc",
+          "evidence_id": null,
+          "retrieved_at": "2026-11-03T05:25:47.722829Z",
+          "url": "https://www.formula1.com/en/results/2026/races/1284/miami/sprint-results"
+        },
+        {
+          "authority": "Formula 1",
+          "content_hash": "893a7fa809a8c1047d2a25f9179ab19fcaf7a68ede8d1bc28a102129a8454bc4",
+          "evidence_id": null,
+          "retrieved_at": "2026-11-03T05:25:47.745519Z",
+          "url": "https://www.formula1.com/en/results/2026/races/1284/miami/sprint-qualifying"
+        }
+      ],
+      "start_at_utc": null,
+      "start_date": "2026-05-03",
+      "status": "CONFIRMED",
+      "summary": "🏁 迈阿密大奖赛（迈阿密, Miami） | 战报",
+      "transparent": true,
+      "uid": "event-31016d61118ea4456bed316280b07e5c@panorama.local"
+    },
+    {
+      "alarms": [],
+      "calendar_kind": "F1_REPORT",
+      "categories": [
+        "F1",
+        "战报"
+      ],
+      "description": "状态：FIA 最终成绩\n赛事：FORMULA 1 LENOVO GRAND PRIX DU CANADA 2026\n【冲刺赛】\n杆位：63 RUS 拉塞尔 🇬🇧 George Russell (Mercedes, 1:12.965)\n成绩：\n🏅 P1 63 RUS 拉塞尔 🇬🇧 George Russell (Mercedes)\n🥈 P2 1 NOR 诺里斯 🇬🇧 Lando Norris (McLaren)\n🥉 P3 12 ANT 安东内利 🇮🇹 Kimi Antonelli (Mercedes)\n【正赛】\n杆位：63 RUS 拉塞尔 🇬🇧 George Russell (Mercedes, 1:12.578)\n成绩：\n🏅 P1 12 ANT 安东内利 🇮🇹 Kimi Antonelli (Mercedes)\n🥈 P2 44 HAM 汉密尔顿 🇬🇧 Lewis Hamilton (Ferrari)\n🥉 P3 3 VER 维斯塔潘 🇳🇱 Max Verstappen (Red Bull Racing)\n完赛：16 人；退赛：6 人\n来源：https://www.formula1.com/en/results/2026/races/1285/canada/race-result",
+      "dtstamp": "2026-11-03T05:25:56.847507Z",
+      "end_at_utc": null,
+      "end_date_exclusive": "2026-05-25",
+      "end_estimated": false,
+      "event_key": "report:2026:canada",
+      "event_kind": "F1_REPORT",
+      "last_modified": "2026-11-03T05:25:56.847507Z",
+      "location": "",
+      "result_status": "FINAL",
+      "sequence": 2,
+      "source_timezone": null,
+      "sources": [
+        {
+          "authority": "Formula 1",
           "content_hash": "8b5502274e582050f8043b810720ed1bc47d10ea3c694a16e9eabe6ff406103f",
           "evidence_id": null,
-          "retrieved_at": "2026-11-03T05:17:55.213710Z",
+          "retrieved_at": "2026-11-03T05:25:48.346072Z",
           "url": "https://www.formula1.com/en/results/2026/races/1285/canada/race-result"
         },
         {
           "authority": "Formula 1",
           "content_hash": "f94c34352f32819b2f0db21f2f618e3a8602f89a32d8fa7fa267e63d2d27a6a3",
           "evidence_id": null,
-          "retrieved_at": "2026-11-03T05:17:55.232995Z",
+          "retrieved_at": "2026-11-03T05:25:48.369122Z",
           "url": "https://www.formula1.com/en/results/2026/races/1285/canada/qualifying"
         },
         {
           "authority": "Formula 1",
           "content_hash": "3f60cea152ac7e31f875b66048bd8725c8834133d62837c838a7434c6b009ff9",
           "evidence_id": null,
-          "retrieved_at": "2026-11-03T05:17:55.253614Z",
+          "retrieved_at": "2026-11-03T05:25:48.391868Z",
           "url": "https://www.formula1.com/en/results/2026/races/1285/canada/sprint-results"
         },
         {
           "authority": "Formula 1",
           "content_hash": "31c12e5613d98a7b54997ff2c88c341d956485088c44bcb85a4a55a2d53215ca",
           "evidence_id": null,
-          "retrieved_at": "2026-11-03T05:17:55.272484Z",
+          "retrieved_at": "2026-11-03T05:25:48.414347Z",
           "url": "https://www.formula1.com/en/results/2026/races/1285/canada/sprint-qualifying"
         }
       ],
       "start_at_utc": null,
       "start_date": "2026-05-24",
       "status": "CONFIRMED",
-      "summary": "F1战报｜Canadian Grand Prix｜正赛",
+      "summary": "🏁 加拿大大奖赛（蒙特利尔, Montréal） | 战报",
       "transparent": true,
       "uid": "event-8fc46885e247c7cdb808945c12ab7c69@panorama.local"
     },
@@ -204,37 +260,37 @@
         "战报"
       ],
       "description": "状态：FIA 最终成绩\n赛事：FORMULA 1 LOUIS VUITTON GRAND PRIX DE MONACO 2026\n【正赛】\n杆位：12 ANT 安东内利 🇮🇹 Kimi Antonelli (Mercedes, 1:12.051)\n成绩：\n🏅 P1 12 ANT 安东内利 🇮🇹 Kimi Antonelli (Mercedes)\n🥈 P2 44 HAM 汉密尔顿 🇬🇧 Lewis Hamilton (Ferrari)\n🥉 P3 6 HAD 哈贾尔 🇫🇷 Isack Hadjar (Red Bull Racing)\n完赛：16 人；退赛：6 人\n来源：https://www.formula1.com/en/results/2026/races/1286/monaco/race-result",
-      "dtstamp": "2026-11-03T05:17:57.825278Z",
+      "dtstamp": "2026-11-03T05:25:56.847507Z",
       "end_at_utc": null,
       "end_date_exclusive": "2026-06-08",
       "end_estimated": false,
       "event_key": "report:2026:monaco",
       "event_kind": "F1_REPORT",
-      "last_modified": "2026-11-03T05:17:57.825278Z",
+      "last_modified": "2026-11-03T05:25:56.847507Z",
       "location": "",
       "result_status": "FINAL",
-      "sequence": 1,
+      "sequence": 2,
       "source_timezone": null,
       "sources": [
         {
           "authority": "Formula 1",
           "content_hash": "f30e52703ac3936c1d58ac2c19ac3a735943ea7389d2cde490cb066360b71f5d",
           "evidence_id": null,
-          "retrieved_at": "2026-11-03T05:17:55.422122Z",
+          "retrieved_at": "2026-11-03T05:25:48.984502Z",
           "url": "https://www.formula1.com/en/results/2026/races/1286/monaco/race-result"
         },
         {
           "authority": "Formula 1",
           "content_hash": "3be475e31223ba4d56964b0c16735348cbd1872a423722488a21483dd23df561",
           "evidence_id": null,
-          "retrieved_at": "2026-11-03T05:17:55.441424Z",
+          "retrieved_at": "2026-11-03T05:25:49.007521Z",
           "url": "https://www.formula1.com/en/results/2026/races/1286/monaco/qualifying"
         }
       ],
       "start_at_utc": null,
       "start_date": "2026-06-07",
       "status": "CONFIRMED",
-      "summary": "F1战报｜Monaco Grand Prix｜正赛",
+      "summary": "🏁 摩纳哥大奖赛（蒙特卡洛, Monte Carlo） | 战报",
       "transparent": true,
       "uid": "event-515b8a532346b2e66034658ccdf24de2@panorama.local"
     },
@@ -246,37 +302,37 @@
         "战报"
       ],
       "description": "状态：FIA 最终成绩\n赛事：FORMULA 1 MSC CRUISES GRAN PREMIO DE BARCELONA-CATALUNYA 2026\n【正赛】\n杆位：63 RUS 拉塞尔 🇬🇧 George Russell (Mercedes, 1:14.679)\n成绩：\n🏅 P1 44 HAM 汉密尔顿 🇬🇧 Lewis Hamilton (Ferrari)\n🥈 P2 63 RUS 拉塞尔 🇬🇧 George Russell (Mercedes)\n🥉 P3 1 NOR 诺里斯 🇬🇧 Lando Norris (McLaren)\n完赛：17 人；退赛：5 人\n来源：https://www.formula1.com/en/results/2026/races/1287/barcelona-catalunya/race-result",
-      "dtstamp": "2026-11-03T05:17:57.825278Z",
+      "dtstamp": "2026-11-03T05:25:56.847507Z",
       "end_at_utc": null,
       "end_date_exclusive": "2026-06-15",
       "end_estimated": false,
       "event_key": "report:2026:barcelona-catalunya",
       "event_kind": "F1_REPORT",
-      "last_modified": "2026-11-03T05:17:57.825278Z",
+      "last_modified": "2026-11-03T05:25:56.847507Z",
       "location": "",
       "result_status": "FINAL",
-      "sequence": 1,
+      "sequence": 2,
       "source_timezone": null,
       "sources": [
         {
           "authority": "Formula 1",
           "content_hash": "4c81b72e667d6dc39b96c8f64758f6233f30566827006c3eac91a9dd5fae011e",
           "evidence_id": null,
-          "retrieved_at": "2026-11-03T05:17:55.587153Z",
+          "retrieved_at": "2026-11-03T05:25:49.775283Z",
           "url": "https://www.formula1.com/en/results/2026/races/1287/barcelona-catalunya/race-result"
         },
         {
           "authority": "Formula 1",
           "content_hash": "baa3cce91d0e51daf7bf0013aa55961a373dc5933a276f30b2af16edebeb670f",
           "evidence_id": null,
-          "retrieved_at": "2026-11-03T05:17:55.606271Z",
+          "retrieved_at": "2026-11-03T05:25:49.799120Z",
           "url": "https://www.formula1.com/en/results/2026/races/1287/barcelona-catalunya/qualifying"
         }
       ],
       "start_at_utc": null,
       "start_date": "2026-06-14",
       "status": "CONFIRMED",
-      "summary": "F1战报｜Barcelona-Catalunya Grand Prix｜正赛",
+      "summary": "🏁 巴塞罗那-加泰罗尼亚大奖赛（巴塞罗那, Barcelona） | 战报",
       "transparent": true,
       "uid": "event-79c43aa4154dd33ce114360fea334da9@panorama.local"
     },
@@ -288,37 +344,37 @@
         "战报"
       ],
       "description": "状态：FIA 最终成绩\n赛事：FORMULA 1 LENOVO AUSTRIAN GRAND PRIX 2026\n【正赛】\n杆位：63 RUS 拉塞尔 🇬🇧 George Russell (Mercedes, 1:06.113)\n成绩：\n🏅 P1 63 RUS 拉塞尔 🇬🇧 George Russell (Mercedes)\n🥈 P2 3 VER 维斯塔潘 🇳🇱 Max Verstappen (Red Bull Racing)\n🥉 P3 12 ANT 安东内利 🇮🇹 Kimi Antonelli (Mercedes)\n完赛：18 人；退赛：4 人\n来源：https://www.formula1.com/en/results/2026/races/1288/austria/race-result",
-      "dtstamp": "2026-11-03T05:17:57.825278Z",
+      "dtstamp": "2026-11-03T05:25:56.847507Z",
       "end_at_utc": null,
       "end_date_exclusive": "2026-06-29",
       "end_estimated": false,
       "event_key": "report:2026:austria",
       "event_kind": "F1_REPORT",
-      "last_modified": "2026-11-03T05:17:57.825278Z",
+      "last_modified": "2026-11-03T05:25:56.847507Z",
       "location": "",
       "result_status": "FINAL",
-      "sequence": 1,
+      "sequence": 2,
       "source_timezone": null,
       "sources": [
         {
           "authority": "Formula 1",
           "content_hash": "63feff91590fd294213c06d5ad97e7993960ec12b947caa759a66a4f6f25d328",
           "evidence_id": null,
-          "retrieved_at": "2026-11-03T05:17:55.744920Z",
+          "retrieved_at": "2026-11-03T05:25:50.445086Z",
           "url": "https://www.formula1.com/en/results/2026/races/1288/austria/race-result"
         },
         {
           "authority": "Formula 1",
           "content_hash": "4c7efd12ad5a878b0cfcc89073b14b4420a12d821cea0925464ee1af10487cfd",
           "evidence_id": null,
-          "retrieved_at": "2026-11-03T05:17:55.764246Z",
+          "retrieved_at": "2026-11-03T05:25:50.468443Z",
           "url": "https://www.formula1.com/en/results/2026/races/1288/austria/qualifying"
         }
       ],
       "start_at_utc": null,
       "start_date": "2026-06-28",
       "status": "CONFIRMED",
-      "summary": "F1战报｜Austrian Grand Prix｜正赛",
+      "summary": "🏁 奥地利大奖赛（斯皮尔伯格, Spielberg） | 战报",
       "transparent": true,
       "uid": "event-cc2e219b6d624ea33f809a939b9c5e37@panorama.local"
     },
@@ -330,51 +386,51 @@
         "战报"
       ],
       "description": "状态：FIA 最终成绩\n赛事：FORMULA 1 PIRELLI BRITISH GRAND PRIX 2026\n【冲刺赛】\n杆位：44 HAM 汉密尔顿 🇬🇧 Lewis Hamilton (Ferrari, 1:28.376)\n成绩：\n🏅 P1 12 ANT 安东内利 🇮🇹 Kimi Antonelli (Mercedes)\n🥈 P2 44 HAM 汉密尔顿 🇬🇧 Lewis Hamilton (Ferrari)\n🥉 P3 1 NOR 诺里斯 🇬🇧 Lando Norris (McLaren)\n【正赛】\n杆位：12 ANT 安东内利 🇮🇹 Kimi Antonelli (Mercedes, 1:28.111)\n成绩：\n🏅 P1 16 LEC 勒克莱尔 🇲🇨 Charles Leclerc (Ferrari)\n🥈 P2 63 RUS 拉塞尔 🇬🇧 George Russell (Mercedes)\n🥉 P3 44 HAM 汉密尔顿 🇬🇧 Lewis Hamilton (Ferrari)\n完赛：20 人；退赛：2 人\n来源：https://www.formula1.com/en/results/2026/races/1289/great-britain/race-result",
-      "dtstamp": "2026-11-03T05:17:57.825278Z",
+      "dtstamp": "2026-11-03T05:25:56.847507Z",
       "end_at_utc": null,
       "end_date_exclusive": "2026-07-06",
       "end_estimated": false,
       "event_key": "report:2026:great-britain",
       "event_kind": "F1_REPORT",
-      "last_modified": "2026-11-03T05:17:57.825278Z",
+      "last_modified": "2026-11-03T05:25:56.847507Z",
       "location": "",
       "result_status": "FINAL",
-      "sequence": 1,
+      "sequence": 2,
       "source_timezone": null,
       "sources": [
         {
           "authority": "Formula 1",
           "content_hash": "3247540cb5de46a2c6f6ad357a34619d5471f2fcfdb8b59d3464fc12769d5d0b",
           "evidence_id": null,
-          "retrieved_at": "2026-11-03T05:17:55.911509Z",
+          "retrieved_at": "2026-11-03T05:25:51.002974Z",
           "url": "https://www.formula1.com/en/results/2026/races/1289/great-britain/race-result"
         },
         {
           "authority": "Formula 1",
           "content_hash": "d9e9b575efcadb9cb8398139540eb1f0a3e0e87e4f68fe381c2b42807e0190a5",
           "evidence_id": null,
-          "retrieved_at": "2026-11-03T05:17:55.931246Z",
+          "retrieved_at": "2026-11-03T05:25:51.026221Z",
           "url": "https://www.formula1.com/en/results/2026/races/1289/great-britain/qualifying"
         },
         {
           "authority": "Formula 1",
           "content_hash": "802eb8819b543ca77eb9043b1b49ea6dc2732a89f17f1af9d71841894f2fef19",
           "evidence_id": null,
-          "retrieved_at": "2026-11-03T05:17:55.952051Z",
+          "retrieved_at": "2026-11-03T05:25:51.049207Z",
           "url": "https://www.formula1.com/en/results/2026/races/1289/great-britain/sprint-results"
         },
         {
           "authority": "Formula 1",
           "content_hash": "d5424a24c93aeaeac1a6ecb16ad16065c0c29008fdddee082f9d56a77b283cdd",
           "evidence_id": null,
-          "retrieved_at": "2026-11-03T05:17:55.972310Z",
+          "retrieved_at": "2026-11-03T05:25:51.095038Z",
           "url": "https://www.formula1.com/en/results/2026/races/1289/great-britain/sprint-qualifying"
         }
       ],
       "start_at_utc": null,
       "start_date": "2026-07-05",
       "status": "CONFIRMED",
-      "summary": "F1战报｜British Grand Prix｜正赛",
+      "summary": "🏁 英国大奖赛（银石, Silverstone） | 战报",
       "transparent": true,
       "uid": "event-4e1c49d94f222bc0ccd89cfa1cd236c3@panorama.local"
     },
@@ -386,37 +442,37 @@
         "战报"
       ],
       "description": "状态：FIA 最终成绩\n赛事：FORMULA 1 MOËT & CHANDON BELGIAN GRAND PRIX 2026\n【正赛】\n杆位：12 ANT 安东内利 🇮🇹 Kimi Antonelli (Mercedes, 1:44.361)\n成绩：\n🏅 P1 12 ANT 安东内利 🇮🇹 Kimi Antonelli (Mercedes)\n🥈 P2 16 LEC 勒克莱尔 🇲🇨 Charles Leclerc (Ferrari)\n🥉 P3 3 VER 维斯塔潘 🇳🇱 Max Verstappen (Red Bull Racing)\n完赛：19 人；退赛：3 人\n来源：https://www.formula1.com/en/results/2026/races/1290/belgium/race-result",
-      "dtstamp": "2026-11-03T05:17:57.825278Z",
+      "dtstamp": "2026-11-03T05:25:56.847507Z",
       "end_at_utc": null,
       "end_date_exclusive": "2026-07-20",
       "end_estimated": false,
       "event_key": "report:2026:belgium",
       "event_kind": "F1_REPORT",
-      "last_modified": "2026-11-03T05:17:57.825278Z",
+      "last_modified": "2026-11-03T05:25:56.847507Z",
       "location": "",
       "result_status": "FINAL",
-      "sequence": 1,
+      "sequence": 2,
       "source_timezone": null,
       "sources": [
         {
           "authority": "Formula 1",
           "content_hash": "5390b7c6c17cf63ffc17beb9f82395c27ccddf4070eb3ab4fb5276bb96e5bd00",
           "evidence_id": null,
-          "retrieved_at": "2026-11-03T05:17:56.118285Z",
+          "retrieved_at": "2026-11-03T05:25:51.561234Z",
           "url": "https://www.formula1.com/en/results/2026/races/1290/belgium/race-result"
         },
         {
           "authority": "Formula 1",
           "content_hash": "3008882e92f1bef2004d52769ee94a1d8aee146ae1e6b2d95467d9a395ac8d57",
           "evidence_id": null,
-          "retrieved_at": "2026-11-03T05:17:56.138164Z",
+          "retrieved_at": "2026-11-03T05:25:51.585590Z",
           "url": "https://www.formula1.com/en/results/2026/races/1290/belgium/qualifying"
         }
       ],
       "start_at_utc": null,
       "start_date": "2026-07-19",
       "status": "CONFIRMED",
-      "summary": "F1战报｜Belgian Grand Prix｜正赛",
+      "summary": "🏁 比利时大奖赛（斯帕, Spa-Francorchamps） | 战报",
       "transparent": true,
       "uid": "event-5459baa7beeebbeffe19bc14b02f5071@panorama.local"
     },
@@ -428,37 +484,37 @@
         "战报"
       ],
       "description": "状态：FIA 最终成绩\n赛事：FORMULA 1 AWS HUNGARIAN GRAND PRIX 2026\n【正赛】\n杆位：1 NOR 诺里斯 🇬🇧 Lando Norris (McLaren, 1:17.207)\n成绩：\n🏅 P1 1 NOR 诺里斯 🇬🇧 Lando Norris (McLaren)\n🥈 P2 3 VER 维斯塔潘 🇳🇱 Max Verstappen (Red Bull Racing)\n🥉 P3 12 ANT 安东内利 🇮🇹 Kimi Antonelli (Mercedes)\n完赛：19 人；退赛：3 人\n来源：https://www.formula1.com/en/results/2026/races/1291/hungary/race-result",
-      "dtstamp": "2026-11-03T05:17:57.825278Z",
+      "dtstamp": "2026-11-03T05:25:56.847507Z",
       "end_at_utc": null,
       "end_date_exclusive": "2026-07-27",
       "end_estimated": false,
       "event_key": "report:2026:hungary",
       "event_kind": "F1_REPORT",
-      "last_modified": "2026-11-03T05:17:57.825278Z",
+      "last_modified": "2026-11-03T05:25:56.847507Z",
       "location": "",
       "result_status": "FINAL",
-      "sequence": 1,
+      "sequence": 2,
       "source_timezone": null,
       "sources": [
         {
           "authority": "Formula 1",
           "content_hash": "15949c1345ad0391100b260921ad91a1d260d49d5e400554032338060cdbd4d3",
           "evidence_id": null,
-          "retrieved_at": "2026-11-03T05:17:56.275688Z",
+          "retrieved_at": "2026-11-03T05:25:52.100963Z",
           "url": "https://www.formula1.com/en/results/2026/races/1291/hungary/race-result"
         },
         {
           "authority": "Formula 1",
           "content_hash": "ada221575be3ec7a715a4cfd80b684e55fab8e9f1fc22a91b4fd1e8d928ebaca",
           "evidence_id": null,
-          "retrieved_at": "2026-11-03T05:17:56.295503Z",
+          "retrieved_at": "2026-11-03T05:25:52.123486Z",
           "url": "https://www.formula1.com/en/results/2026/races/1291/hungary/qualifying"
         }
       ],
       "start_at_utc": null,
       "start_date": "2026-07-26",
       "status": "CONFIRMED",
-      "summary": "F1战报｜Hungarian Grand Prix｜正赛",
+      "summary": "🏁 匈牙利大奖赛（布达佩斯, Budapest） | 战报",
       "transparent": true,
       "uid": "event-4898a9578e679bf518181453da5bb27e@panorama.local"
     },
@@ -470,51 +526,51 @@
         "战报"
       ],
       "description": "状态：FIA 最终成绩\n赛事：FORMULA 1 HEINEKEN DUTCH GRAND PRIX 2026\n【冲刺赛】\n杆位：63 RUS 拉塞尔 🇬🇧 George Russell (Mercedes, 1:11.567)\n成绩：\n🏅 P1 63 RUS 拉塞尔 🇬🇧 George Russell (Mercedes)\n🥈 P2 16 LEC 勒克莱尔 🇲🇨 Charles Leclerc (Ferrari)\n🥉 P3 1 NOR 诺里斯 🇬🇧 Lando Norris (McLaren)\n【正赛】\n杆位：1 NOR 诺里斯 🇬🇧 Lando Norris (McLaren, 1:11.163)\n成绩：\n🏅 P1 1 NOR 诺里斯 🇬🇧 Lando Norris (McLaren)\n🥈 P2 12 ANT 安东内利 🇮🇹 Kimi Antonelli (Mercedes)\n🥉 P3 63 RUS 拉塞尔 🇬🇧 George Russell (Mercedes)\n完赛：17 人；退赛：5 人\n来源：https://www.formula1.com/en/results/2026/races/1292/netherlands/race-result",
-      "dtstamp": "2026-11-03T05:17:57.825278Z",
+      "dtstamp": "2026-11-03T05:25:56.847507Z",
       "end_at_utc": null,
       "end_date_exclusive": "2026-08-24",
       "end_estimated": false,
       "event_key": "report:2026:netherlands",
       "event_kind": "F1_REPORT",
-      "last_modified": "2026-11-03T05:17:57.825278Z",
+      "last_modified": "2026-11-03T05:25:56.847507Z",
       "location": "",
       "result_status": "FINAL",
-      "sequence": 1,
+      "sequence": 2,
       "source_timezone": null,
       "sources": [
         {
           "authority": "Formula 1",
           "content_hash": "4049e28423eed241a6c0fec7d5825b8ac126dc32e676b9e4eeb207112e5b958f",
           "evidence_id": null,
-          "retrieved_at": "2026-11-03T05:17:56.461279Z",
+          "retrieved_at": "2026-11-03T05:25:52.604050Z",
           "url": "https://www.formula1.com/en/results/2026/races/1292/netherlands/race-result"
         },
         {
           "authority": "Formula 1",
           "content_hash": "c661579cc3e62c5622900a94206971617e029106d98ffa7197d7e714e3c25005",
           "evidence_id": null,
-          "retrieved_at": "2026-11-03T05:17:56.480156Z",
+          "retrieved_at": "2026-11-03T05:25:52.626708Z",
           "url": "https://www.formula1.com/en/results/2026/races/1292/netherlands/qualifying"
         },
         {
           "authority": "Formula 1",
           "content_hash": "bf19a7900546b900504a016c2b5c2cfed4dbd21a7142a216967e913792918f0c",
           "evidence_id": null,
-          "retrieved_at": "2026-11-03T05:17:56.498972Z",
+          "retrieved_at": "2026-11-03T05:25:52.650026Z",
           "url": "https://www.formula1.com/en/results/2026/races/1292/netherlands/sprint-results"
         },
         {
           "authority": "Formula 1",
-          "content_hash": "12e90eeb91acc807d8763550a15dae86eb053f2976891b0f72dc8d3d231bdec1",
+          "content_hash": "480494b3915b66d0393bcab0f7a2e62a9076c80489b925843ba58f1e333ec64b",
           "evidence_id": null,
-          "retrieved_at": "2026-11-03T05:17:56.518307Z",
+          "retrieved_at": "2026-11-03T05:25:52.673581Z",
           "url": "https://www.formula1.com/en/results/2026/races/1292/netherlands/sprint-qualifying"
         }
       ],
       "start_at_utc": null,
       "start_date": "2026-08-23",
       "status": "CONFIRMED",
-      "summary": "F1战报｜Dutch Grand Prix｜正赛",
+      "summary": "🏁 荷兰大奖赛（赞德福特, Zandvoort） | 战报",
       "transparent": true,
       "uid": "event-b4f7a58fb0c79eb911135ec243cc64fa@panorama.local"
     },
@@ -526,37 +582,37 @@
         "战报"
       ],
       "description": "状态：FIA 最终成绩\n赛事：FORMULA 1 PIRELLI GRAN PREMIO D’ITALIA 2026\n【正赛】\n杆位：10 GAS 加斯利 🇫🇷 Pierre Gasly (Alpine, 1:21.786)\n成绩：\n🏅 P1 12 ANT 安东内利 🇮🇹 Kimi Antonelli (Mercedes)\n🥈 P2 63 RUS 拉塞尔 🇬🇧 George Russell (Mercedes)\n🥉 P3 3 VER 维斯塔潘 🇳🇱 Max Verstappen (Red Bull Racing)\n完赛：19 人；退赛：3 人\n来源：https://www.formula1.com/en/results/2026/races/1293/italy/race-result",
-      "dtstamp": "2026-11-03T05:17:57.825278Z",
+      "dtstamp": "2026-11-03T05:25:56.847507Z",
       "end_at_utc": null,
       "end_date_exclusive": "2026-09-07",
       "end_estimated": false,
       "event_key": "report:2026:italy",
       "event_kind": "F1_REPORT",
-      "last_modified": "2026-11-03T05:17:57.825278Z",
+      "last_modified": "2026-11-03T05:25:56.847507Z",
       "location": "",
       "result_status": "FINAL",
-      "sequence": 1,
+      "sequence": 2,
       "source_timezone": null,
       "sources": [
         {
           "authority": "Formula 1",
           "content_hash": "2ceea8450d4d2c23f88bc578103b7336cce275c14e55a818a37176543947e2de",
           "evidence_id": null,
-          "retrieved_at": "2026-11-03T05:17:56.655259Z",
+          "retrieved_at": "2026-11-03T05:25:53.310857Z",
           "url": "https://www.formula1.com/en/results/2026/races/1293/italy/race-result"
         },
         {
           "authority": "Formula 1",
           "content_hash": "a1f4a79943ec0191fca507fbaf2a325a6557cb21ebcca6262245c5c10d47ee6e",
           "evidence_id": null,
-          "retrieved_at": "2026-11-03T05:17:56.674585Z",
+          "retrieved_at": "2026-11-03T05:25:53.333657Z",
           "url": "https://www.formula1.com/en/results/2026/races/1293/italy/qualifying"
         }
       ],
       "start_at_utc": null,
       "start_date": "2026-09-06",
       "status": "CONFIRMED",
-      "summary": "F1战报｜Italian Grand Prix｜正赛",
+      "summary": "🏁 意大利大奖赛（蒙扎, Monza） | 战报",
       "transparent": true,
       "uid": "event-f008633c9cea3a69f04e3987a1feef59@panorama.local"
     },
@@ -568,37 +624,37 @@
         "战报"
       ],
       "description": "状态：FIA 最终成绩\n赛事：FORMULA 1 TAG HEUER GRAN PREMIO DE ESPAÑA 2026\n【正赛】\n杆位：1 NOR 诺里斯 🇬🇧 Lando Norris (McLaren, 1:31.824)\n成绩：\n🏅 P1 12 ANT 安东内利 🇮🇹 Kimi Antonelli (Mercedes)\n🥈 P2 3 VER 维斯塔潘 🇳🇱 Max Verstappen (Red Bull Racing)\n🥉 P3 1 NOR 诺里斯 🇬🇧 Lando Norris (McLaren)\n完赛：18 人；退赛：4 人\n来源：https://www.formula1.com/en/results/2026/races/1294/spain/race-result",
-      "dtstamp": "2026-11-03T05:17:57.825278Z",
+      "dtstamp": "2026-11-03T05:25:56.847507Z",
       "end_at_utc": null,
       "end_date_exclusive": "2026-09-14",
       "end_estimated": false,
       "event_key": "report:2026:spain",
       "event_kind": "F1_REPORT",
-      "last_modified": "2026-11-03T05:17:57.825278Z",
+      "last_modified": "2026-11-03T05:25:56.847507Z",
       "location": "",
       "result_status": "FINAL",
-      "sequence": 1,
+      "sequence": 2,
       "source_timezone": null,
       "sources": [
         {
           "authority": "Formula 1",
           "content_hash": "b1f08fe4afbacf4e7cddedc8a92a46663ea87c1a07263d9f2636961eb4c61f81",
           "evidence_id": null,
-          "retrieved_at": "2026-11-03T05:17:56.821397Z",
+          "retrieved_at": "2026-11-03T05:25:53.825589Z",
           "url": "https://www.formula1.com/en/results/2026/races/1294/spain/race-result"
         },
         {
           "authority": "Formula 1",
           "content_hash": "6fb44b2b40797ef7e319775e9622880abc6fe116f9cd9b58aa82044e0183114c",
           "evidence_id": null,
-          "retrieved_at": "2026-11-03T05:17:56.841036Z",
+          "retrieved_at": "2026-11-03T05:25:53.848175Z",
           "url": "https://www.formula1.com/en/results/2026/races/1294/spain/qualifying"
         }
       ],
       "start_at_utc": null,
       "start_date": "2026-09-13",
       "status": "CONFIRMED",
-      "summary": "F1战报｜Spanish Grand Prix｜正赛",
+      "summary": "🏁 西班牙大奖赛（马德里, Madrid） | 战报",
       "transparent": true,
       "uid": "event-1ab4f52f49a15602251bdcb17b3e73a4@panorama.local"
     },
@@ -610,37 +666,37 @@
         "战报"
       ],
       "description": "状态：FIA 最终成绩\n赛事：FORMULA 1 QATAR AIRWAYS AZERBAIJAN GRAND PRIX 2026\n【正赛】\n杆位：63 RUS 拉塞尔 🇬🇧 George Russell (Mercedes, 1:42.526)\n成绩：\n🏅 P1 63 RUS 拉塞尔 🇬🇧 George Russell (Mercedes)\n🥈 P2 3 VER 维斯塔潘 🇳🇱 Max Verstappen (Red Bull Racing)\n🥉 P3 6 HAD 哈贾尔 🇫🇷 Isack Hadjar (Red Bull Racing)\n完赛：16 人；退赛：6 人\n来源：https://www.formula1.com/en/results/2026/races/1295/azerbaijan/race-result",
-      "dtstamp": "2026-11-03T05:17:57.825278Z",
+      "dtstamp": "2026-11-03T05:25:56.847507Z",
       "end_at_utc": null,
       "end_date_exclusive": "2026-09-27",
       "end_estimated": false,
       "event_key": "report:2026:azerbaijan",
       "event_kind": "F1_REPORT",
-      "last_modified": "2026-11-03T05:17:57.825278Z",
+      "last_modified": "2026-11-03T05:25:56.847507Z",
       "location": "",
       "result_status": "FINAL",
-      "sequence": 1,
+      "sequence": 2,
       "source_timezone": null,
       "sources": [
         {
           "authority": "Formula 1",
           "content_hash": "65b17a115fa92a1e374c9b6700bea50e68c294a8ffc60c74b4b318eeb4a8e7aa",
           "evidence_id": null,
-          "retrieved_at": "2026-11-03T05:17:56.980341Z",
+          "retrieved_at": "2026-11-03T05:25:54.373931Z",
           "url": "https://www.formula1.com/en/results/2026/races/1295/azerbaijan/race-result"
         },
         {
           "authority": "Formula 1",
           "content_hash": "22d6aebc6e947c2eb50332ad476d003b2144992fe0ddfcdcacf99a3d398ca882",
           "evidence_id": null,
-          "retrieved_at": "2026-11-03T05:17:56.999758Z",
+          "retrieved_at": "2026-11-03T05:25:54.397077Z",
           "url": "https://www.formula1.com/en/results/2026/races/1295/azerbaijan/qualifying"
         }
       ],
       "start_at_utc": null,
       "start_date": "2026-09-26",
       "status": "CONFIRMED",
-      "summary": "F1战报｜Azerbaijan Grand Prix｜正赛",
+      "summary": "🏁 阿塞拜疆大奖赛（巴库, Baku） | 战报",
       "transparent": true,
       "uid": "event-bbce2a7846005ed515377b05366548d2@panorama.local"
     },
@@ -652,37 +708,37 @@
         "战报"
       ],
       "description": "状态：FIA 最终成绩\n赛事：FORMULA 1 GULF AIR BAHRAIN GRAND PRIX IN MALAYSIA 2026\n【正赛】\n杆位：3 VER 维斯塔潘 🇳🇱 Max Verstappen (Red Bull Racing, 1:35.130)\n成绩：\n🏅 P1 3 VER 维斯塔潘 🇳🇱 Max Verstappen (Red Bull Racing)\n🥈 P2 12 ANT 安东内利 🇮🇹 Kimi Antonelli (Mercedes)\n🥉 P3 44 HAM 汉密尔顿 🇬🇧 Lewis Hamilton (Ferrari)\n完赛：20 人；退赛：2 人\n来源：https://www.formula1.com/en/results/2026/races/1308/bahrain/race-result",
-      "dtstamp": "2026-11-03T05:17:57.825278Z",
+      "dtstamp": "2026-11-03T05:25:56.847507Z",
       "end_at_utc": null,
       "end_date_exclusive": "2026-10-05",
       "end_estimated": false,
       "event_key": "report:2026:bahrain",
       "event_kind": "F1_REPORT",
-      "last_modified": "2026-11-03T05:17:57.825278Z",
+      "last_modified": "2026-11-03T05:25:56.847507Z",
       "location": "",
       "result_status": "FINAL",
-      "sequence": 1,
+      "sequence": 2,
       "source_timezone": null,
       "sources": [
         {
           "authority": "Formula 1",
           "content_hash": "6020906589cf547c490996e2221b86652dc1024a3b673fd7cea049541619c1bb",
           "evidence_id": null,
-          "retrieved_at": "2026-11-03T05:17:57.140531Z",
+          "retrieved_at": "2026-11-03T05:25:54.908763Z",
           "url": "https://www.formula1.com/en/results/2026/races/1308/bahrain/race-result"
         },
         {
           "authority": "Formula 1",
           "content_hash": "03d039576a151ef09527c0ce9537388e8d848f382276d14724952b08ecb5d18e",
           "evidence_id": null,
-          "retrieved_at": "2026-11-03T05:17:57.160395Z",
+          "retrieved_at": "2026-11-03T05:25:54.931561Z",
           "url": "https://www.formula1.com/en/results/2026/races/1308/bahrain/qualifying"
         }
       ],
       "start_at_utc": null,
       "start_date": "2026-10-04",
       "status": "CONFIRMED",
-      "summary": "F1战报｜Bahrain Grand Prix｜正赛",
+      "summary": "🏁 巴林大奖赛（萨基尔, Sakhir） | 战报",
       "transparent": true,
       "uid": "event-282e5200da13acd8a2ea881d19f328fd@panorama.local"
     },
@@ -694,51 +750,51 @@
         "战报"
       ],
       "description": "状态：FIA 最终成绩\n赛事：FORMULA 1 SINGAPORE AIRLINES SINGAPORE GRAND PRIX 2026\n【冲刺赛】\n杆位：3 VER 维斯塔潘 🇳🇱 Max Verstappen (Red Bull Racing, 1:31.156)\n成绩：\n🏅 P1 3 VER 维斯塔潘 🇳🇱 Max Verstappen (Red Bull Racing)\n🥈 P2 44 HAM 汉密尔顿 🇬🇧 Lewis Hamilton (Ferrari)\n🥉 P3 16 LEC 勒克莱尔 🇲🇨 Charles Leclerc (Ferrari)\n【正赛】\n杆位：3 VER 维斯塔潘 🇳🇱 Max Verstappen (Red Bull Racing, 1:31.373)\n成绩：\n🏅 P1 3 VER 维斯塔潘 🇳🇱 Max Verstappen (Red Bull Racing)\n🥈 P2 16 LEC 勒克莱尔 🇲🇨 Charles Leclerc (Ferrari)\n🥉 P3 12 ANT 安东内利 🇮🇹 Kimi Antonelli (Mercedes)\n完赛：19 人；退赛：3 人\n来源：https://www.formula1.com/en/results/2026/races/1296/singapore/race-result",
-      "dtstamp": "2026-11-03T05:17:57.825278Z",
+      "dtstamp": "2026-11-03T05:25:56.847507Z",
       "end_at_utc": null,
       "end_date_exclusive": "2026-10-12",
       "end_estimated": false,
       "event_key": "report:2026:singapore",
       "event_kind": "F1_REPORT",
-      "last_modified": "2026-11-03T05:17:57.825278Z",
+      "last_modified": "2026-11-03T05:25:56.847507Z",
       "location": "",
       "result_status": "FINAL",
-      "sequence": 1,
+      "sequence": 2,
       "source_timezone": null,
       "sources": [
         {
           "authority": "Formula 1",
           "content_hash": "74366032893630ccee3c8d3d7c3b33fd9e018b82a1b434f5df82b3ff597a09d9",
           "evidence_id": null,
-          "retrieved_at": "2026-11-03T05:17:57.312246Z",
+          "retrieved_at": "2026-11-03T05:25:55.410608Z",
           "url": "https://www.formula1.com/en/results/2026/races/1296/singapore/race-result"
         },
         {
           "authority": "Formula 1",
           "content_hash": "b0bf4211929178d18e6339e76d6d6f3128b9cbecae62fcc550c89022975badfe",
           "evidence_id": null,
-          "retrieved_at": "2026-11-03T05:17:57.331346Z",
+          "retrieved_at": "2026-11-03T05:25:55.433755Z",
           "url": "https://www.formula1.com/en/results/2026/races/1296/singapore/qualifying"
         },
         {
           "authority": "Formula 1",
           "content_hash": "bee6534aad5a35bd506134797e8567f5b11df23607ed2783df053a138c400a26",
           "evidence_id": null,
-          "retrieved_at": "2026-11-03T05:17:57.350831Z",
+          "retrieved_at": "2026-11-03T05:25:55.456111Z",
           "url": "https://www.formula1.com/en/results/2026/races/1296/singapore/sprint-results"
         },
         {
           "authority": "Formula 1",
           "content_hash": "9d775b7b5bb8489ce1114e970b342edd3c4984ab8340176037c15f3504121d78",
           "evidence_id": null,
-          "retrieved_at": "2026-11-03T05:17:57.371137Z",
+          "retrieved_at": "2026-11-03T05:25:55.478404Z",
           "url": "https://www.formula1.com/en/results/2026/races/1296/singapore/sprint-qualifying"
         }
       ],
       "start_at_utc": null,
       "start_date": "2026-10-11",
       "status": "CONFIRMED",
-      "summary": "F1战报｜Singapore Grand Prix｜正赛",
+      "summary": "🏁 新加坡大奖赛（新加坡, Singapore） | 战报",
       "transparent": true,
       "uid": "event-32e8d91e58cbcec6a2b9a2273b05b3d3@panorama.local"
     },
@@ -750,37 +806,37 @@
         "战报"
       ],
       "description": "状态：FIA 最终成绩\n赛事：FORMULA 1 MSC CRUISES UNITED STATES GRAND PRIX 2026\n【正赛】\n杆位：12 ANT 安东内利 🇮🇹 Kimi Antonelli (Mercedes, 1:34.035)\n成绩：\n🏅 P1 12 ANT 安东内利 🇮🇹 Kimi Antonelli (Mercedes)\n🥈 P2 16 LEC 勒克莱尔 🇲🇨 Charles Leclerc (Ferrari)\n🥉 P3 3 VER 维斯塔潘 🇳🇱 Max Verstappen (Red Bull Racing)\n完赛：19 人；退赛：3 人\n来源：https://www.formula1.com/en/results/2026/races/1297/united-states/race-result",
-      "dtstamp": "2026-11-03T05:17:57.825278Z",
+      "dtstamp": "2026-11-03T05:25:56.847507Z",
       "end_at_utc": null,
       "end_date_exclusive": "2026-10-26",
       "end_estimated": false,
       "event_key": "report:2026:united-states",
       "event_kind": "F1_REPORT",
-      "last_modified": "2026-11-03T05:17:57.825278Z",
+      "last_modified": "2026-11-03T05:25:56.847507Z",
       "location": "",
       "result_status": "FINAL",
-      "sequence": 1,
+      "sequence": 2,
       "source_timezone": null,
       "sources": [
         {
           "authority": "Formula 1",
           "content_hash": "9eb9ff05cb6269a791525dc6c7d300770f3adf4d69999de73a2046a0cd0353f9",
           "evidence_id": null,
-          "retrieved_at": "2026-11-03T05:17:57.523672Z",
+          "retrieved_at": "2026-11-03T05:25:56.013018Z",
           "url": "https://www.formula1.com/en/results/2026/races/1297/united-states/race-result"
         },
         {
           "authority": "Formula 1",
           "content_hash": "8c8b58c181df62c2b82490d1fb425895b3113a14cac9f0ef560afd7127aeb05e",
           "evidence_id": null,
-          "retrieved_at": "2026-11-03T05:17:57.544089Z",
+          "retrieved_at": "2026-11-03T05:25:56.035136Z",
           "url": "https://www.formula1.com/en/results/2026/races/1297/united-states/qualifying"
         }
       ],
       "start_at_utc": null,
       "start_date": "2026-10-25",
       "status": "CONFIRMED",
-      "summary": "F1战报｜United States Grand Prix｜正赛",
+      "summary": "🏁 美国大奖赛（奥斯汀, Austin） | 战报",
       "transparent": true,
       "uid": "event-aa84d0c40fea82ed59b0a467c7e33e15@panorama.local"
     },
@@ -792,81 +848,39 @@
         "战报"
       ],
       "description": "状态：FIA 最终成绩\n赛事：FORMULA 1 GRAN PREMIO DE LA CIUDAD DE MÉXICO 2026\n【正赛】\n杆位：44 HAM 汉密尔顿 🇬🇧 Lewis Hamilton (Ferrari, 1:16.514)\n成绩：\n🏅 P1 3 VER 维斯塔潘 🇳🇱 Max Verstappen (Red Bull Racing)\n🥈 P2 44 HAM 汉密尔顿 🇬🇧 Lewis Hamilton (Ferrari)\n🥉 P3 12 ANT 安东内利 🇮🇹 Kimi Antonelli (Mercedes)\n完赛：17 人；退赛：5 人\n来源：https://www.formula1.com/en/results/2026/races/1298/mexico/race-result",
-      "dtstamp": "2026-11-03T05:17:57.825278Z",
+      "dtstamp": "2026-11-03T05:25:56.847507Z",
       "end_at_utc": null,
       "end_date_exclusive": "2026-11-02",
       "end_estimated": false,
       "event_key": "report:2026:mexico",
       "event_kind": "F1_REPORT",
-      "last_modified": "2026-11-03T05:17:57.825278Z",
+      "last_modified": "2026-11-03T05:25:56.847507Z",
       "location": "",
       "result_status": "FINAL",
-      "sequence": 1,
+      "sequence": 2,
       "source_timezone": null,
       "sources": [
         {
           "authority": "Formula 1",
           "content_hash": "1b2ee45e1b11f2fbaffed36e09e1a8f8a456739fa8c07a67484f1ec98c003764",
           "evidence_id": null,
-          "retrieved_at": "2026-11-03T05:17:57.679053Z",
+          "retrieved_at": "2026-11-03T05:25:56.632829Z",
           "url": "https://www.formula1.com/en/results/2026/races/1298/mexico/race-result"
         },
         {
           "authority": "Formula 1",
           "content_hash": "e665cdbd0658d765e99fcfa644a9e81216684228b43f404102676c9dfbb16ecc",
           "evidence_id": null,
-          "retrieved_at": "2026-11-03T05:17:57.699428Z",
+          "retrieved_at": "2026-11-03T05:25:56.654932Z",
           "url": "https://www.formula1.com/en/results/2026/races/1298/mexico/qualifying"
         }
       ],
       "start_at_utc": null,
       "start_date": "2026-11-01",
       "status": "CONFIRMED",
-      "summary": "F1战报｜Mexico City Grand Prix｜正赛",
+      "summary": "🏁 墨西哥城大奖赛（墨西哥城, Mexico City） | 战报",
       "transparent": true,
       "uid": "event-c80670d256cb3a1dbfa2802c5eeec161@panorama.local"
-    },
-    {
-      "alarms": [],
-      "calendar_kind": "F1_REPORT",
-      "categories": [
-        "F1",
-        "战报"
-      ],
-      "description": "状态：FIA 最终成绩\n赛事：FORMULA 1 CRYPTO.COM MIAMI GRAND PRIX 2026\n冠军：Kimi Antonelli（Mercedes，25 分）\n亚军：Lando Norris（McLaren，18 分）\n季军：Oscar Piastri（McLaren，15 分）\n杆位：Kimi Antonelli（Mercedes，1:27.798）\n完赛：18 人；退赛：4 人\n来源：F1 官方成绩页 https://www.formula1.com/en/results/2026/races/1284/miami/race-result\n发车顺位：https://www.formula1.com/en/results/2026/races/1284/miami/starting-grid\nFIA 最终成绩文件：https://www.fia.com/system/files/decision-document/2026_miami_grand_prix_-_final_race_classification.pdf",
-      "dtstamp": "2026-11-02T14:36:25.101008Z",
-      "end_at_utc": null,
-      "end_date_exclusive": "2026-05-04",
-      "end_estimated": false,
-      "event_key": "report:2026:miami",
-      "event_kind": "F1_REPORT",
-      "last_modified": null,
-      "location": "",
-      "result_status": "FINAL",
-      "sequence": 0,
-      "source_timezone": null,
-      "sources": [
-        {
-          "authority": "Formula 1",
-          "content_hash": "3600ca2c2d57ee80b8665d5af250a5c076493d9eb35e908935ab5a58b791dda3",
-          "evidence_id": null,
-          "retrieved_at": "2026-11-02T15:29:39.167572Z",
-          "url": "https://www.formula1.com/en/results/2026/races/1284/miami/race-result"
-        },
-        {
-          "authority": "Formula 1",
-          "content_hash": "7d1cb761a97dcb008254f9da28ea83eb62179cd6b635447ccc08624bac978830",
-          "evidence_id": null,
-          "retrieved_at": "2026-11-02T15:29:39.186948Z",
-          "url": "https://www.formula1.com/en/results/2026/races/1284/miami/starting-grid"
-        }
-      ],
-      "start_at_utc": null,
-      "start_date": "2026-05-03",
-      "status": "CONFIRMED",
-      "summary": "F1战报｜Miami Grand Prix｜正赛",
-      "transparent": true,
-      "uid": "event-31016d61118ea4456bed316280b07e5c@panorama.local"
     }
   ],
   "version": 1
