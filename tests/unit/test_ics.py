@@ -1,5 +1,7 @@
 """ICS generation and iOS alarm compatibility tests."""
 
+import pytest
+
 from panorama_calendar.ics import render_calendar, validate_ics_bytes
 from panorama_calendar.ics.folding import CRLF
 from panorama_calendar.models import EventRecord
@@ -31,3 +33,26 @@ def test_every_physical_line_is_at_most_75_octets(workday_event: EventRecord) ->
     data = render_calendar([workday_event], "全国假期｜提醒验证")
     assert all(len(line) <= 75 for line in data[:-2].split(CRLF))
     assert data.endswith(CRLF)
+
+
+def test_calendar_advertises_refresh_interval(workday_event: EventRecord) -> None:
+    """Clients are told how often to re-poll instead of guessing."""
+    text = _unfold(render_calendar([workday_event], "全国假期｜提醒验证"))
+    assert "X-PUBLISHED-TTL:PT6H" in text
+    assert "REFRESH-INTERVAL;VALUE=DURATION:PT6H" in text
+    header = text.split("BEGIN:VEVENT", maxsplit=1)[0]
+    assert header.count("X-PUBLISHED-TTL") == 1
+    assert header.count("REFRESH-INTERVAL") == 1
+
+
+def test_refresh_interval_is_configurable(workday_event: EventRecord) -> None:
+    """The interval is a parameter, so the cloud cadence can change alone."""
+    text = _unfold(render_calendar([workday_event], "全国假期｜提醒验证", refresh_interval="PT1H"))
+    assert "X-PUBLISHED-TTL:PT1H" in text
+    assert "REFRESH-INTERVAL;VALUE=DURATION:PT1H" in text
+
+
+def test_multi_line_refresh_interval_is_rejected(workday_event: EventRecord) -> None:
+    """A header-injection attempt must fail loudly, not corrupt the feed."""
+    with pytest.raises(ValueError, match="single-line"):
+        render_calendar([workday_event], "全国假期｜提醒验证", refresh_interval="PT6H\r\nX-EVIL:1")

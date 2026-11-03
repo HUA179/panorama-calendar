@@ -9,6 +9,11 @@ from panorama_calendar.models.event import EventRecord
 
 DEFAULT_PRODID = "-//Personal Panorama Calendar//ICS Core 1.0//CN"
 
+#: How often clients should re-poll the feed. Matches the cloud build cadence
+#: (every six hours); Apple Calendar and others honour these hints when
+#: deciding when to fetch instead of relying on their own heuristics.
+DEFAULT_REFRESH_INTERVAL = "PT6H"
+
 
 def _format_utc(value: datetime) -> str:
     """Format an aware datetime as an RFC 5545 UTC timestamp."""
@@ -69,10 +74,13 @@ def build_calendar_lines(
     events: Iterable[EventRecord],
     calendar_name: str,
     prodid: str = DEFAULT_PRODID,
+    refresh_interval: str = DEFAULT_REFRESH_INTERVAL,
 ) -> list[str]:
     """Build one VCALENDAR with deterministic event ordering."""
     if "\r" in prodid or "\n" in prodid:
         raise ValueError("PRODID must be single-line")
+    if not refresh_interval or "\r" in refresh_interval or "\n" in refresh_interval:
+        raise ValueError("refresh interval must be a single-line ISO 8601 duration")
     lines = [
         "BEGIN:VCALENDAR",
         f"PRODID:{prodid}",
@@ -80,6 +88,8 @@ def build_calendar_lines(
         "CALSCALE:GREGORIAN",
         "METHOD:PUBLISH",
         f"X-WR-CALNAME:{escape_text(calendar_name)}",
+        f"X-PUBLISHED-TTL:{refresh_interval}",
+        f"REFRESH-INTERVAL;VALUE=DURATION:{refresh_interval}",
     ]
     for event in sorted(events, key=_event_sort_key):
         lines.extend(build_event_lines(event))
