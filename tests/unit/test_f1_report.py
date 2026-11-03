@@ -20,6 +20,12 @@ from panorama_calendar.pipelines import (
 )
 
 RACE_DATE = date(2026, 11, 1)
+MEXICO_RESULT_URL = "https://www.formula1.com/en/results/2026/races/1298/mexico/race-result"
+MEXICO_QUALIFYING_URL = "https://www.formula1.com/en/results/2026/races/1298/mexico/qualifying"
+MEXICO_SPRINT_URL = "https://www.formula1.com/en/results/2026/races/1298/mexico/sprint-results"
+MEXICO_SPRINT_Q_URL = (
+    "https://www.formula1.com/en/results/2026/races/1298/mexico/sprint-qualifying"
+)
 
 
 def _source(url: str) -> SourceReference:
@@ -31,35 +37,117 @@ def _source(url: str) -> SourceReference:
     )
 
 
+def _podium(winner: str = "Max Verstappen") -> list[F1ResultEntry]:
+    """Return one classified podium plus a retirement."""
+    return [
+        F1ResultEntry(
+            position="1",
+            car_number="3",
+            driver=winner,
+            code="VER",
+            team="Red Bull Racing",
+            laps=71,
+            time_or_status="1:37:58.574",
+            points=25,
+        ),
+        F1ResultEntry(
+            position="2",
+            car_number="44",
+            driver="Lewis Hamilton",
+            code="HAM",
+            team="Ferrari",
+            laps=71,
+            time_or_status="+8.271",
+            points=18,
+        ),
+        F1ResultEntry(
+            position="3",
+            car_number="12",
+            driver="Kimi Antonelli",
+            code="ANT",
+            team="Mercedes",
+            laps=71,
+            time_or_status="+12.104",
+            points=15,
+        ),
+        F1ResultEntry(
+            position="NC",
+            car_number="5",
+            driver="Gabriel Bortoleto",
+            code="BOR",
+            team="Audi",
+            laps=68,
+            time_or_status="DNF",
+            points=0,
+        ),
+    ]
+
+
 def _report(
     *,
     status: ResultStatus = ResultStatus.FINAL,
     winner: str = "Max Verstappen",
-    with_grid: bool = True,
+    with_pole: bool = True,
+    with_sprint: bool = False,
     event_id: str = "mexico",
     name: str = "Mexico City Grand Prix",
 ) -> F1RaceReport:
-    """Build one normalised report with a podium and a retirement."""
-    grid = (
-        [
-            F1GridEntry(
-                position=1,
-                car_number="44",
-                driver="Lewis Hamilton",
-                team="Ferrari",
-                time="1:16.514",
-            ),
-            F1GridEntry(
-                position=2,
+    """Build one normalised report with a podium, a pole and a retirement."""
+    pole = (
+        F1GridEntry(
+            position=1,
+            car_number="16",
+            driver="Charles Leclerc",
+            code="LEC",
+            team="Ferrari",
+            time="1:16.514",
+        )
+        if with_pole
+        else None
+    )
+    sprint_results: list[F1ResultEntry] = []
+    sprint_pole = None
+    if with_sprint:
+        sprint_results = [
+            F1ResultEntry(
+                position="1",
                 car_number="1",
+                driver="Lando Norris",
+                code="NOR",
+                team="McLaren",
+                laps=24,
+                time_or_status="39:12.004",
+                points=8,
+            ),
+            F1ResultEntry(
+                position="2",
+                car_number="81",
+                driver="Oscar Piastri",
+                code="PIA",
+                team="McLaren",
+                laps=24,
+                time_or_status="+1.882",
+                points=7,
+            ),
+            F1ResultEntry(
+                position="3",
+                car_number="3",
                 driver="Max Verstappen",
+                code="VER",
                 team="Red Bull Racing",
-                time="1:16.601",
+                laps=24,
+                time_or_status="+4.310",
+                points=6,
             ),
         ]
-        if with_grid
-        else []
-    )
+        sprint_pole = F1GridEntry(
+            position=1,
+            car_number="1",
+            driver="Lando Norris",
+            code="NOR",
+            team="McLaren",
+            time="1:15.882",
+        )
     return F1RaceReport(
         season=2026,
         event_id=event_id,
@@ -67,53 +155,14 @@ def _report(
         official_name=f"FORMULA 1 {name.upper()} 2026",
         race_date=RACE_DATE,
         status=status,
-        results=[
-            F1ResultEntry(
-                position="1",
-                car_number="1",
-                driver=winner,
-                team="Red Bull Racing",
-                laps=71,
-                time_or_status="1:37:58.574",
-                points=25,
-            ),
-            F1ResultEntry(
-                position="2",
-                car_number="44",
-                driver="Lewis Hamilton",
-                team="Ferrari",
-                laps=71,
-                time_or_status="+8.271",
-                points=18,
-            ),
-            F1ResultEntry(
-                position="3",
-                car_number="12",
-                driver="Kimi Antonelli",
-                team="Mercedes",
-                laps=71,
-                time_or_status="+12.104",
-                points=15,
-            ),
-            F1ResultEntry(
-                position="NC",
-                car_number="5",
-                driver="Gabriel Bortoleto",
-                team="Audi",
-                laps=68,
-                time_or_status="DNF",
-                points=0,
-            ),
-        ],
-        grid=grid,
-        result_source=_source(
-            "https://www.formula1.com/en/results/2026/races/1298/mexico/race-result"
-        ),
-        grid_source=(
-            _source("https://www.formula1.com/en/results/2026/races/1298/mexico/starting-grid")
-            if with_grid
-            else None
-        ),
+        results=_podium(winner),
+        result_source=_source(MEXICO_RESULT_URL),
+        pole=pole,
+        pole_source=_source(MEXICO_QUALIFYING_URL) if with_pole else None,
+        sprint_results=sprint_results,
+        sprint_source=_source(MEXICO_SPRINT_URL) if with_sprint else None,
+        sprint_pole=sprint_pole,
+        sprint_pole_source=_source(MEXICO_SPRINT_Q_URL) if with_sprint else None,
         fia_classification_url=(
             "https://www.fia.com/system/files/decision-document/mexico_final.pdf"
             if status is not ResultStatus.PROVISIONAL
@@ -152,16 +201,62 @@ def test_report_identity_is_separate_from_the_schedule() -> None:
     assert schedule_event.event_key != report_event.event_key
 
 
-def test_report_renders_podium_pole_and_status_evidence() -> None:
-    """The description answers who won, who started first, and how final it is."""
+def test_report_renders_the_strict_description_template() -> None:
+    """The description follows the agreed line-by-line layout."""
     event = build_f1_report_events([_report()])[0]
     assert event.summary == "F1战报｜Mexico City Grand Prix｜正赛"
-    assert "状态：FIA 最终成绩" in event.description
-    assert "冠军：Max Verstappen（Red Bull Racing，25 分）" in event.description
-    assert "杆位：Lewis Hamilton（Ferrari，1:16.514）" in event.description
-    assert "完赛：3 人；退赛：1 人" in event.description
-    assert "FIA 最终成绩文件" in event.description
-    assert "赛事：FORMULA 1 MEXICO CITY GRAND PRIX 2026" in event.description
+    assert event.description == (
+        "状态：FIA 最终成绩\n"
+        "赛事：FORMULA 1 MEXICO CITY GRAND PRIX 2026\n"
+        "【正赛】\n"
+        "杆位：16 LEC 勒克莱尔 🇲🇨 Charles Leclerc (Ferrari, 1:16.514)\n"
+        "成绩：\n"
+        "🏅 P1 3 VER 维斯塔潘 🇳🇱 Max Verstappen (Red Bull Racing)\n"
+        "🥈 P2 44 HAM 汉密尔顿 🇬🇧 Lewis Hamilton (Ferrari)\n"
+        "🥉 P3 12 ANT 安东内利 🇮🇹 Kimi Antonelli (Mercedes)\n"
+        "完赛：3 人；退赛：1 人\n"
+        f"来源：{MEXICO_RESULT_URL}"
+    )
+
+
+def test_sprint_weekend_report_merges_both_classifications() -> None:
+    """A sprint round carries the sprint block between the header and the race."""
+    event = build_f1_report_events([_report(with_sprint=True)])[0]
+    lines = event.description.splitlines()
+    assert lines == [
+        "状态：FIA 最终成绩",
+        "赛事：FORMULA 1 MEXICO CITY GRAND PRIX 2026",
+        "【冲刺赛】",
+        "杆位：1 NOR 诺里斯 🇬🇧 Lando Norris (McLaren, 1:15.882)",
+        "成绩：",
+        "🏅 P1 1 NOR 诺里斯 🇬🇧 Lando Norris (McLaren)",
+        "🥈 P2 81 PIA 皮亚斯特里 🇦🇺 Oscar Piastri (McLaren)",
+        "🥉 P3 3 VER 维斯塔潘 🇳🇱 Max Verstappen (Red Bull Racing)",
+        "【正赛】",
+        "杆位：16 LEC 勒克莱尔 🇲🇨 Charles Leclerc (Ferrari, 1:16.514)",
+        "成绩：",
+        "🏅 P1 3 VER 维斯塔潘 🇳🇱 Max Verstappen (Red Bull Racing)",
+        "🥈 P2 44 HAM 汉密尔顿 🇬🇧 Lewis Hamilton (Ferrari)",
+        "🥉 P3 12 ANT 安东内利 🇮🇹 Kimi Antonelli (Mercedes)",
+        "完赛：3 人；退赛：1 人",
+        f"来源：{MEXICO_RESULT_URL}",
+    ]
+
+
+def test_unmapped_driver_code_degrades_without_translation() -> None:
+    """A newcomer without a registry entry keeps number, code and English name."""
+    report = _report()
+    report.results[0] = report.results[0].model_copy(update={"code": "XXX"})
+    event = build_f1_report_events([report])[0]
+    assert "🏅 P1 3 XXX Max Verstappen (Red Bull Racing)" in event.description
+
+
+def test_pole_without_a_lap_time_omits_the_time() -> None:
+    """A missing segment time never renders a trailing comma."""
+    report = _report()
+    report.pole = report.pole.model_copy(update={"time": ""}) if report.pole else None
+    event = build_f1_report_events([report])[0]
+    assert "杆位：16 LEC 勒克莱尔 🇲🇨 Charles Leclerc (Ferrari)" in event.description
 
 
 def test_provisional_report_is_labelled_as_such() -> None:
@@ -235,11 +330,54 @@ def test_report_without_a_winner_is_rejected() -> None:
                     position="2",
                     car_number="44",
                     driver="Lewis Hamilton",
+                    code="HAM",
                     team="Ferrari",
                     laps=71,
                     time_or_status="+8.271",
                     points=18,
                 )
             ],
-            result_source=_source("https://www.formula1.com/en/results/2026/races/1298/race-result"),
+            result_source=_source(MEXICO_RESULT_URL),
+        )
+
+
+def test_sprint_classification_is_validated_like_the_race() -> None:
+    """A sprint table without a winner cannot pass as a sprint weekend."""
+    with pytest.raises(ValueError, match="sprint results are missing the winner"):
+        F1RaceReport(
+            season=2026,
+            event_id="mexico",
+            grand_prix_name="Mexico City Grand Prix",
+            race_date=RACE_DATE,
+            status=ResultStatus.FINAL,
+            results=_podium(),
+            result_source=_source(MEXICO_RESULT_URL),
+            sprint_results=[
+                F1ResultEntry(
+                    position="2",
+                    car_number="81",
+                    driver="Oscar Piastri",
+                    code="PIA",
+                    team="McLaren",
+                    laps=24,
+                    time_or_status="+1.882",
+                    points=7,
+                )
+            ],
+            sprint_source=_source(MEXICO_SPRINT_URL),
+        )
+
+
+def test_sprint_facts_require_their_sources() -> None:
+    """Sprint rows without retrieval evidence are rejected outright."""
+    with pytest.raises(ValueError, match="sprint results require a retrieval source"):
+        F1RaceReport(
+            season=2026,
+            event_id="mexico",
+            grand_prix_name="Mexico City Grand Prix",
+            race_date=RACE_DATE,
+            status=ResultStatus.FINAL,
+            results=_podium(),
+            result_source=_source(MEXICO_RESULT_URL),
+            sprint_results=_report(with_sprint=True).sprint_results,
         )

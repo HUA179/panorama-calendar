@@ -8,7 +8,13 @@ from panorama_calendar.models.enums import (
     SessionKind,
 )
 from panorama_calendar.models.event import Alarm, EventRecord
-from panorama_calendar.models.f1 import F1GridEntry, F1RaceReport, F1ResultEntry, F1Session
+from panorama_calendar.models.f1 import (
+    F1GridEntry,
+    F1QualifyingEntry,
+    F1RaceReport,
+    F1ResultEntry,
+    F1Session,
+)
 from panorama_calendar.models.source import SourceReference
 
 __all__ = [
@@ -18,6 +24,7 @@ __all__ = [
     "EventRecord",
     "EventStatus",
     "F1GridEntry",
+    "F1QualifyingEntry",
     "F1RaceReport",
     "F1ResultEntry",
     "F1Session",

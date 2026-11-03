@@ -16,12 +16,14 @@ from urllib.parse import urljoin, urlsplit
 
 import httpx
 
-from panorama_calendar.models.f1 import F1GridEntry, F1ResultEntry
+from panorama_calendar.models.f1 import F1GridEntry, F1QualifyingEntry, F1ResultEntry
 from panorama_calendar.models.source import SourceReference
 
 F1_BASE_URL = "https://www.formula1.com"
 RACE_RESULT_HEADER = ["Pos.", "No.", "Driver", "Team", "Laps", "Time / Retired", "Pts."]
 STARTING_GRID_HEADER = ["Pos.", "No.", "Driver", "Team", "Time"]
+QUALIFYING_HEADER = ["Pos.", "No.", "Driver", "Team", "Q1", "Q2", "Q3", "Laps"]
+_DRIVER_COLUMN = 2
 _DRIVER_CODE_PATTERN = re.compile(r".*[a-z][A-Z]{3}$")
 
 
@@ -54,24 +56,57 @@ class F1RoundLink:
             f"/{self.event_id}/starting-grid"
         )
 
+    @property
+    def qualifying_url(self) -> str:
+        """Return the official qualifying classification URL."""
+        return (
+            f"{F1_BASE_URL}/en/results/{self.season}/races/{self.race_id}"
+            f"/{self.event_id}/qualifying"
+        )
+
+    @property
+    def sprint_results_url(self) -> str:
+        """Return the official sprint classification URL."""
+        return (
+            f"{F1_BASE_URL}/en/results/{self.season}/races/{self.race_id}"
+            f"/{self.event_id}/sprint-results"
+        )
+
+    @property
+    def sprint_qualifying_url(self) -> str:
+        """Return the official sprint qualifying classification URL."""
+        return (
+            f"{F1_BASE_URL}/en/results/{self.season}/races/{self.race_id}"
+            f"/{self.event_id}/sprint-qualifying"
+        )
+
 
 class _ResultsTableParser(HTMLParser):
-    """Collect table rows while suppressing responsive driver-code spans."""
+    """Collect table rows, keeping the hidden driver codes alongside.
+
+    The visible text of a cell lands in ``rows`` while the text hidden by
+    responsive spans lands in ``codes`` at the same row/column position, so
+    the driver column can be read as a name plus its three-letter code.
+    """
 
     def __init__(self) -> None:
         super().__init__(convert_charrefs=True)
         self.rows: list[list[str]] = []
+        self.codes: list[list[str]] = []
         self._in_cell = False
         self._cell: list[str] = []
+        self._hidden: list[str] = []
         self._spans: list[bool] = []
 
     def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
         """Track rows, cells, and the spans that hide driver codes."""
         if tag == "tr":
             self.rows.append([])
+            self.codes.append([])
         elif tag in ("td", "th"):
             self._in_cell = True
             self._cell = []
+            self._hidden = []
             self._spans = []
         elif tag == "span" and self._in_cell:
             classes = dict(attrs).get("class") or ""
@@ -85,8 +120,12 @@ class _ResultsTableParser(HTMLParser):
             self._spans.append(suppress)
 
     def handle_data(self, data: str) -> None:
-        """Keep text unless every enclosing span suppresses it."""
-        if self._in_cell and not any(self._spans):
+        """Split visible text from the suppressed driver-code text."""
+        if not self._in_cell:
+            return
+        if any(self._spans):
+            self._hidden.append(data)
+        else:
             self._cell.append(data)
 
     def handle_endtag(self, tag: str) -> None:
@@ -95,6 +134,7 @@ class _ResultsTableParser(HTMLParser):
             self._spans.pop()
         elif tag in ("td", "th") and self._in_cell:
             self.rows[-1].append(" ".join("".join(self._cell).split()))
+            self.codes[-1].append("".join(self._hidden).strip())
             self._in_cell = False
 
 
@@ -122,8 +162,10 @@ def discover_results_rounds(index_html: str, season: int) -> list[F1RoundLink]:
     return rounds
 
 
-def _extract_table(html: str, header: list[str], url: str) -> list[list[str]] | None:
-    """Return data rows for the expected table, or None when it is absent."""
+def _extract_table(
+    html: str, header: list[str], url: str
+) -> tuple[list[list[str]], list[str]] | None:
+    """Return data rows plus their driver codes, or None when the table is absent."""
     parser = _ResultsTableParser()
     parser.feed(html)
     start = None
@@ -134,15 +176,17 @@ def _extract_table(html: str, header: list[str], url: str) -> list[list[str]] | 
     if start is None:
         return None
     rows: list[list[str]] = []
-    for row in parser.rows[start:]:
+    codes: list[str] = []
+    for row, hidden in zip(parser.rows[start:], parser.codes[start:], strict=True):
         if len(row) != len(header):
             break
         rows.append(row)
+        codes.append(hidden[_DRIVER_COLUMN] if len(hidden) > _DRIVER_COLUMN else "")
     if not rows:
-        return []
+        return [], []
     if any(any("javascript:" in cell.lower() for cell in row) for row in rows):
         raise F1ResultsError(f"F1 results table contains script content: {url}")
-    return rows
+    return rows, codes
 
 
 def _driver_name(value: str, url: str) -> str:
@@ -170,22 +214,26 @@ def parse_race_result(
     *,
     retrieved_at: datetime | None = None,
 ) -> tuple[list[F1ResultEntry], SourceReference] | None:
-    """Parse the official race classification table.
+    """Parse an official classification table.
 
-    Returns None when the page has no result table yet (the Grand Prix has
-    not finished). Raises F1ResultsError on any structural surprise.
+    Used for the Grand Prix result and, on sprint weekends, for the sprint
+    result page which shares the exact same table shape. Returns None when
+    the page has no result table yet (the session has not finished). Raises
+    F1ResultsError on any structural surprise.
     """
-    rows = _extract_table(html, RACE_RESULT_HEADER, url)
-    if rows is None:
+    extracted = _extract_table(html, RACE_RESULT_HEADER, url)
+    if extracted is None:
         return None
+    rows, codes = extracted
     entries: list[F1ResultEntry] = []
-    for row in rows:
+    for row, code in zip(rows, codes, strict=True):
         position, car_number, driver, team, laps, time_or_status, points = row
         try:
             entry = F1ResultEntry(
                 position=position,
                 car_number=car_number,
                 driver=_driver_name(driver, url),
+                code=code,
                 team=team,
                 laps=int(laps),
                 time_or_status=time_or_status,
@@ -204,22 +252,60 @@ def parse_starting_grid(
     retrieved_at: datetime | None = None,
 ) -> tuple[list[F1GridEntry], SourceReference] | None:
     """Parse the official starting grid table with the same absence rule."""
-    rows = _extract_table(html, STARTING_GRID_HEADER, url)
-    if rows is None:
+    extracted = _extract_table(html, STARTING_GRID_HEADER, url)
+    if extracted is None:
         return None
+    rows, codes = extracted
     entries: list[F1GridEntry] = []
-    for row in rows:
+    for row, code in zip(rows, codes, strict=True):
         position, car_number, driver, team, time = row
         try:
             entry = F1GridEntry(
                 position=int(position),
                 car_number=car_number,
                 driver=_driver_name(driver, url),
+                code=code,
                 team=team,
                 time=time,
             )
         except (ValueError, TypeError) as error:
             raise F1ResultsError(f"invalid starting grid row {row!r} at {url}") from error
+        entries.append(entry)
+    return entries, _source(html, url, retrieved_at)
+
+
+def parse_qualifying(
+    html: str,
+    url: str,
+    *,
+    retrieved_at: datetime | None = None,
+) -> tuple[list[F1QualifyingEntry], SourceReference] | None:
+    """Parse an official qualifying or sprint-qualifying table.
+
+    Both pages share the Q1/Q2/Q3 column layout. The pole-sitter is the
+    entry at position 1; its deciding lap is the deepest non-empty segment.
+    """
+    extracted = _extract_table(html, QUALIFYING_HEADER, url)
+    if extracted is None:
+        return None
+    rows, codes = extracted
+    entries: list[F1QualifyingEntry] = []
+    for row, code in zip(rows, codes, strict=True):
+        position, car_number, driver, team, q1, q2, q3, laps = row
+        try:
+            entry = F1QualifyingEntry(
+                position=position,
+                car_number=car_number,
+                driver=_driver_name(driver, url),
+                code=code,
+                team=team,
+                q1=q1,
+                q2=q2,
+                q3=q3,
+                laps=int(laps),
+            )
+        except (ValueError, TypeError) as error:
+            raise F1ResultsError(f"invalid qualifying row {row!r} at {url}") from error
         entries.append(entry)
     return entries, _source(html, url, retrieved_at)
 
@@ -269,6 +355,27 @@ class F1ResultsClient:
     ) -> tuple[list[F1GridEntry], SourceReference] | None:
         """Fetch one starting grid, or None when it is not published."""
         return parse_starting_grid(self._get_text(link.grid_url, link.season), link.grid_url)
+
+    def fetch_qualifying(
+        self, link: F1RoundLink
+    ) -> tuple[list[F1QualifyingEntry], SourceReference] | None:
+        """Fetch one qualifying classification, or None when not published."""
+        url = link.qualifying_url
+        return parse_qualifying(self._get_text(url, link.season), url)
+
+    def fetch_sprint_results(
+        self, link: F1RoundLink
+    ) -> tuple[list[F1ResultEntry], SourceReference] | None:
+        """Fetch one sprint classification, or None when not published."""
+        url = link.sprint_results_url
+        return parse_race_result(self._get_text(url, link.season), url)
+
+    def fetch_sprint_qualifying(
+        self, link: F1RoundLink
+    ) -> tuple[list[F1QualifyingEntry], SourceReference] | None:
+        """Fetch one sprint qualifying classification, or None when not published."""
+        url = link.sprint_qualifying_url
+        return parse_qualifying(self._get_text(url, link.season), url)
 
 
 def results_url_is_official(url: str) -> bool:

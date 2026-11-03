@@ -10,15 +10,17 @@ from panorama_calendar.models import (
     EventStatus,
     ResultStatus,
 )
-from panorama_calendar.models.f1 import F1RaceReport
+from panorama_calendar.models.f1 import F1GridEntry, F1RaceReport, F1ResultEntry
+from panorama_calendar.models.source import SourceReference
 from panorama_calendar.services.revision import reconcile_events
+from panorama_calendar.sources.f1_metadata import load_f1_driver_registry
 
 _STATUS_LABELS = {
     ResultStatus.PROVISIONAL: "暂定成绩（以 FIA 最终成绩为准）",
     ResultStatus.FINAL: "FIA 最终成绩",
     ResultStatus.AMENDED: "改判后成绩（FIA 已重新发布最终成绩）",
 }
-_PODIUM_TITLES = ("冠军", "亚军", "季军")
+_PODIUM_MEDALS = ("🏅", "🥈", "🥉")
 _STATUS_RANK = {
     ResultStatus.NOT_AVAILABLE: 0,
     ResultStatus.PROVISIONAL: 1,
@@ -31,6 +33,49 @@ class F1ReportError(RuntimeError):
     """Raised when a rebuild would publish less certainty than it already has."""
 
 
+def _driver_label(car_number: str, code: str, driver: str, team: str, time: str = "") -> str:
+    """Render one driver as ``63 RUS 拉塞尔 🇬🇧 George Russell (Mercedes)``.
+
+    The Chinese name and flag come from the reviewed registry keyed by the
+    three-letter code; an unmapped code degrades to number, code and English
+    name instead of inventing a translation.
+    """
+    info = load_f1_driver_registry().get(code) if code else None
+    parts = [car_number]
+    if code:
+        parts.append(code)
+    if info is not None:
+        parts.append(info.zh)
+        parts.append(info.flag)
+    parts.append(driver)
+    suffix = f"{team}, {time}" if time else team
+    return f"{' '.join(parts)} ({suffix})"
+
+
+def _podium_lines(podium: list[F1ResultEntry]) -> list[str]:
+    """Render the top three finishers with medals."""
+    return [
+        f"{medal} P{entry.position} "
+        + _driver_label(entry.car_number, entry.code, entry.driver, entry.team)
+        for medal, entry in zip(_PODIUM_MEDALS, podium, strict=False)
+    ]
+
+
+def _pole_line(pole: F1GridEntry) -> str:
+    """Render the pole-sitter with the deciding lap time."""
+    return "杆位：" + _driver_label(pole.car_number, pole.code, pole.driver, pole.team, pole.time)
+
+
+def _session_block(title: str, pole: F1GridEntry | None, podium: list[F1ResultEntry]) -> list[str]:
+    """Render one 【冲刺赛】or【正赛】block: pole line plus podium."""
+    lines = [title]
+    if pole is not None:
+        lines.append(_pole_line(pole))
+    lines.append("成绩：")
+    lines.extend(_podium_lines(podium))
+    return lines
+
+
 def _candidate_event(report: F1RaceReport) -> EventRecord:
     """Build one self-contained report event from the normalised facts."""
     summary = f"F1战报｜{report.grand_prix_name}｜正赛"
@@ -38,29 +83,22 @@ def _candidate_event(report: F1RaceReport) -> EventRecord:
         summary += "（暂定）"
 
     lines = [f"状态：{_STATUS_LABELS[report.status]}"]
-    if report.official_name and report.official_name != report.grand_prix_name:
-        lines.append(f"赛事：{report.official_name}")
-    for title, entry in zip(_PODIUM_TITLES, report.podium, strict=False):
-        lines.append(f"{title}：{entry.driver}（{entry.team}，{entry.points} 分）")
-    if report.pole is not None:
-        pole = report.pole
-        pole_time = f"，{pole.time}" if pole.time else ""
-        lines.append(f"杆位：{pole.driver}（{pole.team}{pole_time}）")
+    lines.append(f"赛事：{report.official_name or report.grand_prix_name}")
+    if report.sprint_results:
+        lines.extend(_session_block("【冲刺赛】", report.sprint_pole, report.sprint_podium))
+    lines.extend(_session_block("【正赛】", report.pole, report.podium))
     lines.append(f"完赛：{report.classified_count} 人；退赛：{report.dnf_count} 人")
-    lines.append(f"来源：F1 官方成绩页 {report.result_source.url}")
-    if report.grid_source is not None:
-        lines.append(f"发车顺位：{report.grid_source.url}")
-    if report.fia_classification_url is not None:
-        fia_label = (
-            "FIA 最终成绩文件"
-            if report.status is not ResultStatus.PROVISIONAL
-            else "FIA 暂定成绩文件"
-        )
-        lines.append(f"{fia_label}：{report.fia_classification_url}")
+    lines.append(f"来源：{report.result_source.url}")
 
-    sources = [report.result_source]
-    if report.grid_source is not None:
-        sources.append(report.grid_source)
+    sources: list[SourceReference] = []
+    for source in (
+        report.result_source,
+        report.pole_source,
+        report.sprint_source,
+        report.sprint_pole_source,
+    ):
+        if source is not None and all(existing.url != source.url for existing in sources):
+            sources.append(source)
 
     return EventRecord(
         event_key=report.event_key,
@@ -103,9 +141,10 @@ def build_f1_report_events(
             raise F1ReportError(f"{report.grand_prix_name}: duplicate report in one build")
         seen_keys.add(candidate.event_key)
         old = previous_by_key.get(candidate.event_key)
-        if old is not None and _STATUS_RANK[old.result_status] > _STATUS_RANK[
-            candidate.result_status
-        ]:
+        if (
+            old is not None
+            and _STATUS_RANK[old.result_status] > _STATUS_RANK[candidate.result_status]
+        ):
             raise F1ReportError(
                 f"{report.grand_prix_name}: refusing to downgrade "
                 f"{old.result_status} to {candidate.result_status}"

@@ -98,7 +98,7 @@ UID 与赛历完全独立。`dist/f1-reports-{year}.state.json` 保存上次发�
 里程碑 A（ICS 内核）、B（全国假期 / 广西 / 纪念日三类订阅）、C（F1 官方赛历 + 战报）、
 D（云端自动更新闭环）均已完成，iPhone 真机 VALARM 验证已通过。
 2026 赛季真实构建：赛历 23 站 / 58 个 Session，战报 19 个已完赛分站。
-当前共 139 项测试全绿。
+当前共 156 项测试全绿。
 
 云端链路：GitHub Actions 每 6 小时构建 → Cloudflare Pages 发布 →
 `calendar-state` 分支持久化修订状态（线上 ICS 作为 `SEQUENCE` 兜底下限）。

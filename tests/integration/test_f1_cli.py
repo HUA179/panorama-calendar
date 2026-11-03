@@ -41,3 +41,5 @@ def test_f1_schedule_cli_writes_valid_utc_feed(
     assert b"DTSTART:20261108T170000Z" in data
     assert b"DTEND:20261108T190000Z" in data
     assert b"BEGIN:VALARM" not in data
+    unfolded = data.decode("utf-8").replace("\r\n ", "").replace("\\,", ",")
+    assert "🏎️ 巴西大奖赛（圣保罗, São Paulo） | 正赛" in unfolded

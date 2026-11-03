@@ -1,0 +1,117 @@
+{
+  "australia": {
+    "gp_zh": "澳大利亚大奖赛",
+    "city_zh": "墨尔本",
+    "city_en": "Melbourne"
+  },
+  "china": {
+    "gp_zh": "中国大奖赛",
+    "city_zh": "上海",
+    "city_en": "Shanghai"
+  },
+  "japan": {
+    "gp_zh": "日本大奖赛",
+    "city_zh": "铃鹿",
+    "city_en": "Suzuka"
+  },
+  "bahrain": {
+    "gp_zh": "巴林大奖赛",
+    "city_zh": "吉隆坡",
+    "city_en": "Kuala Lumpur"
+  },
+  "miami": {
+    "gp_zh": "迈阿密大奖赛",
+    "city_zh": "迈阿密",
+    "city_en": "Miami"
+  },
+  "canada": {
+    "gp_zh": "加拿大大奖赛",
+    "city_zh": "蒙特利尔",
+    "city_en": "Montréal"
+  },
+  "monaco": {
+    "gp_zh": "摩纳哥大奖赛",
+    "city_zh": "蒙特卡洛",
+    "city_en": "Monte Carlo"
+  },
+  "barcelona-catalunya": {
+    "gp_zh": "巴塞罗那-加泰罗尼亚大奖赛",
+    "city_zh": "巴塞罗那",
+    "city_en": "Barcelona"
+  },
+  "austria": {
+    "gp_zh": "奥地利大奖赛",
+    "city_zh": "斯皮尔伯格",
+    "city_en": "Spielberg"
+  },
+  "great-britain": {
+    "gp_zh": "英国大奖赛",
+    "city_zh": "银石",
+    "city_en": "Silverstone"
+  },
+  "belgium": {
+    "gp_zh": "比利时大奖赛",
+    "city_zh": "斯帕",
+    "city_en": "Spa-Francorchamps"
+  },
+  "hungary": {
+    "gp_zh": "匈牙利大奖赛",
+    "city_zh": "布达佩斯",
+    "city_en": "Budapest"
+  },
+  "netherlands": {
+    "gp_zh": "荷兰大奖赛",
+    "city_zh": "赞德福特",
+    "city_en": "Zandvoort"
+  },
+  "italy": {
+    "gp_zh": "意大利大奖赛",
+    "city_zh": "蒙扎",
+    "city_en": "Monza"
+  },
+  "spain": {
+    "gp_zh": "西班牙大奖赛",
+    "city_zh": "马德里",
+    "city_en": "Madrid"
+  },
+  "azerbaijan": {
+    "gp_zh": "阿塞拜疆大奖赛",
+    "city_zh": "巴库",
+    "city_en": "Baku"
+  },
+  "singapore": {
+    "gp_zh": "新加坡大奖赛",
+    "city_zh": "新加坡",
+    "city_en": "Singapore"
+  },
+  "united-states": {
+    "gp_zh": "美国大奖赛",
+    "city_zh": "奥斯汀",
+    "city_en": "Austin"
+  },
+  "mexico": {
+    "gp_zh": "墨西哥城大奖赛",
+    "city_zh": "墨西哥城",
+    "city_en": "Mexico City"
+  },
+  "brazil": {
+    "gp_zh": "巴西大奖赛",
+    "city_zh": "圣保罗",
+    "city_en": "São Paulo"
+  },
+  "las-vegas": {
+    "gp_zh": "拉斯维加斯大奖赛",
+    "city_zh": "拉斯维加斯",
+    "city_en": "Las Vegas"
+  },
+  "qatar": {
+    "gp_zh": "卡塔尔大奖赛",
+    "city_zh": "卢赛尔",
+    "city_en": "Lusail"
+  },
+  "united-arab-emirates": {
+    "gp_zh": "阿布扎比大奖赛",
+    "city_zh": "阿布扎比",
+    "city_en": "Abu Dhabi"
+  }
+}

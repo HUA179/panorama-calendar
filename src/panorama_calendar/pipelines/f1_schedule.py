@@ -13,6 +13,7 @@ from panorama_calendar.models import (
 )
 from panorama_calendar.models.f1 import F1Session
 from panorama_calendar.services.revision import reconcile_events
+from panorama_calendar.sources.f1_metadata import F1EventDisplay, load_f1_event_names
 
 _SESSION_LABELS = {
     SessionKind.QUALIFYING: "排位赛",
@@ -22,11 +23,24 @@ _SESSION_LABELS = {
 }
 
 
+class F1ScheduleError(RuntimeError):
+    """Raised when a round cannot be rendered with reviewed display names."""
+
+
+def _event_display(event_id: str) -> F1EventDisplay:
+    """Resolve the reviewed Chinese name and bilingual city for one round."""
+    display = load_f1_event_names().get(event_id)
+    if display is None:
+        raise F1ScheduleError(f"no reviewed Chinese display name for F1 event: {event_id}")
+    return display
+
+
 def _candidate_event(session: F1Session) -> EventRecord:
     """Build one UTC event with both Beijing and circuit-local display times."""
     beijing = session.start_at_utc.astimezone(ZoneInfo("Asia/Shanghai"))
     circuit = session.start_at_utc.astimezone(ZoneInfo(session.circuit_timezone))
     label = _SESSION_LABELS[session.session_kind]
+    display = _event_display(session.event_id)
     description = (
         f"赛事：{session.grand_prix_name}\n"
         f"北京时间：{beijing:%Y-%m-%d %H:%M}\n"
@@ -37,11 +51,12 @@ def _candidate_event(session: F1Session) -> EventRecord:
         description += "\n官方状态：本场 Session 已取消。"
     elif session.status is EventStatus.TENTATIVE:
         description += "\n官方状态：时间暂缓，等待后续确认。"
+    summary = f"🏎️ {display.gp_zh}（{display.city_zh}, {display.city_en}） | {label}"
     return EventRecord(
         event_key=session.event_key,
         calendar_kind=CalendarKind.F1_SCHEDULE,
         event_kind=EventKind.F1_SESSION,
-        summary=f"F1｜{session.location or session.grand_prix_name}｜{label}",
+        summary=summary,
         description=description,
         location=session.location,
         start_at_utc=session.start_at_utc,
@@ -66,6 +81,9 @@ def build_f1_schedule_events(
     Only four session kinds enter the model. Existing events absent from the new
     official candidate are retained unchanged; cancellation requires an explicit
     official CANCELLED record. Changed sessions alone advance SEQUENCE.
+
+    Raises:
+        F1ScheduleError: If a round has no reviewed Chinese display name.
     """
     previous_events = [
         event for event in previous if event.calendar_kind is CalendarKind.F1_SCHEDULE

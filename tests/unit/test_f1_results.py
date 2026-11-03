@@ -6,7 +6,9 @@ import pytest
 from panorama_calendar.sources.f1_results import (
     F1ResultsClient,
     F1ResultsError,
+    F1RoundLink,
     discover_results_rounds,
+    parse_qualifying,
     parse_race_result,
     parse_starting_grid,
     results_url_is_official,
@@ -14,6 +16,7 @@ from panorama_calendar.sources.f1_results import (
 
 RESULT_URL = "https://www.formula1.com/en/results/2026/races/1298/mexico/race-result"
 GRID_URL = "https://www.formula1.com/en/results/2026/races/1298/mexico/starting-grid"
+QUALIFYING_URL = "https://www.formula1.com/en/results/2026/races/1298/mexico/qualifying"
 
 _RESULT_HEADER = (
     "<tr><th>Pos.</th><th>No.</th><th>Driver</th><th>Team</th>"
@@ -21,6 +24,10 @@ _RESULT_HEADER = (
 )
 _GRID_HEADER = (
     "<tr><th>Pos.</th><th>No.</th><th>Driver</th><th>Team</th><th>Time</th></tr>"
+)
+_QUALIFYING_HEADER = (
+    "<tr><th>Pos.</th><th>No.</th><th>Driver</th><th>Team</th>"
+    "<th>Q1</th><th>Q2</th><th>Q3</th><th>Laps</th></tr>"
 )
 
 
@@ -54,12 +61,39 @@ def _grid_page(rows: list[str]) -> str:
     return f"<html><table><tbody>{_GRID_HEADER}{''.join(rows)}</tbody></table></html>"
 
 
+def _qualifying_row(
+    position: str,
+    number: str,
+    first: str,
+    last: str,
+    code: str,
+    team: str,
+    q1: str,
+    q2: str,
+    q3: str,
+    laps: str,
+) -> str:
+    """Render one qualifying row the way the official page does."""
+    return (
+        f"<tr><td>{position}</td><td>{number}</td>"
+        f'<td><span class="max-lg:hidden">{first}</span> '
+        f'<span class="max-md:hidden">{last}</span>'
+        f'<span class="md:hidden">{code}</span></td>'
+        f"<td>{team}</td><td>{q1}</td><td>{q2}</td><td>{q3}</td><td>{laps}</td></tr>"
+    )
+
+
+def _qualifying_page(rows: list[str]) -> str:
+    """Wrap qualifying rows in a table the parser can find."""
+    return f"<html><table><tbody>{_QUALIFYING_HEADER}{''.join(rows)}</tbody></table></html>"
+
+
 def test_race_result_strips_the_hidden_driver_code() -> None:
     """The responsive three-letter code must never leak into the driver name."""
     html = _result_page(
         [
             _result_row(
-                "1", "1", "Max", "Verstappen", "VER", "Red Bull Racing", "71", "1:37:58.574", "25"
+                "1", "3", "Max", "Verstappen", "VER", "Red Bull Racing", "71", "1:37:58.574", "25"
             ),
             _result_row("2", "44", "Lewis", "Hamilton", "HAM", "Ferrari", "71", "+8.271", "18"),
             _result_row("NC", "5", "Gabriel", "Bortoleto", "BOR", "Audi", "68", "DNF", "0"),
@@ -73,6 +107,7 @@ def test_race_result_strips_the_hidden_driver_code() -> None:
         "Lewis Hamilton",
         "Gabriel Bortoleto",
     ]
+    assert [entry.code for entry in entries] == ["VER", "HAM", "BOR"]
     assert entries[0].points == 25
     assert entries[2].classified is False
     assert source.url == RESULT_URL
@@ -120,8 +155,70 @@ def test_starting_grid_parses_positions_and_times() -> None:
     entries, source = parsed
     assert entries[0].position == 1
     assert entries[0].driver == "Lewis Hamilton"
+    assert entries[0].code == "HAM"
     assert entries[0].time == "1:16.514"
     assert source.url == GRID_URL
+
+
+def test_qualifying_parses_segments_and_codes() -> None:
+    """The pole-sitter is identified by position 1 with its deciding segment."""
+    html = _qualifying_page(
+        [
+            _qualifying_row(
+                "1", "16", "Charles", "Leclerc", "LEC", "Ferrari",
+                "1:17.201", "1:16.988", "1:16.514", "15",
+            ),
+            _qualifying_row(
+                "2", "3", "Max", "Verstappen", "VER", "Red Bull Racing",
+                "1:17.340", "1:17.012", "1:16.601", "14",
+            ),
+        ]
+    )
+    parsed = parse_qualifying(html, QUALIFYING_URL)
+    assert parsed is not None
+    entries, source = parsed
+    assert entries[0].position == "1"
+    assert entries[0].driver == "Charles Leclerc"
+    assert entries[0].code == "LEC"
+    assert entries[0].best_time == "1:16.514"
+    pole = entries[0].as_pole()
+    assert pole.position == 1
+    assert pole.time == "1:16.514"
+    assert pole.code == "LEC"
+    assert source.url == QUALIFYING_URL
+
+
+def test_qualifying_best_time_falls_back_when_q3_is_empty() -> None:
+    """A rain-shortened session still yields a deciding lap."""
+    html = _qualifying_page(
+        [
+            _qualifying_row(
+                "1", "63", "George", "Russell", "RUS", "Mercedes",
+                "1:33.305", "1:32.443", "", "12",
+            )
+        ]
+    )
+    parsed = parse_qualifying(html, QUALIFYING_URL)
+    assert parsed is not None
+    entries, _ = parsed
+    assert entries[0].best_time == "1:32.443"
+
+
+def test_missing_qualifying_table_is_not_an_error() -> None:
+    """Qualifying pages before the session has run yield None."""
+    placeholder = "<html><body><p>Results will appear after qualifying.</p></body></html>"
+    assert parse_qualifying(placeholder, QUALIFYING_URL) is None
+
+
+def test_round_link_covers_every_session_page() -> None:
+    """One discovered round knows the URLs of every session classification."""
+    link = F1RoundLink(season=2026, race_id=1298, event_id="mexico", round_number=20)
+    base = "https://www.formula1.com/en/results/2026/races/1298/mexico"
+    assert link.result_url == f"{base}/race-result"
+    assert link.grid_url == f"{base}/starting-grid"
+    assert link.qualifying_url == f"{base}/qualifying"
+    assert link.sprint_results_url == f"{base}/sprint-results"
+    assert link.sprint_qualifying_url == f"{base}/sprint-qualifying"
 
 
 def test_season_index_dedupes_and_keeps_discovery_order() -> None:

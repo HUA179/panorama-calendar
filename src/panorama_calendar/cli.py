@@ -17,10 +17,18 @@ from panorama_calendar.models import (
     EventRecord,
     ResultStatus,
     SessionKind,
+    SourceReference,
 )
-from panorama_calendar.models.f1 import F1GridEntry, F1RaceReport, F1Session
+from panorama_calendar.models.f1 import (
+    F1GridEntry,
+    F1QualifyingEntry,
+    F1RaceReport,
+    F1ResultEntry,
+    F1Session,
+)
 from panorama_calendar.pipelines import (
     F1ReportError,
+    F1ScheduleError,
     build_f1_report_events,
     build_f1_schedule_events,
     build_holiday_events,
@@ -45,8 +53,9 @@ from panorama_calendar.sources.datasets import (
     load_anniversary_registry,
     load_holiday_dataset,
 )
+from panorama_calendar.sources.f1_metadata import F1MetadataError
 from panorama_calendar.sources.f1_official import F1OfficialClient, F1SourceError
-from panorama_calendar.sources.f1_results import F1ResultsClient, F1ResultsError
+from panorama_calendar.sources.f1_results import F1ResultsClient, F1ResultsError, F1RoundLink
 from panorama_calendar.sources.fia_documents import (
     FiaDocumentsClient,
     FiaDocumentsError,
@@ -272,6 +281,8 @@ def f1_schedule(
         _record_publication(out, "f1-schedule", year, "build", events, artifact)
     except (
         F1SourceError,
+        F1ScheduleError,
+        F1MetadataError,
         httpx.HTTPError,
         PublishGuardError,
         EventStateError,
@@ -288,6 +299,49 @@ def f1_schedule(
 def _race_local_date(session: F1Session) -> date:
     """Return the date the Grand Prix is held at the circuit, not in UTC."""
     return session.start_at_utc.astimezone(ZoneInfo(session.circuit_timezone)).date()
+
+
+def _fetch_pole(
+    results: F1ResultsClient,
+    link: F1RoundLink,
+    slug: str,
+    *,
+    sprint: bool = False,
+) -> tuple[F1GridEntry | None, SourceReference | None]:
+    """Fetch pole position from a qualifying classification.
+
+    The pole-sitter is the fastest qualifier (position 1), which is not always
+    the driver starting first after grid penalties. A page without a table yet
+    yields ``(None, None)``; parse and transport failures propagate so the
+    round is retried on the next run instead of publishing a pole-less report.
+    """
+    fetch = results.fetch_sprint_qualifying if sprint else results.fetch_qualifying
+    fetched = fetch(link)
+    if fetched is None:
+        label = "sprint qualifying" if sprint else "qualifying"
+        logger.warning("%s: %s classification not published yet", slug, label)
+        return None, None
+    entries, source = fetched
+    leader = next(
+        (entry for entry in entries if entry.position == "1"),
+        None,
+    )
+    if leader is None:
+        label = "sprint qualifying" if sprint else "qualifying"
+        raise F1ResultsError(f"{slug}: {label} classification has no position 1")
+    return _qualifying_leader_to_pole(leader), source
+
+
+def _qualifying_leader_to_pole(leader: F1QualifyingEntry) -> F1GridEntry:
+    """Keep only what a report needs from the fastest qualifier."""
+    return F1GridEntry(
+        position=1,
+        car_number=leader.car_number,
+        driver=leader.driver,
+        code=leader.code,
+        team=leader.team,
+        time=leader.best_time,
+    )
 
 
 @app.command("f1-report")
@@ -311,10 +365,14 @@ def f1_report(
     reports: list[F1RaceReport] = []
     try:
         registry = load_fia_event_registry(year)
+        sessions = official.fetch_schedule(year)
         races = {
             session.event_id: session
-            for session in official.fetch_schedule(year)
+            for session in sessions
             if session.session_kind is SessionKind.RACE
+        }
+        sprint_rounds = {
+            session.event_id for session in sessions if session.session_kind is SessionKind.SPRINT
         }
         links = {link.event_id: link for link in results.fetch_round_links(year)}
         if event:
@@ -352,15 +410,41 @@ def f1_report(
                 continue
             entries, result_source = fetched
 
-            grid: list[F1GridEntry] = []
-            grid_source = None
             try:
-                grid_fetched = results.fetch_starting_grid(link)
+                pole, pole_source = _fetch_pole(results, link, slug)
             except (F1ResultsError, httpx.HTTPError) as error:
-                logger.warning("starting grid unavailable for %s: %s", slug, error)
-                grid_fetched = None
-            if grid_fetched is not None:
-                grid, grid_source = grid_fetched
+                failures.append(slug)
+                typer.echo(f"[FAILED] {slug}: qualifying unavailable: {error}", err=True)
+                continue
+
+            sprint_entries: list[F1ResultEntry] = []
+            sprint_source = None
+            sprint_pole: F1GridEntry | None = None
+            sprint_pole_source = None
+            if slug in sprint_rounds:
+                try:
+                    sprint_fetched = results.fetch_sprint_results(link)
+                except (F1ResultsError, httpx.HTTPError) as error:
+                    failures.append(slug)
+                    typer.echo(f"[FAILED] {slug}: sprint unavailable: {error}", err=True)
+                    continue
+                if sprint_fetched is None:
+                    failures.append(slug)
+                    typer.echo(
+                        f"[FAILED] {slug}: sprint weekend has no sprint classification",
+                        err=True,
+                    )
+                    continue
+                sprint_entries, sprint_source = sprint_fetched
+                try:
+                    sprint_pole, sprint_pole_source = _fetch_pole(results, link, slug, sprint=True)
+                except (F1ResultsError, httpx.HTTPError) as error:
+                    failures.append(slug)
+                    typer.echo(
+                        f"[FAILED] {slug}: sprint qualifying unavailable: {error}",
+                        err=True,
+                    )
+                    continue
 
             fia_title = registry.title_for(slug)
             if fia_title is None:
@@ -386,15 +470,21 @@ def f1_report(
                 race_date=race_date,
                 status=status,
                 results=entries,
-                grid=grid,
                 result_source=result_source,
-                grid_source=grid_source,
+                pole=pole,
+                pole_source=pole_source,
+                sprint_results=sprint_entries,
+                sprint_source=sprint_source,
+                sprint_pole=sprint_pole,
+                sprint_pole_source=sprint_pole_source,
                 fia_classification_url=fia_url,
             )
             reports.append(report)
+            sprint_note = f", sprint: {len(sprint_entries)}" if sprint_entries else ""
+            pole_note = f", pole: {pole.driver}" if pole is not None else ""
             typer.echo(
-                f"{slug}: {report.status.value}, {report.classified_count} classified, "
-                f"{len(report.grid)} on grid, {report.race_date}"
+                f"{slug}: {report.status.value}, {report.classified_count} classified"
+                f"{sprint_note}{pole_note}, {report.race_date}"
             )
 
         if not reports and not previous:
@@ -422,6 +512,7 @@ def f1_report(
         F1ResultsError,
         FiaDocumentsError,
         F1ReportError,
+        F1MetadataError,
         EventStateError,
         FeedSnapshotError,
         PublishGuardError,
@@ -471,9 +562,7 @@ def rollback(
     """Republish an older snapshot as a new revision instead of rewinding SEQUENCE."""
     spec = ROLLBACK_FEEDS.get(feed)
     if spec is None:
-        raise typer.BadParameter(
-            f"unknown feed {feed!r}; choose from {', '.join(ROLLBACK_FEEDS)}"
-        )
+        raise typer.BadParameter(f"unknown feed {feed!r}; choose from {', '.join(ROLLBACK_FEEDS)}")
     if not from_state.is_file():
         raise typer.BadParameter(f"snapshot not found: {from_state}")
     kind, pattern, calendar_name = spec

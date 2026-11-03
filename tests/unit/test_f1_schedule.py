@@ -2,8 +2,10 @@
 
 from datetime import UTC, datetime, timedelta
 
+import pytest
+
 from panorama_calendar.models import EventStatus, F1Session, SessionKind, SourceReference
-from panorama_calendar.pipelines import build_f1_schedule_events
+from panorama_calendar.pipelines import F1ScheduleError, build_f1_schedule_events
 
 
 def _session(
@@ -43,6 +45,21 @@ def test_schedule_uses_utc_and_iana_display_times() -> None:
     assert event.alarms == []
 
 
+def test_summary_pairs_the_chinese_grand_prix_with_the_bilingual_city() -> None:
+    """The title follows the agreed 「大奖赛（城市） | Session」 layout."""
+    race = build_f1_schedule_events([_session()])[0]
+    assert race.summary == "🏎️ 巴西大奖赛（圣保罗, São Paulo） | 正赛"
+    sprint_qualifying = build_f1_schedule_events([_session(SessionKind.SPRINT_QUALIFYING)])[0]
+    assert sprint_qualifying.summary == "🏎️ 巴西大奖赛（圣保罗, São Paulo） | 冲刺排位赛"
+
+
+def test_unknown_round_has_no_reviewed_display_name() -> None:
+    """A new slug must be added to the reviewed registry, not guessed."""
+    session = _session().model_copy(update={"event_id": "saudi-arabia"})
+    with pytest.raises(F1ScheduleError, match="no reviewed Chinese display name"):
+        build_f1_schedule_events([session])
+
+
 def test_reschedule_keeps_uid_and_only_advances_changed_session() -> None:
     """Qualifying is untouched when only the race moves to a new time."""
     original = build_f1_schedule_events(
@@ -57,8 +74,8 @@ def test_reschedule_keeps_uid_and_only_advances_changed_session() -> None:
         previous=original,
         now=datetime(2026, 11, 2, tzinfo=UTC),
     )
-    old_by_kind = {event.summary.rsplit("｜", 1)[-1]: event for event in original}
-    new_by_kind = {event.summary.rsplit("｜", 1)[-1]: event for event in revised}
+    old_by_kind = {event.summary.rsplit(" | ", 1)[-1]: event for event in original}
+    new_by_kind = {event.summary.rsplit(" | ", 1)[-1]: event for event in revised}
     assert new_by_kind["正赛"].uid == old_by_kind["正赛"].uid
     assert new_by_kind["正赛"].sequence == old_by_kind["正赛"].sequence + 1
     assert new_by_kind["排位赛"].sequence == old_by_kind["排位赛"].sequence

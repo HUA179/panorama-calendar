@@ -69,6 +69,7 @@ class F1ResultEntry(BaseModel):
     position: str = Field(min_length=1, max_length=4)
     car_number: str = Field(min_length=1, max_length=3)
     driver: str = Field(min_length=1)
+    code: str = Field(default="", max_length=3)
     team: str = Field(min_length=1)
     laps: int = Field(ge=0)
     time_or_status: str = Field(min_length=1)
@@ -88,8 +89,41 @@ class F1GridEntry(BaseModel):
     position: int = Field(ge=1)
     car_number: str = Field(min_length=1, max_length=3)
     driver: str = Field(min_length=1)
+    code: str = Field(default="", max_length=3)
     team: str = Field(min_length=1)
     time: str = ""
+
+
+class F1QualifyingEntry(BaseModel):
+    """One row of an official qualifying or sprint-qualifying table."""
+
+    model_config = ConfigDict(str_strip_whitespace=True)
+
+    position: str = Field(min_length=1, max_length=4)
+    car_number: str = Field(min_length=1, max_length=3)
+    driver: str = Field(min_length=1)
+    code: str = Field(default="", max_length=3)
+    team: str = Field(min_length=1)
+    q1: str = ""
+    q2: str = ""
+    q3: str = ""
+    laps: int = Field(ge=0)
+
+    @property
+    def best_time(self) -> str:
+        """Return the deciding segment time, falling back when Q3 was not run."""
+        return self.q3 or self.q2 or self.q1
+
+    def as_pole(self) -> F1GridEntry:
+        """View this entry as a pole-position record with its deciding lap."""
+        return F1GridEntry(
+            position=1,
+            car_number=self.car_number,
+            driver=self.driver,
+            code=self.code,
+            team=self.team,
+            time=self.best_time,
+        )
 
 
 class F1RaceReport(BaseModel):
@@ -104,30 +138,43 @@ class F1RaceReport(BaseModel):
     race_date: date
     status: ResultStatus = ResultStatus.PROVISIONAL
     results: list[F1ResultEntry] = Field(min_length=1)
-    grid: list[F1GridEntry] = Field(default_factory=list)
     result_source: SourceReference
-    grid_source: SourceReference | None = None
+    pole: F1GridEntry | None = None
+    pole_source: SourceReference | None = None
+    sprint_results: list[F1ResultEntry] = Field(default_factory=list)
+    sprint_source: SourceReference | None = None
+    sprint_pole: F1GridEntry | None = None
+    sprint_pole_source: SourceReference | None = None
     fia_classification_url: str | None = None
+
+    @staticmethod
+    def _check_classification(entries: list[F1ResultEntry], label: str) -> None:
+        """Apply the classification invariants to one results table."""
+        car_numbers = [entry.car_number for entry in entries]
+        if len(car_numbers) != len(set(car_numbers)):
+            raise ValueError(f"{label} results contain duplicate car numbers")
+        if not any(entry.position == "1" for entry in entries):
+            raise ValueError(f"{label} results are missing the winner")
+        numeric_positions = sorted(int(entry.position) for entry in entries if entry.classified)
+        if numeric_positions != list(range(1, len(numeric_positions) + 1)):
+            raise ValueError(f"{label} classified positions must be a gapless 1..N sequence")
 
     @model_validator(mode="after")
     def check_consistency(self) -> "F1RaceReport":
         """Reject reports that cannot represent one clean classification."""
         if self.status is ResultStatus.NOT_AVAILABLE:
             raise ValueError("a report requires actual race results")
-        car_numbers = [entry.car_number for entry in self.results]
-        if len(car_numbers) != len(set(car_numbers)):
-            raise ValueError("race results contain duplicate car numbers")
-        if not any(entry.position == "1" for entry in self.results):
-            raise ValueError("race results are missing the winner")
-        numeric_positions = sorted(
-            int(entry.position) for entry in self.results if entry.classified
-        )
-        if numeric_positions != list(range(1, len(numeric_positions) + 1)):
-            raise ValueError("classified positions must be a gapless 1..N sequence")
-        if self.grid:
-            positions = [entry.position for entry in self.grid]
-            if sorted(positions) != list(range(1, len(positions) + 1)):
-                raise ValueError("starting grid positions must be a gapless 1..N sequence")
+        self._check_classification(self.results, "race")
+        if self.sprint_results:
+            self._check_classification(self.sprint_results, "sprint")
+        if self.sprint_pole is not None and not self.sprint_results:
+            raise ValueError("a sprint pole requires sprint results")
+        if self.sprint_results and self.sprint_source is None:
+            raise ValueError("sprint results require a retrieval source")
+        if self.pole is not None and self.pole_source is None:
+            raise ValueError("a pole position requires a retrieval source")
+        if self.sprint_pole is not None and self.sprint_pole_source is None:
+            raise ValueError("a sprint pole requires a retrieval source")
         if self.fia_classification_url is not None and not self.fia_classification_url.startswith(
             "https://"
         ):
@@ -142,15 +189,20 @@ class F1RaceReport(BaseModel):
     @property
     def podium(self) -> list[F1ResultEntry]:
         """Return the first three classified finishers in order."""
-        return sorted(
-            (entry for entry in self.results if entry.classified),
-            key=lambda entry: int(entry.position),
-        )[:3]
+        return self._podium_of(self.results)
 
     @property
-    def pole(self) -> F1GridEntry | None:
-        """Return the pole-sitter when the starting grid is available."""
-        return self.grid[0] if self.grid else None
+    def sprint_podium(self) -> list[F1ResultEntry]:
+        """Return the first three classified sprint finishers in order."""
+        return self._podium_of(self.sprint_results)
+
+    @staticmethod
+    def _podium_of(entries: list[F1ResultEntry]) -> list[F1ResultEntry]:
+        """Return the first three classified finishers of one table."""
+        return sorted(
+            (entry for entry in entries if entry.classified),
+            key=lambda entry: int(entry.position),
+        )[:3]
 
     @property
     def classified_count(self) -> int:

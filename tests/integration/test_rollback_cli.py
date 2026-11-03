@@ -80,8 +80,10 @@ def test_rollback_republishes_old_content_with_a_higher_sequence(
     assert result.exit_code == 0, result.output
     data = (tmp_path / "f1-reports-2026.ics").read_bytes()
     assert b"SEQUENCE:2" in data
-    assert b"Max Verstappen" in data
-    assert b"Charles Leclerc" not in data
+    unfolded = data.decode("utf-8").replace("\r\n ", "")
+    assert "Max Verstappen" in unfolded
+    # The corrected P1 is gone; Leclerc still appears as the pole-sitter.
+    assert "🏅 P1 16 LEC" not in unfolded
     state = (tmp_path / "f1-reports-2026.state.json").read_text(encoding="utf-8")
     assert '"sequence": 2' in state
 
