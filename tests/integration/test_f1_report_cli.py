@@ -248,9 +248,7 @@ def test_sprint_weekend_report_merges_sprint_and_race(
         "fetch_sprint_qualifying",
         lambda self, round_link: (
             sprint_qualifying,
-            _source(
-                "https://www.formula1.com/en/results/2026/races/1298/mexico/sprint-qualifying"
-            ),
+            _source("https://www.formula1.com/en/results/2026/races/1298/mexico/sprint-qualifying"),
         ),
     )
 

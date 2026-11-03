@@ -208,6 +208,21 @@ def _source(html: str, url: str, retrieved_at: datetime | None) -> SourceReferen
     )
 
 
+def _count(value: str, *, field: str, url: str) -> int:
+    """Read a numeric cell, treating a blank as zero.
+
+    Disqualified rows are published as ``DQ`` with an empty laps cell (the
+    driver is excluded from the classification), so a blank counts as nothing
+    completed rather than an unparseable page.
+    """
+    if not value.strip():
+        return 0
+    try:
+        return int(value)
+    except ValueError as error:
+        raise F1ResultsError(f"invalid {field} value {value!r} at {url}") from error
+
+
 def parse_race_result(
     html: str,
     url: str,
@@ -235,9 +250,9 @@ def parse_race_result(
                 driver=_driver_name(driver, url),
                 code=code,
                 team=team,
-                laps=int(laps),
+                laps=_count(laps, field="laps", url=url),
                 time_or_status=time_or_status,
-                points=int(points),
+                points=_count(points, field="points", url=url),
             )
         except (ValueError, TypeError) as error:
             raise F1ResultsError(f"invalid race result row {row!r} at {url}") from error
@@ -302,7 +317,7 @@ def parse_qualifying(
                 q1=q1,
                 q2=q2,
                 q3=q3,
-                laps=int(laps),
+                laps=_count(laps, field="laps", url=url),
             )
         except (ValueError, TypeError) as error:
             raise F1ResultsError(f"invalid qualifying row {row!r} at {url}") from error

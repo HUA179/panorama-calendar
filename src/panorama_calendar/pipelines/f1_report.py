@@ -13,7 +13,11 @@ from panorama_calendar.models import (
 from panorama_calendar.models.f1 import F1GridEntry, F1RaceReport, F1ResultEntry
 from panorama_calendar.models.source import SourceReference
 from panorama_calendar.services.revision import reconcile_events
-from panorama_calendar.sources.f1_metadata import load_f1_driver_registry
+from panorama_calendar.sources.f1_metadata import (
+    F1EventDisplay,
+    load_f1_driver_registry,
+    load_f1_event_names,
+)
 
 _STATUS_LABELS = {
     ResultStatus.PROVISIONAL: "暂定成绩（以 FIA 最终成绩为准）",
@@ -76,9 +80,18 @@ def _session_block(title: str, pole: F1GridEntry | None, podium: list[F1ResultEn
     return lines
 
 
+def _event_display(event_id: str) -> F1EventDisplay:
+    """Resolve the reviewed Chinese name and bilingual city for one round."""
+    display = load_f1_event_names().get(event_id)
+    if display is None:
+        raise F1ReportError(f"no reviewed Chinese display name for F1 event: {event_id}")
+    return display
+
+
 def _candidate_event(report: F1RaceReport) -> EventRecord:
     """Build one self-contained report event from the normalised facts."""
-    summary = f"F1战报｜{report.grand_prix_name}｜正赛"
+    display = _event_display(report.event_id)
+    summary = f"🏁 {display.gp_zh}（{display.city_zh}, {display.city_en}） | 战报"
     if report.status is ResultStatus.PROVISIONAL:
         summary += "（暂定）"
 

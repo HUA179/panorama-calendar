@@ -22,9 +22,7 @@ _RESULT_HEADER = (
     "<tr><th>Pos.</th><th>No.</th><th>Driver</th><th>Team</th>"
     "<th>Laps</th><th>Time / Retired</th><th>Pts.</th></tr>"
 )
-_GRID_HEADER = (
-    "<tr><th>Pos.</th><th>No.</th><th>Driver</th><th>Team</th><th>Time</th></tr>"
-)
+_GRID_HEADER = "<tr><th>Pos.</th><th>No.</th><th>Driver</th><th>Team</th><th>Time</th></tr>"
 _QUALIFYING_HEADER = (
     "<tr><th>Pos.</th><th>No.</th><th>Driver</th><th>Team</th>"
     "<th>Q1</th><th>Q2</th><th>Q3</th><th>Laps</th></tr>"
@@ -130,7 +128,7 @@ def test_structurally_wrong_row_fails_closed() -> None:
             )
         ]
     )
-    with pytest.raises(F1ResultsError, match="invalid race result row"):
+    with pytest.raises(F1ResultsError, match="invalid laps value 'DNF'"):
         parse_race_result(html, RESULT_URL)
 
 
@@ -142,6 +140,39 @@ def test_driver_code_left_in_the_cell_is_rejected() -> None:
     )
     with pytest.raises(F1ResultsError, match="unseparated code"):
         parse_race_result(_result_page([row]), RESULT_URL)
+
+
+def test_disqualified_row_with_blank_laps_is_accepted() -> None:
+    """A real DSQ row publishes an empty laps cell and must still parse.
+
+    Miami's 2026 sprint classification ends with
+    ``DQ | 5 | Gabriel Bortoleto | Audi | (blank) | DSQ | 0``. Treating the
+    blank as an error would fail the whole feed for one excluded driver.
+    """
+    html = _result_page(
+        [
+            _result_row(
+                "1",
+                "3",
+                "Max",
+                "Verstappen",
+                "VER",
+                "Red Bull Racing",
+                "19",
+                "30:12.442",
+                "8",
+            ),
+            _result_row("NC", "27", "Nico", "Hulkenberg", "HUL", "Audi", "0", "DNS", "0"),
+            _result_row("DQ", "5", "Gabriel", "Bortoleto", "BOR", "Audi", "", "DSQ", "0"),
+        ]
+    )
+    parsed = parse_race_result(html, RESULT_URL)
+    assert parsed is not None
+    entries, _ = parsed
+    assert entries[-1].laps == 0
+    assert entries[-1].time_or_status == "DSQ"
+    assert entries[-1].classified is False
+    assert entries[1].time_or_status == "DNS"
 
 
 def test_starting_grid_parses_positions_and_times() -> None:
@@ -165,12 +196,28 @@ def test_qualifying_parses_segments_and_codes() -> None:
     html = _qualifying_page(
         [
             _qualifying_row(
-                "1", "16", "Charles", "Leclerc", "LEC", "Ferrari",
-                "1:17.201", "1:16.988", "1:16.514", "15",
+                "1",
+                "16",
+                "Charles",
+                "Leclerc",
+                "LEC",
+                "Ferrari",
+                "1:17.201",
+                "1:16.988",
+                "1:16.514",
+                "15",
             ),
             _qualifying_row(
-                "2", "3", "Max", "Verstappen", "VER", "Red Bull Racing",
-                "1:17.340", "1:17.012", "1:16.601", "14",
+                "2",
+                "3",
+                "Max",
+                "Verstappen",
+                "VER",
+                "Red Bull Racing",
+                "1:17.340",
+                "1:17.012",
+                "1:16.601",
+                "14",
             ),
         ]
     )
@@ -193,8 +240,16 @@ def test_qualifying_best_time_falls_back_when_q3_is_empty() -> None:
     html = _qualifying_page(
         [
             _qualifying_row(
-                "1", "63", "George", "Russell", "RUS", "Mercedes",
-                "1:33.305", "1:32.443", "", "12",
+                "1",
+                "63",
+                "George",
+                "Russell",
+                "RUS",
+                "Mercedes",
+                "1:33.305",
+                "1:32.443",
+                "",
+                "12",
             )
         ]
     )

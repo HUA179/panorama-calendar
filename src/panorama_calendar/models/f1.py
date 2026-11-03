@@ -211,5 +211,5 @@ class F1RaceReport(BaseModel):
 
     @property
     def dnf_count(self) -> int:
-        """Count unclassified drivers (DNF/DNS/NC)."""
+        """Count unclassified drivers (DNF/DNS/NC/DQ)."""
         return len(self.results) - self.classified_count

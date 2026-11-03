@@ -23,9 +23,7 @@ RACE_DATE = date(2026, 11, 1)
 MEXICO_RESULT_URL = "https://www.formula1.com/en/results/2026/races/1298/mexico/race-result"
 MEXICO_QUALIFYING_URL = "https://www.formula1.com/en/results/2026/races/1298/mexico/qualifying"
 MEXICO_SPRINT_URL = "https://www.formula1.com/en/results/2026/races/1298/mexico/sprint-results"
-MEXICO_SPRINT_Q_URL = (
-    "https://www.formula1.com/en/results/2026/races/1298/mexico/sprint-qualifying"
-)
+MEXICO_SPRINT_Q_URL = "https://www.formula1.com/en/results/2026/races/1298/mexico/sprint-qualifying"
 
 
 def _source(url: str) -> SourceReference:
@@ -204,7 +202,7 @@ def test_report_identity_is_separate_from_the_schedule() -> None:
 def test_report_renders_the_strict_description_template() -> None:
     """The description follows the agreed line-by-line layout."""
     event = build_f1_report_events([_report()])[0]
-    assert event.summary == "F1战报｜Mexico City Grand Prix｜正赛"
+    assert event.summary == "🏁 墨西哥城大奖赛（墨西哥城, Mexico City） | 战报"
     assert event.description == (
         "状态：FIA 最终成绩\n"
         "赛事：FORMULA 1 MEXICO CITY GRAND PRIX 2026\n"
@@ -217,6 +215,13 @@ def test_report_renders_the_strict_description_template() -> None:
         "完赛：3 人；退赛：1 人\n"
         f"来源：{MEXICO_RESULT_URL}"
     )
+
+
+def test_unknown_round_has_no_reviewed_display_name() -> None:
+    """A new slug must be added to the reviewed registry, not guessed."""
+    report = _report().model_copy(update={"event_id": "saudi-arabia"})
+    with pytest.raises(F1ReportError, match="no reviewed Chinese display name"):
+        build_f1_report_events([report])
 
 
 def test_sprint_weekend_report_merges_both_classifications() -> None:

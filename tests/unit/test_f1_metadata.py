@@ -36,9 +36,28 @@ def test_driver_registry_covers_the_2026_grid() -> None:
     """All 22 drivers of the 2026 grid have a Chinese name and a flag."""
     registry = load_f1_driver_registry()
     grid = {
-        "ALB", "ALO", "ANT", "BEA", "BOR", "BOT", "COL", "GAS", "HAD", "HAM",
-        "HUL", "LAW", "LEC", "LIN", "NOR", "OCO", "PER", "PIA", "RUS", "SAI",
-        "STR", "VER",
+        "ALB",
+        "ALO",
+        "ANT",
+        "BEA",
+        "BOR",
+        "BOT",
+        "COL",
+        "GAS",
+        "HAD",
+        "HAM",
+        "HUL",
+        "LAW",
+        "LEC",
+        "LIN",
+        "NOR",
+        "OCO",
+        "PER",
+        "PIA",
+        "RUS",
+        "SAI",
+        "STR",
+        "VER",
     }
     assert grid <= set(registry)
     for code in grid:
