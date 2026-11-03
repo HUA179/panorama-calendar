@@ -14,6 +14,39 @@ CALENDAR_CATEGORY: dict[CalendarKind, str] = {
     CalendarKind.GX_HOLIDAY: "广西地方假期",
 }
 
+#: Suffix marking a rest-period event in its summary.
+REST_SUFFIX = "（休）"
+#: Suffix marking an adjustment-workday event in its summary.
+WORKDAY_SUFFIX = "（班）"
+#: Fallback label when the notice does not tie an adjustment to one festival.
+GENERIC_WORKDAY_LABEL = "法定假日"
+#: Fallback label when the adjustment only exists because of a weekend swap.
+WEEKEND_WORKDAY_LABEL = "调休补班"
+
+
+def _rest_summary(period: HolidayPeriod) -> str:
+    """Name a rest span as ``<festival>（休）``."""
+    return f"{period.name}{REST_SUFFIX}"
+
+
+def _workday_label(dataset: HolidayDataset, reason: str) -> str:
+    """Name the festival an adjustment workday belongs to, with fallbacks.
+
+    The notice usually states which festival the swap serves. When it does not
+    (or the day merely restores a weekend), fall back to a generic label so the
+    summary never renders a dangling ``（班）``.
+    """
+    if any(period.name == reason for period in dataset.periods):
+        return reason
+    if "周末" in reason:
+        return WEEKEND_WORKDAY_LABEL
+    return GENERIC_WORKDAY_LABEL
+
+
+def _workday_summary(dataset: HolidayDataset, reason: str) -> str:
+    """Name an adjustment workday as ``<festival>（班）``."""
+    return f"{_workday_label(dataset, reason)}{WORKDAY_SUFFIX}"
+
 
 def _source_reference(dataset: HolidayDataset) -> SourceReference:
     """Wrap the notice provenance into a reusable evidence record."""
@@ -85,7 +118,7 @@ def build_holiday_events(
                 event_key=f"{prefix}:rest:{dataset.year}:{period.name}",
                 calendar_kind=dataset.calendar_kind,
                 event_kind=EventKind.REST_PERIOD,
-                summary=f"{period.name}｜放假{period.days}天",
+                summary=_rest_summary(period),
                 description=_rest_description(dataset, period),
                 start_date=period.start,
                 end_date_exclusive=period.end + timedelta(days=1),
@@ -101,7 +134,7 @@ def build_holiday_events(
                 event_key=f"{prefix}:workday:{workday.date.isoformat()}",
                 calendar_kind=dataset.calendar_kind,
                 event_kind=EventKind.ADJUSTED_WORKDAY,
-                summary=f"调休上班｜{workday.reason}",
+                summary=_workday_summary(dataset, workday.reason),
                 description=_workday_description(dataset, workday.reason),
                 start_date=workday.date,
                 end_date_exclusive=workday.date + timedelta(days=1),

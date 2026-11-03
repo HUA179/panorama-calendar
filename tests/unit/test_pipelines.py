@@ -7,7 +7,11 @@ from datetime import UTC, date, datetime
 from panorama_calendar.models import EventKind
 from panorama_calendar.models.enums import CalendarKind
 from panorama_calendar.pipelines import build_holiday_events, build_memorial_events
-from panorama_calendar.sources.datasets import load_anniversary_registry, load_holiday_dataset
+from panorama_calendar.sources.datasets import (
+    AdjustmentWorkday,
+    load_anniversary_registry,
+    load_holiday_dataset,
+)
 
 NOW = datetime(2026, 11, 2, 7, 0, tzinfo=UTC)
 
@@ -80,6 +84,63 @@ def test_uids_are_stable_across_rebuilds() -> None:
     )
     assert [event.uid for event in first] == [event.uid for event in second]
     assert len({event.uid for event in first}) == len(first)
+
+
+def test_rest_summaries_use_rest_suffix() -> None:
+    """Every rest span is titled ``<festival>（休）`` with no day count."""
+    dataset = load_holiday_dataset(CalendarKind.CN_HOLIDAY, 2026)
+    events = build_holiday_events(dataset, now=NOW)
+    rest = [event for event in events if event.event_kind is EventKind.REST_PERIOD]
+    expected = {f"{period.name}（休）" for period in dataset.periods}
+    assert {event.summary for event in rest} == expected
+    for event in rest:
+        assert "｜放假" not in (event.summary or "")
+
+
+def test_workday_summaries_use_workday_suffix() -> None:
+    """Every adjustment workday is titled ``<festival>（班）``."""
+    dataset = load_holiday_dataset(CalendarKind.CN_HOLIDAY, 2026)
+    events = build_holiday_events(dataset, now=NOW)
+    workdays = [event for event in events if event.event_kind is EventKind.ADJUSTED_WORKDAY]
+    expected = {f"{item.reason}（班）" for item in dataset.workdays}
+    assert {event.summary for event in workdays} == expected
+    assert "国庆节（班）" in expected
+
+
+def test_workday_summary_falls_back_to_generic_label() -> None:
+    """An unnamed festival still yields a readable ``（班）`` summary."""
+    base = load_holiday_dataset(CalendarKind.CN_HOLIDAY, 2026)
+    dataset = base.model_copy(
+        update={
+            "workdays": [
+                AdjustmentWorkday(date=date(2026, 1, 4), reason="节假日", raw="1月4日上班。")
+            ]
+        }
+    )
+    events = build_holiday_events(dataset, now=NOW)
+    workday = next(event for event in events if event.event_kind is EventKind.ADJUSTED_WORKDAY)
+    assert workday.summary == "法定假日（班）"
+
+
+def test_workday_summary_falls_back_for_weekend_swap() -> None:
+    """A pure weekend swap is labelled as 调休补班."""
+    base = load_holiday_dataset(CalendarKind.CN_HOLIDAY, 2026)
+    dataset = base.model_copy(
+        update={
+            "workdays": [
+                AdjustmentWorkday(date=date(2026, 1, 4), reason="周末调休", raw="1月4日上班。")
+            ]
+        }
+    )
+    events = build_holiday_events(dataset, now=NOW)
+    workday = next(event for event in events if event.event_kind is EventKind.ADJUSTED_WORKDAY)
+    assert workday.summary == "调休补班（班）"
+
+
+def test_guangxi_rest_summary_uses_same_suffix() -> None:
+    """The Guangxi feed shares the pipeline, so it follows the same format."""
+    events = build_holiday_events(load_holiday_dataset(CalendarKind.GX_HOLIDAY, 2026), now=NOW)
+    assert events[0].summary == "广西三月三（休）"
 
 
 def test_memorial_events_are_quiet() -> None:
