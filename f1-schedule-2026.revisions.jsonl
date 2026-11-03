@@ -1,3 +1,4 @@
 {"action": "build", "events": 58, "feed": "f1-schedule", "ics_sha256": "e8d0196a087a877a3c4a8a19b5c894c20f9c7444712e120f91005914bf09d3b4", "published_at": "2026-11-02T15:29:36.970538+00:00", "sequence_max": 0, "sequence_min": 0}
 {"action": "build", "events": 58, "feed": "f1-schedule", "ics_sha256": "af505c2253a119f18ae9e57f7f5acac8c194fd3854e7bdea52d863d09f6394aa", "published_at": "2026-11-03T05:17:53.651313+00:00", "sequence_max": 1, "sequence_min": 1}
 {"action": "build", "events": 58, "feed": "f1-schedule", "ics_sha256": "d9f713edec77c63cd9133029690f060acdebebc40c9a766f8382c8eafc46fe12", "published_at": "2026-11-03T05:25:42.621065+00:00", "sequence_max": 2, "sequence_min": 1}
+{"action": "build", "events": 58, "feed": "f1-schedule", "ics_sha256": "92bdc0052ea174307951c143aeb2baa763fa611cde404620a2421f926b29f801", "published_at": "2026-11-03T10:52:35.248428+00:00", "sequence_max": 2, "sequence_min": 1}
