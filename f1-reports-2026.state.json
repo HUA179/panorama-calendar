@@ -881,6 +881,48 @@
       "summary": "🏁 墨西哥城大奖赛（墨西哥城, Mexico City） | 战报",
       "transparent": true,
       "uid": "event-c80670d256cb3a1dbfa2802c5eeec161@panorama.local"
+    },
+    {
+      "alarms": [],
+      "calendar_kind": "F1_REPORT",
+      "categories": [
+        "F1",
+        "战报"
+      ],
+      "description": "状态：FIA 最终成绩\n赛事：FORMULA 1 MSC CRUISES GRANDE PRÊMIO DE SÃO PAULO 2026\n【正赛】\n杆位：1 NOR 诺里斯 🇬🇧 Lando Norris (McLaren, 1:27.470)\n成绩：\n🏅 P1 1 NOR 诺里斯 🇬🇧 Lando Norris (McLaren)\n🥈 P2 3 VER 维斯塔潘 🇳🇱 Max Verstappen (Red Bull Racing)\n🥉 P3 6 HAD 哈贾尔 🇫🇷 Isack Hadjar (Red Bull Racing)\n完赛：20 人；退赛：2 人\n来源：https://www.formula1.com/en/results/2026/races/1299/brazil/race-result",
+      "dtstamp": "2026-11-08T22:13:00.781567Z",
+      "end_at_utc": null,
+      "end_date_exclusive": "2026-11-09",
+      "end_estimated": false,
+      "event_key": "report:2026:brazil",
+      "event_kind": "F1_REPORT",
+      "last_modified": null,
+      "location": "",
+      "result_status": "FINAL",
+      "sequence": 0,
+      "source_timezone": null,
+      "sources": [
+        {
+          "authority": "Formula 1",
+          "content_hash": "4567adc7abfcbf4b8b21e3113f04e865fe97b71f103e7aeee49863eb828f2259",
+          "evidence_id": null,
+          "retrieved_at": "2026-11-08T22:13:00.579514Z",
+          "url": "https://www.formula1.com/en/results/2026/races/1299/brazil/race-result"
+        },
+        {
+          "authority": "Formula 1",
+          "content_hash": "1bb2da06f7fdc290a2af4f93ee013b3c59e50711cfdd5f93928048c1f88487e0",
+          "evidence_id": null,
+          "retrieved_at": "2026-11-08T22:13:00.611300Z",
+          "url": "https://www.formula1.com/en/results/2026/races/1299/brazil/qualifying"
+        }
+      ],
+      "start_at_utc": null,
+      "start_date": "2026-11-08",
+      "status": "CONFIRMED",
+      "summary": "🏁 巴西大奖赛（圣保罗, São Paulo） | 战报",
+      "transparent": true,
+      "uid": "event-eb669e3107d5e539900a119a8e6a4926@panorama.local"
     }
   ],
   "version": 1

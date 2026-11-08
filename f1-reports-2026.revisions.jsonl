@@ -2,3 +2,4 @@
 {"action": "build", "events": 19, "feed": "f1-reports", "ics_sha256": "9fef6f84311dcf83acb31512cff7db784e6c2d6d5be8bb678f92993b37584e30", "published_at": "2026-11-03T05:17:57.840680+00:00", "sequence_max": 1, "sequence_min": 0}
 {"action": "build", "events": 19, "feed": "f1-reports", "ics_sha256": "cbbcf55685b079b0a980de16814bfa7efe035c3ef3c24009e7f54deafef6642e", "published_at": "2026-11-03T05:25:56.864877+00:00", "sequence_max": 2, "sequence_min": 1}
 {"action": "build", "events": 19, "feed": "f1-reports", "ics_sha256": "1ae3c10a78633d25cdf76f3eaafd7ee71ee3845296347dd4d5ec21b4e044b999", "published_at": "2026-11-03T10:52:42.973452+00:00", "sequence_max": 2, "sequence_min": 1}
+{"action": "build", "events": 20, "feed": "f1-reports", "ics_sha256": "3cfae1d2152851019944b29e3588b214823f4584b3ae745299ed85c885473cf6", "published_at": "2026-11-08T22:13:00.792788+00:00", "sequence_max": 2, "sequence_min": 0}

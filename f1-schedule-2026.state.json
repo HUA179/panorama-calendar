@@ -7,76 +7,6 @@
         "F1",
         "排位赛"
       ],
-      "description": "赛事：FORMULA 1 GRAN PREMIO DE LA CIUDAD DE MÉXICO 2026\n北京时间：2026-11-01 05:00\n赛道当地时间：2026-10-31 15:00（America/Mexico_City）\n来源：Formula 1 官方分站赛历",
-      "dtstamp": "2026-11-03T05:17:53.616186Z",
-      "end_at_utc": "2026-10-31T22:00:00Z",
-      "end_date_exclusive": null,
-      "end_estimated": false,
-      "event_key": "f1:session:2026:mexico:QUALIFYING",
-      "event_kind": "F1_SESSION",
-      "last_modified": "2026-11-03T05:17:53.616186Z",
-      "location": "Mexico City",
-      "result_status": "NOT_AVAILABLE",
-      "sequence": 1,
-      "source_timezone": "UTC",
-      "sources": [
-        {
-          "authority": "Formula 1",
-          "content_hash": "714029c3ad0d56bbb02f06277814e012f45152e10b637f4dea5e6fabf1a22b3e",
-          "evidence_id": null,
-          "retrieved_at": "2026-11-03T05:17:51.317047Z",
-          "url": "https://www.formula1.com/en/racing/2026/mexico"
-        }
-      ],
-      "start_at_utc": "2026-10-31T21:00:00Z",
-      "start_date": null,
-      "status": "CONFIRMED",
-      "summary": "🏎️ 墨西哥城大奖赛（墨西哥城, Mexico City） | 排位赛",
-      "transparent": false,
-      "uid": "event-38cf3d9ca1f38ea1778590139bc87e26@panorama.local"
-    },
-    {
-      "alarms": [],
-      "calendar_kind": "F1_SCHEDULE",
-      "categories": [
-        "F1",
-        "正赛"
-      ],
-      "description": "赛事：FORMULA 1 GRAN PREMIO DE LA CIUDAD DE MÉXICO 2026\n北京时间：2026-11-02 04:00\n赛道当地时间：2026-11-01 14:00（America/Mexico_City）\n来源：Formula 1 官方分站赛历",
-      "dtstamp": "2026-11-03T05:17:53.616186Z",
-      "end_at_utc": "2026-11-01T22:00:00Z",
-      "end_date_exclusive": null,
-      "end_estimated": false,
-      "event_key": "f1:session:2026:mexico:RACE",
-      "event_kind": "F1_SESSION",
-      "last_modified": "2026-11-03T05:17:53.616186Z",
-      "location": "Mexico City",
-      "result_status": "NOT_AVAILABLE",
-      "sequence": 1,
-      "source_timezone": "UTC",
-      "sources": [
-        {
-          "authority": "Formula 1",
-          "content_hash": "714029c3ad0d56bbb02f06277814e012f45152e10b637f4dea5e6fabf1a22b3e",
-          "evidence_id": null,
-          "retrieved_at": "2026-11-03T05:17:51.317047Z",
-          "url": "https://www.formula1.com/en/racing/2026/mexico"
-        }
-      ],
-      "start_at_utc": "2026-11-01T20:00:00Z",
-      "start_date": null,
-      "status": "CONFIRMED",
-      "summary": "🏎️ 墨西哥城大奖赛（墨西哥城, Mexico City） | 正赛",
-      "transparent": false,
-      "uid": "event-c8e2ccbb96725edf5e7a68053fda4096@panorama.local"
-    },
-    {
-      "alarms": [],
-      "calendar_kind": "F1_SCHEDULE",
-      "categories": [
-        "F1",
-        "排位赛"
-      ],
       "description": "赛事：FORMULA 1 MSC CRUISES GRANDE PRÊMIO DE SÃO PAULO 2026\n北京时间：2026-11-08 02:00\n赛道当地时间：2026-11-07 15:00（America/Sao_Paulo）\n来源：Formula 1 官方分站赛历",
       "dtstamp": "2026-11-03T05:17:53.616186Z",
       "end_at_utc": "2026-11-07T19:00:00Z",
@@ -279,6 +209,76 @@
       "summary": "🏎️ 卡塔尔大奖赛（卢赛尔, Lusail） | 正赛",
       "transparent": false,
       "uid": "event-c369f3f82304fb576d96e29b1bb584f4@panorama.local"
+    },
+    {
+      "alarms": [],
+      "calendar_kind": "F1_SCHEDULE",
+      "categories": [
+        "F1",
+        "排位赛"
+      ],
+      "description": "赛事：FORMULA 1 ETIHAD AIRWAYS ABU DHABI GRAND PRIX 2026\n北京时间：2026-12-05 22:00\n赛道当地时间：2026-12-05 18:00（Asia/Dubai）\n来源：Formula 1 官方分站赛历",
+      "dtstamp": "2026-11-03T05:17:53.616186Z",
+      "end_at_utc": "2026-12-05T15:00:00Z",
+      "end_date_exclusive": null,
+      "end_estimated": false,
+      "event_key": "f1:session:2026:united-arab-emirates:QUALIFYING",
+      "event_kind": "F1_SESSION",
+      "last_modified": "2026-11-03T05:17:53.616186Z",
+      "location": "Yas Marina",
+      "result_status": "NOT_AVAILABLE",
+      "sequence": 1,
+      "source_timezone": "UTC",
+      "sources": [
+        {
+          "authority": "Formula 1",
+          "content_hash": "d50ad858fae5cbc1bc2098a12e7b8c1a46a4d514e685f4f75d23a982d2063613",
+          "evidence_id": null,
+          "retrieved_at": "2026-11-03T05:17:53.556071Z",
+          "url": "https://www.formula1.com/en/racing/2026/united-arab-emirates"
+        }
+      ],
+      "start_at_utc": "2026-12-05T14:00:00Z",
+      "start_date": null,
+      "status": "CONFIRMED",
+      "summary": "🏎️ 阿布扎比大奖赛（阿布扎比, Abu Dhabi） | 排位赛",
+      "transparent": false,
+      "uid": "event-bcaf3ccb72baa28206d75bed35912df3@panorama.local"
+    },
+    {
+      "alarms": [],
+      "calendar_kind": "F1_SCHEDULE",
+      "categories": [
+        "F1",
+        "正赛"
+      ],
+      "description": "赛事：FORMULA 1 ETIHAD AIRWAYS ABU DHABI GRAND PRIX 2026\n北京时间：2026-12-06 21:00\n赛道当地时间：2026-12-06 17:00（Asia/Dubai）\n来源：Formula 1 官方分站赛历",
+      "dtstamp": "2026-11-03T05:17:53.616186Z",
+      "end_at_utc": "2026-12-06T15:00:00Z",
+      "end_date_exclusive": null,
+      "end_estimated": false,
+      "event_key": "f1:session:2026:united-arab-emirates:RACE",
+      "event_kind": "F1_SESSION",
+      "last_modified": "2026-11-03T05:17:53.616186Z",
+      "location": "Yas Marina",
+      "result_status": "NOT_AVAILABLE",
+      "sequence": 1,
+      "source_timezone": "UTC",
+      "sources": [
+        {
+          "authority": "Formula 1",
+          "content_hash": "d50ad858fae5cbc1bc2098a12e7b8c1a46a4d514e685f4f75d23a982d2063613",
+          "evidence_id": null,
+          "retrieved_at": "2026-11-03T05:17:53.556071Z",
+          "url": "https://www.formula1.com/en/racing/2026/united-arab-emirates"
+        }
+      ],
+      "start_at_utc": "2026-12-06T13:00:00Z",
+      "start_date": null,
+      "status": "CONFIRMED",
+      "summary": "🏎️ 阿布扎比大奖赛（阿布扎比, Abu Dhabi） | 正赛",
+      "transparent": false,
+      "uid": "event-b0ef7e8faedf504fb01901cb63dc99a1@panorama.local"
     },
     {
       "alarms": [],
@@ -1967,33 +1967,33 @@
         "F1",
         "排位赛"
       ],
-      "description": "赛事：FORMULA 1 ETIHAD AIRWAYS ABU DHABI GRAND PRIX 2026\n北京时间：2026-12-05 22:00\n赛道当地时间：2026-12-05 18:00（Asia/Dubai）\n来源：Formula 1 官方分站赛历",
+      "description": "赛事：FORMULA 1 GRAN PREMIO DE LA CIUDAD DE MÉXICO 2026\n北京时间：2026-11-01 05:00\n赛道当地时间：2026-10-31 15:00（America/Mexico_City）\n来源：Formula 1 官方分站赛历",
       "dtstamp": "2026-11-03T05:17:53.616186Z",
-      "end_at_utc": "2026-12-05T15:00:00Z",
+      "end_at_utc": "2026-10-31T22:00:00Z",
       "end_date_exclusive": null,
       "end_estimated": false,
-      "event_key": "f1:session:2026:united-arab-emirates:QUALIFYING",
+      "event_key": "f1:session:2026:mexico:QUALIFYING",
       "event_kind": "F1_SESSION",
       "last_modified": "2026-11-03T05:17:53.616186Z",
-      "location": "Yas Marina",
+      "location": "Mexico City",
       "result_status": "NOT_AVAILABLE",
       "sequence": 1,
       "source_timezone": "UTC",
       "sources": [
         {
           "authority": "Formula 1",
-          "content_hash": "d50ad858fae5cbc1bc2098a12e7b8c1a46a4d514e685f4f75d23a982d2063613",
+          "content_hash": "714029c3ad0d56bbb02f06277814e012f45152e10b637f4dea5e6fabf1a22b3e",
           "evidence_id": null,
-          "retrieved_at": "2026-11-03T05:17:53.556071Z",
-          "url": "https://www.formula1.com/en/racing/2026/united-arab-emirates"
+          "retrieved_at": "2026-11-03T05:17:51.317047Z",
+          "url": "https://www.formula1.com/en/racing/2026/mexico"
         }
       ],
-      "start_at_utc": "2026-12-05T14:00:00Z",
+      "start_at_utc": "2026-10-31T21:00:00Z",
       "start_date": null,
       "status": "CONFIRMED",
-      "summary": "🏎️ 阿布扎比大奖赛（阿布扎比, Abu Dhabi） | 排位赛",
+      "summary": "🏎️ 墨西哥城大奖赛（墨西哥城, Mexico City） | 排位赛",
       "transparent": false,
-      "uid": "event-bcaf3ccb72baa28206d75bed35912df3@panorama.local"
+      "uid": "event-38cf3d9ca1f38ea1778590139bc87e26@panorama.local"
     },
     {
       "alarms": [],
@@ -2002,33 +2002,33 @@
         "F1",
         "正赛"
       ],
-      "description": "赛事：FORMULA 1 ETIHAD AIRWAYS ABU DHABI GRAND PRIX 2026\n北京时间：2026-12-06 21:00\n赛道当地时间：2026-12-06 17:00（Asia/Dubai）\n来源：Formula 1 官方分站赛历",
+      "description": "赛事：FORMULA 1 GRAN PREMIO DE LA CIUDAD DE MÉXICO 2026\n北京时间：2026-11-02 04:00\n赛道当地时间：2026-11-01 14:00（America/Mexico_City）\n来源：Formula 1 官方分站赛历",
       "dtstamp": "2026-11-03T05:17:53.616186Z",
-      "end_at_utc": "2026-12-06T15:00:00Z",
+      "end_at_utc": "2026-11-01T22:00:00Z",
       "end_date_exclusive": null,
       "end_estimated": false,
-      "event_key": "f1:session:2026:united-arab-emirates:RACE",
+      "event_key": "f1:session:2026:mexico:RACE",
       "event_kind": "F1_SESSION",
       "last_modified": "2026-11-03T05:17:53.616186Z",
-      "location": "Yas Marina",
+      "location": "Mexico City",
       "result_status": "NOT_AVAILABLE",
       "sequence": 1,
       "source_timezone": "UTC",
       "sources": [
         {
           "authority": "Formula 1",
-          "content_hash": "d50ad858fae5cbc1bc2098a12e7b8c1a46a4d514e685f4f75d23a982d2063613",
+          "content_hash": "714029c3ad0d56bbb02f06277814e012f45152e10b637f4dea5e6fabf1a22b3e",
           "evidence_id": null,
-          "retrieved_at": "2026-11-03T05:17:53.556071Z",
-          "url": "https://www.formula1.com/en/racing/2026/united-arab-emirates"
+          "retrieved_at": "2026-11-03T05:17:51.317047Z",
+          "url": "https://www.formula1.com/en/racing/2026/mexico"
         }
       ],
-      "start_at_utc": "2026-12-06T13:00:00Z",
+      "start_at_utc": "2026-11-01T20:00:00Z",
       "start_date": null,
       "status": "CONFIRMED",
-      "summary": "🏎️ 阿布扎比大奖赛（阿布扎比, Abu Dhabi） | 正赛",
+      "summary": "🏎️ 墨西哥城大奖赛（墨西哥城, Mexico City） | 正赛",
       "transparent": false,
-      "uid": "event-b0ef7e8faedf504fb01901cb63dc99a1@panorama.local"
+      "uid": "event-c8e2ccbb96725edf5e7a68053fda4096@panorama.local"
     }
   ],
   "version": 1

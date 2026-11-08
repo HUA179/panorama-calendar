@@ -422,4 +422,23 @@ URL:https://www.formula1.com/en/results/2026/races/1298/mexico/race-result
 LAST-MODIFIED:20261103T052556Z
 CATEGORIES:F1,战报
 END:VEVENT
+BEGIN:VEVENT
+UID:event-eb669e3107d5e539900a119a8e6a4926@panorama.local
+DTSTAMP:20261108T221300Z
+DTSTART;VALUE=DATE:20261108
+DTEND;VALUE=DATE:20261109
+SUMMARY:🏁 巴西大奖赛（圣保罗\, São Paulo） | 战报
+DESCRIPTION:状态：FIA 最终成绩\n赛事：FORMULA 1 MSC CRUISES GRAND
+ E PRÊMIO DE SÃO PAULO 2026\n【正赛】\n杆位：1 NOR 诺里斯 🇬
+ 🇧 Lando Norris (McLaren\, 1:27.470)\n成绩：\n🏅 P1 1 NOR 诺里斯
+  🇬🇧 Lando Norris (McLaren)\n🥈 P2 3 VER 维斯塔潘 🇳🇱 Max 
+ Verstappen (Red Bull Racing)\n🥉 P3 6 HAD 哈贾尔 🇫🇷 Isack Hadja
+ r (Red Bull Racing)\n完赛：20 人；退赛：2 人\n来源：https://ww
+ w.formula1.com/en/results/2026/races/1299/brazil/race-result
+STATUS:CONFIRMED
+SEQUENCE:0
+TRANSP:TRANSPARENT
+URL:https://www.formula1.com/en/results/2026/races/1299/brazil/race-result
+CATEGORIES:F1,战报
+END:VEVENT
 END:VCALENDAR
